@@ -6,6 +6,15 @@ on:
     # 05:00, 08:00, 11:00, 14:00, 17:00, 20:00, 23:00 and 02:00 PKT.
     - cron: '0 0,3,6,9,12,15,18,21 * * *'
   workflow_dispatch:          # lets you run it by hand from the Actions tab
+    inputs:
+      skip_olx:
+        description: 'Skip OLX scraping (quick test, ~5 mins)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 concurrency:
   group: refresh
@@ -34,7 +43,12 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Scrape and build
-        run: python kei-tracker/scripts/refresh.py
+        run: |
+          if [ "${{ github.event.inputs.skip_olx }}" = "true" ]; then
+            python kei-tracker/scripts/refresh.py --skip-olx
+          else
+            python kei-tracker/scripts/refresh.py
+          fi
 
       - name: Upload to SmarterASP.NET
         env:
