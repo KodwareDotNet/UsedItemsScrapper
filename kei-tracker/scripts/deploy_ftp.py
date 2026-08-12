@@ -5,7 +5,7 @@ Credentials come from the environment, never from the repo:
   FTP_HOST      e.g. ftp.yoursite.com   (Control Panel > FTP Manager)
   FTP_USER
   FTP_PASS
-  FTP_DIR       remote directory, default /wwwroot
+  FTP_DIR       remote directory, /CarsScrapping
   FTP_TLS       "0" to force plain FTP; default is to try FTPS first
 
 Uploads to a temporary name and renames into place, so a visitor mid-upload
@@ -52,7 +52,7 @@ def main():
 
     ftp = connect()
     try:
-        remote_dir = os.environ.get('FTP_DIR', '/wwwroot')
+        remote_dir = os.environ.get('FTP_DIR', '/CarsScrapping')
         ftp.cwd(remote_dir)
         for local, remote in FILES:
             tmp = remote + '.uploading'
