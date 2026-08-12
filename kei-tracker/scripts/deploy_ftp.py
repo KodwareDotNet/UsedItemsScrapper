@@ -13,7 +13,7 @@ never sees a half-written page.
 """
 #!/usr/bin/env python3
 """Upload the built page to SmarterASP.NET over FTP."""
-import os, sys
+import os, sys, time
 from ftplib import FTP, FTP_TLS, error_perm, error_temp
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -29,18 +29,20 @@ def connect():
     host = os.environ['FTP_HOST']
     user = os.environ['FTP_USER']
     password = os.environ['FTP_PASS']
+    
     if os.environ.get('FTP_TLS', '1') != '0':
         try:
-            ftp = FTP_TLS(host, timeout=60)
+            ftp = FTP_TLS(host, timeout=180)  # 3 minutes instead of 1
             ftp.login(user, password)
             ftp.prot_p()
-            print('connected over FTPS')
+            print('✓ Connected over FTPS')
             return ftp
         except Exception as e:
             print(f'FTPS failed ({e}); falling back to plain FTP')
-    ftp = FTP(host, timeout=60)
+    
+    ftp = FTP(host, timeout=180)
     ftp.login(user, password)
-    print('connected over plain FTP')
+    print('✓ Connected over plain FTP')
     return ftp
 
 def main():
@@ -51,32 +53,56 @@ def main():
     
     ftp = connect()
     try:
-        remote_dir = os.environ.get('FTP_DIR', '/CarsScrapping')
-        try:
-            ftp.cwd(remote_dir)
-        except error_perm as e:
-            print(f'ERROR: Cannot access {remote_dir}: {e}', file=sys.stderr)
-            return 1
+        remote_dir = os.environ.get('FTP_DIR', '/')
+        if remote_dir != '/':
+            try:
+                ftp.cwd(remote_dir)
+            except error_perm as e:
+                print(f'ERROR: Cannot access {remote_dir}: {e}', file=sys.stderr)
+                return 1
         
         for local, remote in FILES:
             tmp = remote + '.uploading'
-            try:
-                with open(local, 'rb') as fh:
-                    ftp.storbinary(f'STOR {tmp}', fh, blocksize=64 * 1024)
+            max_retries = 3
+            
+            for attempt in range(1, max_retries + 1):
                 try:
-                    ftp.delete(remote)
-                except error_perm:
-                    pass  # first upload
-                ftp.rename(tmp, remote)
-                print(f'✓ {os.path.basename(local)} -> {remote_dir}/{remote} ({os.path.getsize(local):,} bytes)')
-            except (error_perm, error_temp) as e:
-                print(f'ERROR uploading {remote}: {e}', file=sys.stderr)
-                return 1
+                    print(f'Uploading {os.path.basename(local)} (attempt {attempt}/{max_retries})...')
+                    with open(local, 'rb') as fh:
+                        ftp.storbinary(f'STOR {tmp}', fh, blocksize=64 * 1024)
+                    
+                    # Delete old version if it exists
+                    try:
+                        ftp.delete(remote)
+                    except error_perm:
+                        pass
+                    
+                    # Rename into place
+                    ftp.rename(tmp, remote)
+                    print(f'✓ {remote_dir}/{remote} ({os.path.getsize(local):,} bytes)')
+                    break  # Success, move to next file
+                
+                except (error_perm, error_temp, TimeoutError, OSError) as e:
+                    print(f'  Attempt {attempt} failed: {e}', file=sys.stderr)
+                    if attempt < max_retries:
+                        print(f'  Retrying in 5 seconds...', file=sys.stderr)
+                        time.sleep(5)
+                        # Reconnect on timeout
+                        try:
+                            ftp.quit()
+                        except:
+                            ftp.close()
+                        ftp = connect()
+                    else:
+                        print(f'ERROR: Failed to upload {remote} after {max_retries} attempts', file=sys.stderr)
+                        return 1
+    
     finally:
         try:
             ftp.quit()
         except:
             ftp.close()
+    
     return 0
 
 if __name__ == '__main__':
