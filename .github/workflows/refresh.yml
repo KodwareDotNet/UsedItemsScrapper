@@ -1,1 +1,68 @@
-$(cat /mnt/user-data/uploads/UsedItemsScrapper/.github/workflows/refresh.yml)
+name: Refresh kei tracker
+
+on:
+  schedule:
+    # Every 3 hours. GitHub cron is UTC; Pakistan is UTC+5, so this fires at
+    # 05:00, 08:00, 11:00, 14:00, 17:00, 20:00, 23:00 and 02:00 PKT.
+    - cron: '0 0,3,6,9,12,15,18,21 * * *'
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false   # never let two runs fight over state/
+
+permissions:
+  contents: write             # needed to commit the updated snapshot back
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      TZ: Asia/Karachi        # build_all.py stamps in local time; without this
+                              # the runner's UTC clock breaks the NEW badges
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape and build
+        run: python kei-tracker/scripts/refresh.py
+
+      - name: Upload to SmarterASP.NET
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+          FTP_DIR: ${{ secrets.FTP_DIR }}
+        run: python kei-tracker/scripts/deploy_ftp.py
+
+      - name: Commit updated state
+        run: |
+          git config user.name  "kei-tracker bot"
+          git config user.email "actions@github.com"
+          git add kei-tracker/state kei-tracker/raw
+          if git diff --staged --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "refresh $(date '+%Y-%m-%d %H:%M %Z')"
+            git push
+          fi
+
+      - name: Keep the built page as an artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kei-tracker-output
+          path: |
+            kei_cars_islamabad_rawalpindi.html
+            660cc_kei_cars_isb_rwp.xlsx
+          retention-days: 7
+          if-no-files-found: ignore
