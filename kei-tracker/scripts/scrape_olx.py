@@ -21,7 +21,7 @@ os.makedirs(RAW, exist_ok=True)
 
 CITIES = ['islamabad_g4060615', 'rawalpindi_g4060681']
 PAGES = 3
-DELAY = 0.2  # Reduced from 0.4 to speed up scraping (saves ~1.5 minutes)
+DELAY = 1.0  # Increased from 0.2s to 1.0s to avoid OLX rate-limiting
 TIMEOUT = 30
 RETRIES = 3
 
@@ -94,11 +94,17 @@ def get(session, url):
             if r.status_code == 200:
                 return r.text
             if r.status_code in (403, 429):
-                time.sleep(5 * (attempt + 1))
+                wait = 5 * (attempt + 1)
+                print(f'      → Rate limited (HTTP {r.status_code}), waiting {wait}s...', flush=True)
+                time.sleep(wait)
+                continue  # Actually retry after sleeping
             elif r.status_code == 404:
                 return None
-        except requests.RequestException:
-            time.sleep(2 * (attempt + 1))
+        except requests.RequestException as e:
+            wait = 2 * (attempt + 1)
+            print(f'      → Connection error: {e}, waiting {wait}s...', flush=True)
+            time.sleep(wait)
+            continue  # Actually retry after sleeping
     return None
 
 
