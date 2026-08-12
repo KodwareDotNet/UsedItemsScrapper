@@ -108,12 +108,15 @@ def harvest():
     session = requests.Session()
     for kw in KEYWORDS:
         before = len(found)
+        print(f'  [{kw!r}] starting...', flush=True)
         for city in CITIES:
             for page in range(1, PAGES + 1):
                 url = (f'https://www.olx.com.pk/{city}/cars_c84/q-{requests.utils.quote(kw)}'
                        f'?filter=price_between_0_to_3000000' + (f'&page={page}' if page > 1 else ''))
+                print(f'    fetching page {page}...', flush=True)
                 html = get(session, url)
                 if not html:
+                    print(f'    page {page}: no response, skipping to next keyword', flush=True)
                     break
                 soup = BeautifulSoup(html, 'lxml')
                 anchors = soup.select('a[href*="-iid-"]')
