@@ -68,6 +68,16 @@ def main():
         print(f'\nOLX: skipped, data is only {age:.1f}h old '
               f'(threshold {OLX_MAX_AGE_HOURS}h)')
 
+    # Save scraped raw data to git immediately (before build/upload can fail)
+    print('\n=== Saving scraped data to git ===', flush=True)
+    subprocess.call(['git', 'add', 'kei-tracker/raw'], cwd=os.path.dirname(ROOT))
+    result = subprocess.call(['git', 'commit', '-m', f'scrape: {datetime.now(TZ).strftime("%Y-%m-%d %H:%M")}'], cwd=os.path.dirname(ROOT))
+    if result == 0:
+        subprocess.call(['git', 'push'], cwd=os.path.dirname(ROOT))
+        print('=== Scraped data committed and pushed ===', flush=True)
+    else:
+        print('=== No changes to commit (already up to date) ===', flush=True)
+
     # Every "x ago" in the raw dumps is relative to THIS instant, not to build
     # time. Written in Pakistan time because that is what the page renders in.
     stamp = datetime.now(TZ).strftime('%Y-%m-%dT%H:%M:%S')

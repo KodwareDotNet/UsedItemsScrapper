@@ -9,7 +9,7 @@ so the raw sweep pulls in Karachi/Lahore/Sialkot cars. Everything is filtered
 down to Islamabad/Rawalpindi (region 'core') or the listed nearby towns
 ('near'); expect roughly 300-500 rows to survive out of ~1,800.
 """
-import os, re, sys, time
+import os, re, sys, time, subprocess, json
 from datetime import datetime, timezone
 import requests
 from bs4 import BeautifulSoup
@@ -112,6 +112,8 @@ def harvest():
     """Collect {id: (card_text, thumbnail_id, searched_city)} across every keyword."""
     found = {}
     session = requests.Session()
+    jsonl_file = os.path.join(ROOT, 'raw', 'olx_live.jsonl')
+
     for kw in KEYWORDS:
         before = len(found)
         print(f'  [{kw!r}] starting...', flush=True)
@@ -152,7 +154,21 @@ def harvest():
                 if not fresh:
                     break
                 time.sleep(DELAY)
-        print(f'  {kw!r}: +{len(found) - before} (total {len(found)})')
+
+        # Save keyword batch to JSONL and commit
+        added = len(found) - before
+        if added > 0:
+            for ad_id in list(found.keys())[before:]:
+                blob, pic, searched = found[ad_id]
+                with open(jsonl_file, 'a', encoding='utf-8') as fh:
+                    json.dump({'id': ad_id, 'blob': blob, 'pic': pic, 'searched': searched}, fh)
+                    fh.write('\n')
+            # Commit this keyword's batch
+            subprocess.call(['git', 'add', 'kei-tracker/raw/olx_live.jsonl'])
+            subprocess.call(['git', 'commit', '-m', f'scrape: OLX {kw!r} +{added}'])
+            subprocess.call(['git', 'push'])
+            print(f'  ✓ Committed {added} records', flush=True)
+        print(f'  {kw!r}: +{added} (total {len(found)})')
     return found
 
 
@@ -215,7 +231,14 @@ def parse(found):
 
 
 def main():
-    rows = parse(harvest())
+    jsonl_file = os.path.join(RAW, 'olx_live.jsonl')
+
+    # Clear previous live file
+    if os.path.exists(jsonl_file):
+        os.remove(jsonl_file)
+
+    found = harvest()  # Already writes to JSONL and commits per keyword
+    rows = parse(found)
     if len(rows) < 80:
         print(f'ABORT: only {len(rows)} OLX rows survived, expected several hundred. '
               f'Leaving the previous olx_rows.txt in place.', file=sys.stderr)
