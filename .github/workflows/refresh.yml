@@ -50,6 +50,35 @@ jobs:
             python kei-tracker/scripts/refresh.py
           fi
 
+      - name: Debug FTP directory structure
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+        run: |
+          python3 << 'EOF'
+          import os
+          from ftplib import FTP, FTP_TLS
+          
+          host = os.environ['FTP_HOST']
+          user = os.environ['FTP_USER']
+          password = os.environ['FTP_PASS']
+          
+          try:
+              ftp = FTP_TLS(host, timeout=60)
+              ftp.login(user, password)
+              ftp.prot_p()
+              print("✓ Connected over FTPS\n")
+          except:
+              ftp = FTP(host, timeout=60)
+              ftp.login(user, password)
+              print("✓ Connected over plain FTP\n")
+          
+          print("Root directory listing:")
+          ftp.dir()
+          ftp.quit()
+          EOF
+        
       - name: Upload to SmarterASP.NET
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
