@@ -96,14 +96,20 @@ def pwimg(r):
 pw['img']=pw.apply(pwimg,axis=1)
 
 # ---------- OLX ----------
-ol=pd.read_csv(os.path.join(RAW,'olx_rows.txt'),sep='|',header=None,dtype=str,
-   names=['id','model_full','variant','price_lacs','year','mileage_km','searched','area','ago','region','pic'])
-ol['source']='OLX'
-ol['url']='https://www.olx.com.pk/item/-iid-'+ol['id']
-for c in ['price_lacs','year','mileage_km']: ol[c]=pd.to_numeric(ol[c],errors='coerce')
-ol['city']=ol['area'].fillna('').str.split(',').str[-1].str.strip()
-ol['transmission']=''; ol['badge']=''; ol['rating']=np.nan; ol['pics']=np.nan
-ol['img']=ol['pic'].fillna('').apply(lambda p: f"https://images.olx.com.pk/thumbnails/{p}-600x450.jpeg" if p else '')
+# ---------- OLX ----------
+olx_path = os.path.join(RAW,'olx_rows.txt')
+if os.path.exists(olx_path) and os.path.getsize(olx_path) > 0:
+    ol=pd.read_csv(olx_path,sep='|',header=None,dtype=str,
+       names=['id','model_full','variant','price_lacs','year','mileage_km','searched','area','ago','region','pic'])
+    ol['source']='OLX'
+    ol['url']='https://www.olx.com.pk/item/-iid-'+ol['id']
+    for c in ['price_lacs','year','mileage_km']: ol[c]=pd.to_numeric(ol[c],errors='coerce')
+    ol['city']=ol['area'].fillna('').str.split(',').str[-1].str.strip()
+    ol['transmission']=''; ol['badge']=''; ol['rating']=np.nan; ol['pics']=np.nan
+    ol['img']=ol['pic'].fillna('').apply(lambda p: f"https://images.olx.com.pk/thumbnails/{p}-600x450.jpeg" if p else '')
+else:
+    print("WARNING: olx_rows.txt not found or empty (--skip-olx mode?). Building with PakWheels data only.")
+    ol=pd.DataFrame(columns=['id','model_full','variant','price_lacs','year','mileage_km','searched','area','ago','region','pic','source','url','city','transmission','badge','rating','pics','img'])
 
 cols=['id','source','model_full','variant','year','price_lacs','mileage_km','transmission','city','area',
       'badge','rating','pics','ago','region','url','img']
