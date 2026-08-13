@@ -1,15 +1,16 @@
-**Kei tracker — 13 Aug, 9:02 PM**
-754 live listings (672 PakWheels, 82 OLX)
-**7 new** since last run · **96 price drops** · 5 ads disappeared
+**Kei tracker — 13 Aug, 9:18 PM**
+743 live listings (672 PakWheels, 71 OLX)
+**10 new** since last run · **96 price drops** · 21 ads disappeared
 
 New:
-- Mitsubishi EK Wagon 2013 T Safety Package — 22.95 lacs, 125,000 km, Rawalpindi
-- Suzuki Alto 2021 VXR — 25.25 lacs, 87,000 km, Rawalpindi
-- Nissan Dayz 2015 Highway Star X — 26.80 lacs, 76,000 km, Islamabad
-- Suzuki Alto 2021 VXL — 27.40 lacs, 87,000 km, Islamabad
-- Suzuki Alto 2024 VXR — 28.75 lacs, 35,000 km, Rawalpindi
-- Suzuki Alto 2023 VXL — 29.45 lacs, 23,000 km, Rawalpindi
-- Daihatsu Move 2015 X — 29.50 lacs, 150,000 km, Islamabad
+- Suzuki Alto 2021 2021 — 15.00 lacs, 2 km, PWD Road, Islamabad
+- Suzuki Alto 2010 2010 — 20.00 lacs, 1,613 km, Westridge, Rawalpindi
+- Suzuki Alto 2021 2021 — 23.20 lacs, 98,000 km, Chaklala Scheme, Rawalpindi
+- Nissan Moco 2014 2014 — 24.20 lacs, 280,000 km, Gawal Mandi, Rawalpindi
+- Suzuki Alto 2020 2020 VXR — 25.60 lacs, 57,230 km, Fazal Town, Rawalpindi
+- Suzuki Alto 2021 VXR 2021 — 27.00 lacs, 31,000 km, Park View, Rawalpindi
+- Suzuki Alto 2022 2022 — 27.20 lacs, 42,000 km, Airport Housing Society, Rawalpindi
+- Suzuki Alto 2023 2023 — 27.90 lacs, n/a km, Chaklala, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
