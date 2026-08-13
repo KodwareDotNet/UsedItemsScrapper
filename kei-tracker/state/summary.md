@@ -1,16 +1,16 @@
-**Kei tracker — 14 Aug, 12:18 AM**
-744 live listings (673 PakWheels, 71 OLX)
-**10 new** since last run · **96 price drops** · 9 ads disappeared
+**Kei tracker — 14 Aug, 3:03 AM**
+753 live listings (673 PakWheels, 80 OLX)
+**12 new** since last run · **96 price drops** · 3 ads disappeared
 
 New:
-- Suzuki Alto 2012 2012 — 12.85 lacs, 150 km, Bahria Town, Islamabad
-- Suzuki Every 2011  — 14.50 lacs, 155,000 km, Rawalpindi
-- Suzuki Alto 2010 1000CC SZ4 Import 2015 Model 2010 UK Mahruti — 17.75 lacs, 100,000 km, Railway Scheme 9, Rawalpindi
-- Nissan Roox 2015 E — 19.95 lacs, 132,000 km, Islamabad
-- Suzuki Wagon R 2010 FX Limited — 20.50 lacs, 145,000 km, Islamabad
-- Daihatsu Mira 2011 L — 21.00 lacs, 105,000 km, Rawalpindi
-- Suzuki Alto 2021 2021 — 23.50 lacs, 100,000 km, Frash Town Phase 1, Islamabad
-- Suzuki Alto 2020 2020 — 25.50 lacs, 102,000 km, F-15/1, Islamabad
+- Suzuki Alto 2010 2010 — 20.00 lacs, 49,819 km, Adiala Road, Rawalpindi
+- Daihatsu Mira 2011 2011 Automatic   Imported   Islamabad   Excellent Condit — 23.50 lacs, 301,000 km, I-8, Islamabad
+- Daihatsu Mira 2012 2012 — 23.75 lacs, 98,000 km, G-11, Islamabad
+- Daihatsu Mira 2012 2012 — 24.00 lacs, 91,000 km, I-10, Islamabad
+- Daihatsu Mira 2013 2013 — 24.80 lacs, n/a km, G-9, Islamabad
+- Daihatsu Mira 2013 2013/17 Model Urgent Sale 03435809514 — 24.95 lacs, 101,500 km, Khan Akbar Town, Islamabad
+- Daihatsu Mira 2013 2013 — 25.00 lacs, 130,000 km, Fazaia Housing Scheme, Islamabad
+- Suzuki Alto 2023 2023 — 25.50 lacs, 76,000 km, Adiala Road, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
