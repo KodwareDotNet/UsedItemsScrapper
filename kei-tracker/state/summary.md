@@ -1,16 +1,10 @@
-**Kei tracker — 13 Aug, 2:16 PM**
-750 live listings (668 PakWheels, 82 OLX)
-**13 new** since last run · **97 price drops** · 44 ads disappeared
+**Kei tracker — 13 Aug, 3:13 PM**
+748 live listings (666 PakWheels, 82 OLX)
+**2 new** since last run · **97 price drops** · 4 ads disappeared
 
 New:
-- Suzuki Alto 2010 2010 — 10.85 lacs, 255,288 km, Satellite Town, Rawalpindi
-- Suzuki Alto 2012 2012 — 12.85 lacs, 262,500 km, Bahria Town Phase 8, Rawalpindi
-- Suzuki Alto 2011  — 18.70 lacs, 107,000 km, Rawalpindi
-- Suzuki Alto 2012 2012 — 19.00 lacs, 308 km, PWD Housing Scheme, Islamabad
-- Suzuki Alto 2013 2013 — 22.20 lacs, 117,700 km, College Road, Rawalpindi
-- Suzuki Alto 2021 2021 — 22.50 lacs, 290,000 km, Bhara kahu, Islamabad
-- Daihatsu Mira 2012 2012 — 23.75 lacs, 98,000 km, G-11, Islamabad
-- Suzuki Alto 2019 VXL AGS Auto 2019 total geniune Islamabad Registered — 25.65 lacs, 61,250 km, Kamala Abad, Rawalpindi
+- Subaru Pleo 2012 F — 1.28 lacs, 85,000 km, Islamabad
+- Nissan Moco 2014 X — 22.75 lacs, 170,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
