@@ -1,1 +1,313 @@
-$(cat /mnt/user-data/uploads/UsedItemsScrapper/kei-tracker/scripts/page_template.html)
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>660cc Kei Cars - Islamabad &amp; Rawalpindi</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#f4f5f7;color:#1a1f2b}
+header{background:#16233d;color:#fff;padding:18px 22px 14px}
+header h1{margin:0 0 4px;font-size:19px;font-weight:650}
+header .sub{font-size:12.5px;color:#9fb0cc}
+#cap{color:#ffd9a0}
+#stale{background:#fdecec;border-bottom:1px solid #f0bcbc;color:#8a1f1f}
+.warn{background:#fff4e0;border-bottom:1px solid #f0d9ae;color:#6b4a13;padding:9px 22px;font-size:12.5px}
+.bar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #dfe3ea;padding:11px 22px;display:flex;flex-wrap:wrap;gap:9px;align-items:center;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.bar label{font-size:11px;color:#5c6678;display:flex;flex-direction:column;gap:3px}
+select,input[type=text],input[type=number]{font:13px Arial,sans-serif;padding:5px 7px;border:1px solid #ccd2dc;border-radius:5px;background:#fff;color:#1a1f2b}
+input[type=text]{min-width:190px}
+input[type=number]{width:80px}
+select{max-width:190px}
+button{font:13px Arial,sans-serif;padding:6px 11px;border:1px solid #ccd2dc;background:#fff;border-radius:5px;cursor:pointer}
+button:hover{background:#f0f3f8}
+button.on{background:#16233d;color:#fff;border-color:#16233d}
+.hidebar{padding:7px 22px;background:#fff;border-bottom:1px solid #dfe3ea;font-size:12px;color:#5c6678;display:none;align-items:center;gap:7px;flex-wrap:wrap}
+.hidebar .hc{background:#fdecec;color:#9a2020;border-radius:4px;padding:2px 7px;display:inline-flex;align-items:center;gap:5px}
+.hidebar .hc b{cursor:pointer;font-weight:700}
+.count{margin-left:auto;font-size:12.5px;color:#5c6678;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:15px;padding:18px 22px 60px}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:9px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
+.card:hover{box-shadow:0 5px 18px rgba(20,35,61,.13);transform:translateY(-2px)}
+.ph{position:relative;background:#e7eaf0;aspect-ratio:4/3;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:#9aa3b3;font-size:12px}
+.src{position:absolute;top:8px;left:8px;font-size:10.5px;font-weight:700;letter-spacing:.4px;padding:3px 7px;border-radius:4px;color:#fff}
+.src.PW{background:#0b6b3a}.src.OL{background:#5a2d9e}
+.fav{position:absolute;top:6px;right:6px;background:rgba(255,255,255,.92);border:none;border-radius:50%;width:29px;height:29px;font-size:15px;line-height:1;cursor:pointer;color:#b9c0cc;padding:0}
+.fav.on{color:#e0245e}
+.rib{position:absolute;top:8px;right:42px;font-size:10.5px;font-weight:700;padding:3px 7px;border-radius:4px;background:#0b6b3a;color:#fff}
+.rib.drop{background:#c2410c;right:8px;top:40px}
+.npix{position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.62);color:#fff;font-size:10.5px;padding:2px 6px;border-radius:4px}
+.body{padding:11px 12px 12px;display:flex;flex-direction:column;gap:6px;flex:1}
+.price{font-size:19px;font-weight:700;letter-spacing:-.2px}
+.price small{font-size:11.5px;font-weight:400;color:#6b7488;letter-spacing:0}
+.ttl{font-size:13.5px;font-weight:620;line-height:1.3}
+.var{font-size:12px;color:#5c6678;margin-top:-3px}
+.specs{font-size:12px;color:#39415280;color:#4a5364;display:flex;flex-wrap:wrap;gap:4px 9px}
+.specs b{font-weight:600;color:#1a1f2b}
+.loc{font-size:11.5px;color:#6b7488}
+.when{font-size:11.5px;color:#6b7488}
+.when b{color:#0b6b3a}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font-size:10.5px;padding:2px 6px;border-radius:4px;background:#eef1f6;color:#42506b}
+.chip.g{background:#e3f4e9;color:#0b6b3a}
+.chip.b{background:#e9edfb;color:#2b3f8f}
+.chip.w{background:#fdecec;color:#9a2020}
+.go{margin-top:auto;display:block;text-align:center;text-decoration:none;background:#16233d;color:#fff;padding:8px;border-radius:6px;font-size:12.5px;font-weight:600}
+.go:hover{background:#22355c}
+.go.ol{background:#5a2d9e}.go.ol:hover{background:#71429b}
+.empty{padding:60px 22px;text-align:center;color:#6b7488}
+footer{padding:18px 22px 40px;font-size:11.5px;color:#7a8396;border-top:1px solid #e2e6ee;background:#fff}
+#ftog{display:none}
+@media(max-width:700px){
+  header{padding:13px 13px 11px}
+  header h1{font-size:16.5px;line-height:1.25}
+  header .sub{font-size:11.5px}
+  .warn{padding:8px 13px;font-size:11.5px}
+  #howto{display:flex;gap:7px;align-items:flex-start}
+  #howtoTxt{max-height:3em;overflow:hidden;flex:1 1 auto}
+  #howto.open #howtoTxt{max-height:none}
+  #howto .more{flex:0 0 auto;font-weight:700;text-decoration:underline;cursor:pointer;white-space:nowrap}
+  .bar{padding:8px 11px;gap:7px}
+  .bar>label:not(.lq),.bar>button:not(#ftog),.bar>.count{display:none}
+  .bar>label:not(.lq){order:3}
+  .bar>button:not(#ftog){order:4}
+  .bar.open>label,.bar.open>button,.bar.open>.count{display:flex}
+  #ftog{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;order:2}
+  .lq{order:1;flex:1 1 100%}
+  .lq input[type=text]{width:100%;min-width:0}
+  .bar>label{flex:1 1 46%;min-width:0}
+  .bar>label select,.bar>label input{width:100%;min-width:0;max-width:none}
+  .bar.open>button:not(#ftog){flex:1 1 46%;justify-content:center}
+  select,input[type=text],input[type=number]{font-size:16px;padding:8px 9px}
+  button{font-size:14px;padding:9px 12px;min-height:42px}
+  .count{margin-left:0;order:99;flex:1 1 100%;white-space:normal;font-size:11.5px;text-align:center}
+  .hidebar{padding:7px 13px}
+  .grid{padding:11px 11px 46px;grid-template-columns:repeat(auto-fill,minmax(min(100%,164px),1fr));gap:10px}
+  .card:hover{transform:none;box-shadow:none}
+  .body{padding:9px 10px 10px;gap:5px}
+  .price{font-size:16.5px}
+  .price small{display:block;font-size:10.5px}
+  .ttl{font-size:12.5px}
+  .fav{width:36px;height:36px;font-size:17px}
+  .go{padding:11px 8px;font-size:13px}
+  footer{padding:16px 13px 34px;font-size:11px}
+}
+@media(max-width:380px){.grid{grid-template-columns:1fr}}
+</style></head><body>
+
+<header>
+  <h1>660cc Japanese Kei Cars &mdash; Islamabad &amp; Rawalpindi</h1>
+  <div class="sub">COUNT_HERE live listings &middot; under PKR 30 lacs &middot; 2010 and newer &middot; refreshed STAMP_HERE <span id="cap"></span> &middot; <b style="color:#7ee2a8">NEW_HERE new</b> since last run, DROP_HERE price drops</div>
+</header>
+<div class="warn" id="stale" style="display:none"></div>
+<div class="warn" id="howto"><span id="howtoTxt"><b>How to use this:</b> filter and shortlist here, then click <b>Open listing</b> to go to the real ad on PakWheels or OLX for photos, seller phone number and full description. Prices are asking prices. Ads older than about two weeks are often already sold.</span> <span class="more" id="howtoMore">more</span></div>
+
+<div class="bar" id="bar">
+  <label class="lq">Search<input type="text" id="q" placeholder="alto vxr, mira es, G-11..."></label>
+  <button id="ftog">Filters</button>
+  <label>Model<select id="fm"></select></label>
+  <label>Site<select id="fs"><option value="">Both</option><option value="Pa">PakWheels</option><option value="OL">OLX</option></select></label>
+  <label>Body<select id="fb"><option value="">All</option><option>Hatchback</option><option>Tall-boy</option><option>Van</option></select></label>
+  <label>City<select id="fc"><option value="">All</option></select></label>
+  <label>Price lacs<span style="display:flex;gap:4px"><input type="number" id="pmin" placeholder="min"><input type="number" id="pmax" placeholder="max"></span></label>
+  <label>Year from<input type="number" id="ymin" placeholder="2010"></label>
+  <label>Max km<input type="number" id="kmax" placeholder="any"></label>
+  <label>Hide words<input type="text" id="hide" placeholder="e.g. instalment, bahria, van"></label>
+  <label>Posted<select id="ff"><option value="">Any time</option><option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7">Last 7 days</option><option value="14">Last 14 days</option></select></label>
+  <label>Sort<select id="so">
+    <option value="new">Newest ad</option><option value="plo">Price: low to high</option><option value="phi">Price: high to low</option>
+    <option value="klo">Mileage: lowest</option><option value="yhi">Year: newest</option><option value="val">Best value score</option><option value="drop">Biggest price drop</option>
+  </select></label>
+  <button id="onlyNew">New only</button>
+  <button id="onlyDrop">Price drops</button>
+  <button id="clean" class="on">Hide flagged</button>
+  <button id="shortOnly">Shortlist <span id="sc">0</span></button>
+  <button id="copy">Copy links</button>
+  <button id="reset">Reset</button>
+  <span class="count" id="count"></span>
+</div>
+
+<div class="hidebar" id="hidebar"></div>
+<div class="grid" id="grid"></div>
+<div class="empty" id="empty" style="display:none">Nothing matches those filters.</div>
+
+<footer>
+Auto-refreshed every 3 hours between 9am and 9pm while the Claude app is open. Built from PakWheels' 600&ndash;660cc filtered search (every result page) and ~40 kei model keyword searches on OLX, then location-verified against the area on each ad.
+Seven listings PakWheels tagged as 660cc were actually Mehran, Bolan, Ravi, Carry, Cuore or Kix and have been removed.
+OLX fields come from seller-written text, so variant and mileage are only as reliable as what was typed.
+Pakistani-assembled Suzuki Wagon R is 1000cc &mdash; OLX Wagon Rs were only kept where the ad said Stingray, FX, FZ or Hybrid, so some genuine JDM 660cc cars may be missing.
+Always get an auction sheet verification before paying for a JDM import.
+</footer>
+
+<script>
+const D=DATA_HERE;
+const CAP=new Date("CAPTURE_ISO");
+const SITE={Pa:'PakWheels',OL:'OLX'};
+function human(ms){const m=Math.max(0,Math.round(ms/60000));
+  if(m<1)return'just now'; if(m<60)return m+' min'+(m>1?'s':'');
+  const h=Math.floor(m/60),r=m%60; if(h<24)return h+'h'+(r?' '+r+'m':'');
+  const d=Math.floor(h/24); return d+' day'+(d>1?'s':'')+(h%24?' '+(h%24)+'h':'');}
+function capAgeMs(){return Date.now()-CAP.getTime()}
+function tickCap(){
+  const a=capAgeMs();
+  document.getElementById('cap').textContent=a<60000?'(captured just now)':'(captured '+human(a)+' ago)';
+  const s=document.getElementById('stale');
+  if(a>4*3600000){s.style.display='block';
+    s.innerHTML='<b>This snapshot is '+human(a)+' old.</b> Every "posted" time below is estimated forward from the capture, and some of these cars will already be sold. The tracker refreshes at 9am, 12pm, 3pm, 6pm and 9pm while the Claude app is open.';}
+  else s.style.display='none';}
+const fav=new Set();
+let shortOnly=false, clean=true, onlyNew=false, onlyDrop=false;
+
+const el=id=>document.getElementById(id);
+const models=[...new Set(D.map(x=>x.m))].sort();
+el('fm').innerHTML='<option value="">All models</option>'+models.map(m=>{
+  const n=D.filter(x=>x.m===m).length; return `<option value="${m}">${m} (${n})</option>`}).join('');
+const cities=[...new Set(D.map(x=>x.c).filter(Boolean))].sort();
+el('fc').innerHTML='<option value="">All</option>'+cities.map(c=>`<option>${c}</option>`).join('');
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function agoDays(g){const m=/^(\d+)(m|h|d|w|mo|y)$/.exec(g||'');if(!m)return 9999;
+  const n=+m[1];return n*({m:1/1440,h:1/24,d:1,w:7,mo:30.4,y:365}[m[2]])}
+function liveDays(x){const a=agoDays(x.g); return a>9000?a:a+capAgeMs()/86400000}
+function postedAt(x){const a=agoDays(x.g); return a>9000?null:new Date(CAP.getTime()-a*86400000)}
+function fmtK(k){return k==null?'km n/a':k.toLocaleString('en-US')+' km'}
+function score(x){return (x.y-2009)*2 - x.p*0.55 - (x.k==null?3:x.k/40000)}
+
+function hideTerms(){return el('hide').value.split(/[,\n]+/).map(s=>s.trim().toLowerCase()).filter(Boolean)}
+function hay(x){return (x.m+' '+x.v+' '+x.a+' '+x.c+' '+x.b+' '+x.bd+' '+x.f+' '+x.y).toLowerCase()}
+function matches(x){
+  const hides=hideTerms();
+  if(hides.length && hides.some(t=>hay(x).includes(t))) return false;
+  if(clean && x.f) return false;
+  if(shortOnly && !fav.has(x.u)) return false;
+  if(onlyNew && !x.nw) return false;
+  if(onlyDrop && x.pd==null) return false;
+  const q=el('q').value.trim().toLowerCase();
+  if(q){const hay=(x.m+' '+x.v+' '+x.a+' '+x.y+' '+x.bd).toLowerCase();
+    if(!q.split(/\s+/).every(t=>hay.includes(t))) return false}
+  if(el('fm').value && x.m!==el('fm').value) return false;
+  if(el('fs').value && x.s!==el('fs').value) return false;
+  if(el('fb').value && x.b!==el('fb').value) return false;
+  if(el('fc').value && x.c!==el('fc').value) return false;
+  const pmin=parseFloat(el('pmin').value), pmax=parseFloat(el('pmax').value);
+  if(!isNaN(pmin)&&x.p<pmin) return false;
+  if(!isNaN(pmax)&&x.p>pmax) return false;
+  const ymin=parseInt(el('ymin').value); if(!isNaN(ymin)&&x.y<ymin) return false;
+  const kmax=parseInt(el('kmax').value); if(!isNaN(kmax)&&(x.k==null||x.k>kmax)) return false;
+  const ff=parseFloat(el('ff').value); if(!isNaN(ff)&&liveDays(x)>ff) return false;
+  return true;
+}
+
+function sortRows(rows){
+  const s=el('so').value;
+  const c={new:(a,b)=>liveDays(a)-liveDays(b)||a.p-b.p,
+    plo:(a,b)=>a.p-b.p, phi:(a,b)=>b.p-a.p,
+    klo:(a,b)=>(a.k==null?1e9:a.k)-(b.k==null?1e9:b.k),
+    yhi:(a,b)=>b.y-a.y||a.p-b.p, val:(a,b)=>score(b)-score(a),
+    drop:(a,b)=>(b.pd||0)-(a.pd||0)}[s];
+  return rows.slice().sort(c);
+}
+
+function card(x){
+  const site=SITE[x.s]||x.s;
+  const chips=[];
+  if(x.bd) chips.push(`<span class="chip g">${esc(x.bd)}</span>`);
+  if(x.r!=null) chips.push(`<span class="chip b">Inspected ${x.r}/10</span>`);
+  chips.push(`<span class="chip">${esc(x.b)}</span>`);
+  if(x.f) x.f.split('; ').forEach(f=>chips.push(`<span class="chip w">${esc(f)}</span>`));
+  const ribs=(x.nw?'<span class="rib">NEW</span>':'')+(x.pd!=null?`<span class="rib drop">&#9660; ${x.pd.toFixed(2)} lacs</span>`:'');
+  const img=x.i?`<img loading="lazy" src="${esc(x.i)}" alt="" onerror="this.parentNode.innerHTML='<div class=noimg>photo unavailable</div>'">`
+                :`<div class="noimg">no photo</div>`;
+  return `<div class="card">
+    <div class="ph">${img}<span class="src ${x.s==='Pa'?'PW':'OL'}">${site}</span>${ribs}
+      <button class="fav${fav.has(x.u)?' on':''}" data-u="${esc(x.u)}" title="Shortlist">&#9829;</button>
+      ${x.n?`<span class="npix">${x.n} photos</span>`:''}</div>
+    <div class="body">
+      <div class="price">${x.p.toFixed(2)} lacs <small>PKR ${(x.p*100000).toLocaleString('en-US')}</small></div>
+      <div class="ttl">${esc(x.m)} ${x.y}</div>
+      ${x.v?`<div class="var">${esc(x.v)}</div>`:''}
+      <div class="specs"><span><b>${fmtK(x.k)}</b></span>${x.t?`<span>${x.t==='A'?'Automatic':'Manual'}</span>`:''}<span>660 cc</span></div>
+      <div class="loc">${esc(x.a||x.c)}</div>
+      <div class="when">${(()=>{const t=postedAt(x);
+        return t? `Posted <b>${human(Date.now()-t.getTime())} ago</b> <span title="exact time the ad was posted or last bumped">&middot; ${t.toLocaleString('en-GB',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'})}</span>`
+                : 'Posted date unknown';})()}</div>
+      <div class="chips">${chips.join('')}</div>
+      <a class="go${x.s==='OL'?' ol':''}" target="_blank" rel="noopener" href="${esc(x.u)}">Open listing on ${site} &#8599;</a>
+    </div></div>`;
+}
+
+let shown=[];
+function render(){
+  shown=sortRows(D.filter(matches));
+  el('grid').innerHTML=shown.map(card).join('');
+  el('empty').style.display=shown.length?'none':'block';
+  const tot=shown.length;
+  const ps=shown.map(x=>x.p).sort((a,b)=>a-b);
+  const med=ps.length?ps[Math.floor(ps.length/2)].toFixed(2):'-';
+  el('count').textContent=`${tot} of ${D.length} shown${tot?` · median ${med} lacs · cheapest ${ps[0].toFixed(2)} · dearest ${ps[ps.length-1].toFixed(2)}`:''}`;
+  el('sc').textContent=fav.size;
+  const hides=hideTerms(), hb=el('hidebar');
+  if(hides.length){
+    const n=D.filter(x=>hides.some(t=>hay(x).includes(t))).length;
+    hb.style.display='flex';
+    hb.innerHTML='<span>Hiding '+n+' listing'+(n===1?'':'s')+' matching:</span>'+
+      hides.map(t=>`<span class="hc">${esc(t)}<b data-drop="${esc(t)}" title="remove">&times;</b></span>`).join('')+
+      '<button id="clearHide" style="padding:3px 9px">Clear all</button>';
+  } else hb.style.display='none';
+  syncHash();
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.fav'); if(!b) return;
+  const u=b.dataset.u; fav.has(u)?fav.delete(u):fav.add(u);
+  b.classList.toggle('on'); el('sc').textContent=fav.size;
+  if(shortOnly) render();
+});
+['q','fm','fs','fb','fc','pmin','pmax','ymin','kmax','ff','so','hide'].forEach(id=>{
+  el(id).addEventListener((id==='q'||id==='hide')?'input':'change',render)});
+document.addEventListener('click',e=>{
+  const d=e.target.closest('[data-drop]');
+  if(d){ el('hide').value=hideTerms().filter(t=>t!==d.dataset.drop).join(', '); render(); return }
+  if(e.target.id==='clearHide'){ el('hide').value=''; render() }
+});
+el('onlyNew').onclick=()=>{onlyNew=!onlyNew;el('onlyNew').classList.toggle('on',onlyNew);render()};
+el('onlyDrop').onclick=()=>{onlyDrop=!onlyDrop;el('onlyDrop').classList.toggle('on',onlyDrop);render()};
+el('clean').onclick=()=>{clean=!clean;el('clean').classList.toggle('on',clean);render()};
+el('shortOnly').onclick=()=>{shortOnly=!shortOnly;el('shortOnly').classList.toggle('on',shortOnly);render()};
+el('copy').onclick=()=>{
+  const rows=(fav.size?shown.filter(x=>fav.has(x.u)):shown);
+  const txt=rows.map(x=>`${x.m} ${x.y} ${x.v} - ${x.p} lacs - ${fmtK(x.k)} - ${x.a} - ${x.u}`).join('\n');
+  navigator.clipboard.writeText(txt).then(()=>{el('copy').textContent='Copied '+rows.length;
+    setTimeout(()=>el('copy').textContent='Copy links',1600)})};
+el('reset').onclick=()=>{['q','pmin','pmax','ymin','kmax','hide'].forEach(i=>el(i).value='');
+  ['fm','fs','fb','fc','ff'].forEach(i=>el(i).value='');el('so').value='new';
+  clean=true;el('clean').classList.add('on');shortOnly=false;el('shortOnly').classList.remove('on');
+  onlyNew=false;onlyDrop=false;el('onlyNew').classList.remove('on');el('onlyDrop').classList.remove('on');render()};
+const FIELDS=['q','fm','fs','fb','fc','pmin','pmax','ymin','kmax','ff','so','hide'];
+let hashLock=false;
+function syncHash(){
+  if(hashLock) return;
+  const p=new URLSearchParams();
+  FIELDS.forEach(f=>{ if(el(f).value) p.set(f,el(f).value) });
+  if(!clean) p.set('showflagged','1');
+  if(onlyNew) p.set('new','1');
+  if(onlyDrop) p.set('drop','1');
+  const s=p.toString();
+  history.replaceState(null,'',s?'#'+s:location.pathname);
+}
+function loadHash(){
+  if(!location.hash) return;
+  hashLock=true;
+  const p=new URLSearchParams(location.hash.slice(1));
+  FIELDS.forEach(f=>{ if(p.has(f)) el(f).value=p.get(f) });
+  if(p.get('showflagged')){clean=false; el('clean').classList.remove('on')}
+  if(p.get('new')){onlyNew=true; el('onlyNew').classList.add('on')}
+  if(p.get('drop')){onlyDrop=true; el('onlyDrop').classList.add('on')}
+  hashLock=false;
+}
+el('ftog').onclick=()=>{const b=el('bar');const o=b.classList.toggle('open');
+  el('ftog').classList.toggle('on',o); el('ftog').textContent=o?'Hide filters':'Filters'};
+el('howtoMore').onclick=()=>{const h=el('howto');const o=h.classList.toggle('open');
+  el('howtoMore').textContent=o?'less':'more'};
+loadHash();
+tickCap(); setInterval(()=>{tickCap();render();},60000);
+render();
+</script></body></html>
