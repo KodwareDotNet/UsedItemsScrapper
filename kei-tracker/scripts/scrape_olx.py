@@ -9,9 +9,20 @@ so the raw sweep pulls in Karachi/Lahore/Sialkot cars. Everything is filtered
 down to Islamabad/Rawalpindi (region 'core') or the listed nearby towns
 ('near'); expect roughly 300-500 rows to survive out of ~1,800.
 
-Rate-limit handling: GitHub Actions runners share IP ranges with a huge
-number of other bots, so OLX throttles/blocks them far more aggressively
-than a residential IP ever gets throttled. Two things guard against that:
+Rate-limit / block handling: GitHub Actions runners share IP ranges with a
+huge number of other bots, so OLX throttles/blocks them far more aggressively
+than a residential IP ever gets throttled. Several things guard against that:
+  - requests go through curl_cffi (falling back to plain `requests` if it
+    isn't installed) so the TLS/HTTP2 handshake matches a real Chrome build
+    instead of python-requests' default fingerprint. Plenty of "why am I
+    getting 403s with perfect headers" cases come from the WAF fingerprinting
+    the TLS ClientHello, not the headers — headers alone can't fix that.
+  - a real Chrome-like header set (sec-ch-ua*, sec-fetch-*, Accept-Encoding)
+    goes out with every request instead of the ~4 headers a bare script
+    usually sends.
+  - the session visits the homepage once before hitting search URLs, so it
+    picks up whatever cookies OLX's edge sets on a normal first visit rather
+    than jumping straight to a deep search URL with an empty cookie jar.
   - every request backs off hard (exponential + jitter, respects
     Retry-After) before retrying a 403/429
   - a circuit breaker watches for BLOCK_THRESHOLD consecutive exhausted
@@ -22,11 +33,24 @@ On an aborted/short run, main() refuses to overwrite olx_rows.txt with a
 too-small result (see the len(rows) < 80 check), so the previous good
 snapshot stays live and refresh.py treats it as "continuing with the
 previous OLX rows" rather than failing the whole pipeline.
+
+None of this beats a real residential IP outright — if blocks persist even
+with all of the above, the reliable fix is moving this one script to run
+somewhere with a non-datacenter IP (e.g. a self-hosted Actions runner on a
+home machine) rather than squeezing more out of a shared CI IP.
 """
 import os, re, sys, time, random, subprocess, json
 from datetime import datetime, timezone
-import requests
 from bs4 import BeautifulSoup
+
+try:
+    from curl_cffi import requests  # TLS/HTTP2 fingerprint matches real Chrome
+    IMPERSONATE = 'chrome124'
+except ImportError:  # pragma: no cover - fallback when curl_cffi isn't installed
+    import requests
+    IMPERSONATE = None
+    print('WARNING: curl_cffi not installed, falling back to plain requests '
+          '(pip install curl_cffi to get TLS-fingerprint impersonation)', file=sys.stderr)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -35,8 +59,8 @@ os.makedirs(RAW, exist_ok=True)
 
 CITIES = ['islamabad_g4060615', 'rawalpindi_g4060681']
 PAGES = 3
-BASE_DELAY = 1.5      # was a flat 1.0s; now the floor of a jittered range
-DELAY_JITTER = 1.5    # actual delay is BASE_DELAY + uniform(0, DELAY_JITTER)
+BASE_DELAY = 2.0      # floor of a jittered per-request delay
+DELAY_JITTER = 2.0    # actual delay is BASE_DELAY + uniform(0, DELAY_JITTER)
 TIMEOUT = 30
 RETRIES = 3
 BLOCK_THRESHOLD = 4   # consecutive fully-retried 403/429s -> stop the whole harvest
@@ -46,19 +70,27 @@ BLOCK_THRESHOLD = 4   # consecutive fully-retried 403/429s -> stop the whole har
 # rotating per-request which is itself a bot fingerprint).
 USER_AGENTS = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
-    '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+    '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-    '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 '
-    '(KHTML, like Gecko) Version/17.5 Safari/605.1.15',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-    '(KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0',
+    '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
 ]
+_UA = random.choice(USER_AGENTS)
 HEADERS = {
-    'User-Agent': random.choice(USER_AGENTS),
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'User-Agent': _UA,
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
     'Referer': 'https://www.olx.com.pk/',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Ch-Ua': '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+    'Sec-Ch-Ua-Mobile': '?0',
+    'Sec-Ch-Ua-Platform': '"macOS"',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'DNT': '1',
 }
 
 KEYWORDS = [
@@ -160,9 +192,18 @@ def harvest():
     keywords while OLX is actively throttling us.
     """
     found = {}
-    session = requests.Session()
+    session = requests.Session(impersonate=IMPERSONATE) if IMPERSONATE else requests.Session()
     jsonl_file = os.path.join(ROOT, 'raw', 'olx_live.jsonl')
     consecutive_blocks = 0
+
+    # Warm up like a real visitor landing on the homepage first, rather than
+    # jumping straight into a deep search URL with an empty cookie jar.
+    try:
+        warm_headers = dict(HEADERS, **{'Sec-Fetch-Site': 'none', 'Sec-Fetch-User': '?1'})
+        session.get('https://www.olx.com.pk/', headers=warm_headers, timeout=TIMEOUT)
+        time.sleep(BASE_DELAY + random.uniform(0, DELAY_JITTER))
+    except requests.RequestException as e:
+        print(f'  warm-up request failed ({e}), continuing anyway', flush=True)
 
     for kw in KEYWORDS:
         before = len(found)
