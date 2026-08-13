@@ -1,10 +1,6 @@
-**Kei tracker — 13 Aug, 1:18 PM**
+**Kei tracker — 13 Aug, 1:22 PM**
 781 live listings (668 PakWheels, 113 OLX)
-**2 new** since last run · **96 price drops** · 1 ads disappeared
-
-New:
-- Suzuki Alto 2013 E — 24.00 lacs, 175,000 km, Islamabad
-- Suzuki Alto 2017 Works Edition — 29.00 lacs, 100,500 km, Islamabad
+**0 new** since last run · **96 price drops** · 0 ads disappeared
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
