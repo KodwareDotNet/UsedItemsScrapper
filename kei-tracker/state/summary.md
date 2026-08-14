@@ -1,16 +1,13 @@
-**Kei tracker — 14 Aug, 9:07 PM**
-738 live listings (661 PakWheels, 77 OLX)
-**9 new** since last run · **98 price drops** · 10 ads disappeared
+**Kei tracker — 15 Aug, 12:11 AM**
+735 live listings (659 PakWheels, 76 OLX)
+**5 new** since last run · **98 price drops** · 8 ads disappeared
 
 New:
-- Daihatsu Tanto 2015 X — 20.00 lacs, 122,148 km, Islamabad
-- Suzuki Wagon R 2013  — 21.50 lacs, 117,966 km, Islamabad
-- Suzuki Alto 2021 2021 — 23.50 lacs, 100,000 km, Frash Town Phase 1, Islamabad
-- Suzuki Alto 2019 Vxr 2019 — 23.75 lacs, 85,409 km, Ghauri Town Phase 5, Islamabad
-- Suzuki Alto 2022 VXR — 25.50 lacs, 98,000 km, Islamabad
-- Suzuki Alto 2022 VXR — 25.80 lacs, 58,000 km, Islamabad
-- Suzuki Alto 2021 VXL — 27.10 lacs, 100,000 km, Rawalpindi
-- Honda N Box 2021  — 29.50 lacs, 83,000 km, Islamabad
+- Suzuki Alto 2010 vxr 2010 Total genuine — 14.00 lacs, n/a km, G-15/1, Islamabad
+- Suzuki Alto 2014 ECO L — 24.30 lacs, 164,000 km, Islamabad
+- Suzuki Alto 2019 2019 — 24.50 lacs, 70,000 km, E-11/3, Islamabad
+- Daihatsu Mira ES 2015  — 25.60 lacs, 110,000 km, Islamabad
+- Suzuki Alto 2023 VXL — 29.90 lacs, 27,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
