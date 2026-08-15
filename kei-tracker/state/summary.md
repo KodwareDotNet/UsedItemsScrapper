@@ -1,6 +1,6 @@
-**Kei tracker — 16 Aug, 3:00 AM**
-748 live listings (675 PakWheels, 73 OLX)
-**0 new** since last run · **102 price drops** · 0 ads disappeared
+**Kei tracker — 16 Aug, 3:14 AM**
+746 live listings (675 PakWheels, 71 OLX)
+**0 new** since last run · **102 price drops** · 2 ads disappeared
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
