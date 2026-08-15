@@ -7,15 +7,15 @@
 1117816503|Suzuki Alto|2009|12|2009|170000|isb|G-6, Islamabad|1w|core|636913969
 1117712112|Suzuki Alto|2007|17.3|2007|115000|isb|Jhangi Syedan, Islamabad|1w|core|636299131
 1117505747|Suzuki Alto|2024|28.45|2024|50000|isb|Khanna Pul, Islamabad|2w|core|635094697
-1118081895|Suzuki Alto|2011|13.5|2011|180000|isb|Jhangi Syedan, Islamabad|39m|core|638464127
+1118081895|Suzuki Alto|2011|13.5|2011|180000|isb|Jhangi Syedan, Islamabad|1h|core|638464127
 1118075279|Suzuki Alto|2007|18|2007|96000|isb|DHA Valley, Islamabad|5h|core|638425881
 1118074812|Suzuki Alto|2009|11.95|2009|287000|isb|Jinnah Gardens, Islamabad|5h|core|638423257
 1118074451|Suzuki Alto|vxr 2021|21|2021|55000|isb|PAEC Employees Cooperative Housing Society, Islamabad|5h|core|638421434
-1118071549|Suzuki Alto|2021 VX con to VXR|22.7|2021|125000|isb|Rawat, Islamabad|6h|core|638405585
-1118071492|Suzuki Alto|2006|18.2|2006|100|isb|G-14/4, Islamabad|6h|core|638405219
-1118066302|Suzuki Alto|2019|24.1|2019|110000|isb|H-8, Islamabad|8h|core|638374387
+1118071549|Suzuki Alto|2021 VX con to VXR|22.7|2021|125000|isb|Rawat, Islamabad|7h|core|638405585
+1118071492|Suzuki Alto|2006|18.2|2006|100|isb|G-14/4, Islamabad|7h|core|638405219
+1118066302|Suzuki Alto|2019|24.1|2019|110000|isb|H-8, Islamabad|9h|core|638374387
 1118061749|Suzuki Alto|2012|12|2012|99000|isb|MPCHS - Multi Gardens, Islamabad|10h|core|638347922
-1116783107|Suzuki Alto|2025|29.8|2025|40000|isb|Lehtarar Road, Islamabad|11h|core|630848746
+1116783107|Suzuki Alto|2025|29.8|2025|40000|isb|Lehtarar Road, Islamabad|12h|core|630848746
 1118036070|Suzuki Alto|2010|12.3|2010|10000|isb|G-13, Islamabad|12h|core|638196008
 1117988443|Suzuki Alto|2007|18.85|2007||isb|Jhangi Syedan, Islamabad|3d|core|637921020
 1117988405|Suzuki Alto|2007|19|2007|197000|isb|I-8 Markaz, Islamabad|3d|core|637920763
@@ -58,15 +58,15 @@
 1117853516|Suzuki Alto|VXR 2024|28.75|2024|24000|rwp|Dhok Mangtal, Rawalpindi|6d|core|637129391
 1117871847|Suzuki Alto|2011|15.5|2011|100000|rwp|Askari 15, Rawalpindi|5d|core|637242014
 1117681147|Suzuki Alto|VXR 2006|12.5|2006|133000|rwp|Shalley Valley, Rawalpindi|1w|core|636113879
-1118081242|Suzuki Alto|2007|10.8|2007|12645|rwp|Affandi Colony, Rawalpindi|1h|core|638460096
-1118081136|Suzuki Alto|2021|26.5|2021|90000|rwp|Satellite Town, Rawalpindi|1h|core|638459427
+1118081242|Suzuki Alto|2007|10.8|2007|12645|rwp|Affandi Colony, Rawalpindi|2h|core|638460096
+1118081136|Suzuki Alto|2021|26.5|2021|90000|rwp|Satellite Town, Rawalpindi|2h|core|638459427
 1115759291|Suzuki Alto|2016|26.5|2016|94000|rwp|Afshan Colony, Rawalpindi|2h|core|624866201
 1118080226|Suzuki Alto|vxr2012|14.5|2012|100000|rwp|Saddar, Rawalpindi|2h|core|638454192
-1118079648|Suzuki Alto|2004|11.6|2004|150000|rwp|Dhoke Khabba, Rawalpindi|2h|core|638450733
-1118077785|Suzuki Alto|2009|13.5|2009|185000|rwp|Kahuta, Rawalpindi|3h|core|638439864
+1118079648|Suzuki Alto|2004|11.6|2004|150000|rwp|Dhoke Khabba, Rawalpindi|3h|core|638450733
+1118077785|Suzuki Alto|2009|13.5|2009|185000|rwp|Kahuta, Rawalpindi|4h|core|638439864
 1118076423|Suzuki Alto|2020|26|2020|73000|rwp|Bakra Mandi, Rawalpindi|4h|core|638431919
 1118074497|Suzuki Alto|2007|11.5|2007|240000|rwp|Bahria Town Phase 8, Rawalpindi|5h|core|638421664
-1118073813|Suzuki Alto|2021|28.4|2021|38250|rwp|Defence Colony, Rawalpindi|5h|core|638418115
+1118073813|Suzuki Alto|2021|28.4|2021|38250|rwp|Defence Colony, Rawalpindi|6h|core|638418115
 1118072651|Suzuki Alto|2012 /2016|24.6|2012|162000|rwp|Saddar, Rawalpindi|6h|core|638411557
 1116826332|Suzuki Alto|660cc model 10|12.8|2010||rwp|Chungi No. 22 Road, Rawalpindi|6h|core|631099307
 1118069331|Suzuki Alto|2011|15|2011|123|rwp|Kallar Syedan, Rawalpindi|7h|core|638392499
@@ -76,7 +76,7 @@
 1117999159|Suzuki Alto|2023 VXL AGS|29.45|2023|23000|rwp|Al-Noor Colony, Rawalpindi|2d|core|637985038
 1117994772|Suzuki Alto|VXR 2021|26|2021|31000|rwp|Park View, Rawalpindi|2d|core|637961276
 1117991731|Suzuki Alto|2021|23.2|2021|98000|rwp|Chaklala Scheme, Rawalpindi|2d|core|637940997
-1117990250|Suzuki Alto|2023|27.9|2023||rwp|Chaklala, Rawalpindi|2d|core|637931920
+1117990250|Suzuki Alto|2023|27.9|2023||rwp|Chaklala, Rawalpindi|3d|core|637931920
 1117988329|Suzuki Alto|2025|29.9|2025|30000|rwp|Kallar Syedan, Rawalpindi|3d|core|637920336
 1117986126|Suzuki Alto|2010|10.85|2010|255288|rwp|Satellite Town, Rawalpindi|3d|core|637906987
 1116635054|Suzuki Alto|2007|12.15|2007|123456|rwp|Sangar Town, Rawalpindi|3d|core|629988886
@@ -100,8 +100,8 @@
 1117913535|Suzuki Alto|2005|13.25|2005|91000|rwp|Harley Street, Rawalpindi|4d|core|637485404
 1117911976|Suzuki Alto|2020 VXR|25.6|2020|57230|rwp|Fazal Town, Rawalpindi|4d|core|637475628
 1117909465|Suzuki Alto|2007|11|2007|200000|rwp|Eastridge Housing Scheme, Rawalpindi|4d|core|637461481
-1117894808|Suzuki Alto|2010|20|2010|1613|rwp|Westridge, Rawalpindi|4d|core|637372190
-1117907168|Suzuki Alto|2022|27.2|2022|42000|rwp|Airport Housing Society, Rawalpindi|4d|core|637446199
+1117894808|Suzuki Alto|2010|20|2010|1613|rwp|Westridge, Rawalpindi|5d|core|637372190
+1117907168|Suzuki Alto|2022|27.2|2022|42000|rwp|Airport Housing Society, Rawalpindi|5d|core|637446199
 1117902268|Nissan Moco|2014|24.2|2014|280000|rwp|Gawal Mandi, Rawalpindi|5d|core|637416555
 1117898354|Suzuki Alto|2006|12|2006|300000|rwp|Chakri Road, Rawalpindi|5d|core|637392815
 1117897673|Suzuki Alto|2013|22.2|2013|117700|rwp|College Road, Rawalpindi|5d|core|637388905

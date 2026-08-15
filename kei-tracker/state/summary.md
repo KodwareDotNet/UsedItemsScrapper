@@ -1,16 +1,6 @@
-**Kei tracker — 16 Aug, 2:36 AM**
+**Kei tracker — 16 Aug, 3:00 AM**
 748 live listings (675 PakWheels, 73 OLX)
-**10 new** since last run · **102 price drops** · 17 ads disappeared
-
-New:
-- Suzuki Alto 2011 2011 — 13.50 lacs, 180,000 km, Jhangi Syedan, Islamabad
-- Suzuki Alto 2012 vxr2012 — 14.50 lacs, 100,000 km, Saddar, Rawalpindi
-- Suzuki Alto 2010 1000CC SZ4 Import 2015 Model 2010 UK Mahruti — 17.75 lacs, 100,000 km, Railway Scheme 9, Rawalpindi
-- Suzuki Alto 2011  — 21.50 lacs, 98,000 km, Islamabad
-- Suzuki Alto 2023 2023 — 25.50 lacs, 76,000 km, Adiala Road, Rawalpindi
-- Suzuki Alto 2013 ECO S — 26.50 lacs, 94,000 km, Rawalpindi
-- Suzuki Alto 2021 2021 — 26.50 lacs, 90,000 km, Satellite Town, Rawalpindi
-- Suzuki Alto 2021 VXL — 26.50 lacs, 90,000 km, Rawalpindi
+**0 new** since last run · **102 price drops** · 0 ads disappeared
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
