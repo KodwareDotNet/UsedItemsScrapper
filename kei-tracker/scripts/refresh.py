@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 RAW = os.path.join(ROOT, 'raw')
 TZ = ZoneInfo(os.environ.get('TZ', 'Asia/Karachi'))
-OLX_MAX_AGE_HOURS = float(os.environ.get('OLX_MAX_AGE_HOURS', '9'))
+OLX_MAX_AGE_HOURS = float(os.environ.get('OLX_MAX_AGE_HOURS', '0'))
 
 
 def run(script, label):
