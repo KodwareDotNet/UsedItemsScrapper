@@ -179,9 +179,22 @@ new_snap.to_csv(snap_path,index=False)
 open(last_run_path,'w').write(STAMP)
 
 # ---------- JSON for the page ----------
+def _uid(u):
+    """Stable per-listing id extracted from the URL.
+    PakWheels: https://www.pakwheels.com/used-cars/.../-12345-for-sale-in-...  ->  'pw_12345'
+    OLX:       https://www.olx.com.pk/item/-iid-678901  ->  'olx_678901'      """
+    u = (u or '').lower()
+    if 'pakwheels.com' in u:
+        m = re.search(r'-(\d+)-for-sale-in-', u)
+        return f'pw_{m.group(1)}' if m else ''
+    if 'olx.com.pk' in u:
+        m = re.search(r'-iid-(\d+)', u)
+        return f'olx_{m.group(1)}' if m else ''
+    return ''
+
 recs=[]
 for _,r in df.iterrows():
-    recs.append({'s':r['source'][:2],'m':r['model_full'],'v':(r['variant'] or '')[:34],'y':int(r['year']),
+    recs.append({'id':_uid(r['url']),'s':r['source'][:2],'m':r['model_full'],'v':(r['variant'] or '')[:34],'y':int(r['year']),
       'p':round(float(r['price_lacs']),2),
       'k':None if pd.isna(r['mileage_km']) else int(r['mileage_km']),
       't':(r['transmission'] or '')[:1],'c':r['city'],'a':r['area'],'d':r['posted_date'],

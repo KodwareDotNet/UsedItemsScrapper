@@ -94,6 +94,7 @@ HEADERS = {
 }
 
 KEYWORDS = [
+'jimny',
     'alto', 'wagon r', 'mira', 'move', 'every', 'hijet', 'ek wagon', 'n box', 'dayz',
     'n one', 'n wgn', 'moco', 'roox', 'carol', 'flair', 'spacia', 'hustler', 'lapin',
     'tanto', 'cast', 'pixis', 'pajero mini', 'minicab', 'scrum', 'clipper', 'life',
