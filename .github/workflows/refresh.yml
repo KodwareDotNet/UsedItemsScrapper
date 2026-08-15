@@ -44,6 +44,8 @@ jobs:
 
       - name: Scrape and build
         run: |
+          git config user.name  "kei-tracker bot"
+          git config user.email "actions@github.com"
           if [ "${{ github.event.inputs.skip_olx }}" = "true" ]; then
             python kei-tracker/scripts/refresh.py --skip-olx
           else

@@ -260,7 +260,7 @@ def harvest():
                     break
                 time.sleep(BASE_DELAY + random.uniform(0, DELAY_JITTER))
 
-        # Save keyword batch to JSONL and commit
+        # Save keyword batch to JSONL (persistence for crash recovery)
         added = len(found) - before
         if added > 0:
             for ad_id in list(found.keys())[before:]:
@@ -268,12 +268,9 @@ def harvest():
                 with open(jsonl_file, 'a', encoding='utf-8') as fh:
                     json.dump({'id': ad_id, 'blob': blob, 'pic': pic, 'searched': searched}, fh)
                     fh.write('\n')
-            # Commit this keyword's batch
-            subprocess.call(['git', 'add', 'kei-tracker/raw/olx_live.jsonl'])
-            subprocess.call(['git', 'commit', '-m', f'scrape: OLX {kw!r} +{added}'])
-            subprocess.call(['git', 'push'])
-            print(f'  OK committed {added} records', flush=True)
-        print(f'  {kw!r}: +{added} (total {len(found)})')
+            print(f'  {kw!r}: +{added} (total {len(found)})', flush=True)
+        else:
+            print(f'  {kw!r}: no new results, skipped', flush=True)
     return found
 
 
