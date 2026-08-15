@@ -1,16 +1,16 @@
-**Kei tracker — 15 Aug, 9:05 AM**
-790 live listings (641 PakWheels, 149 OLX)
-**74 new** since last run · **96 price drops** · 8 ads disappeared
+**Kei tracker — 15 Aug, 11:57 AM**
+733 live listings (649 PakWheels, 84 OLX)
+**21 new** since last run · **98 price drops** · 78 ads disappeared
 
 New:
-- Daihatsu Hijet 2014  — 12.75 lacs, 100,000 km, Kuri Road Area, Rawalpindi
-- Daihatsu Hijet 2015 2015 — 13.50 lacs, 225,000 km, Blue Area, Islamabad
-- Daihatsu Hijet 2011 2011 — 13.50 lacs, 240,000 km, Golra Road, Islamabad
-- Daihatsu Hijet 2010 2010 — 14.20 lacs, 80,000 km, Benazir Colony, Wah
-- Suzuki Every 2011 2011 — 14.50 lacs, 155,000 km, Saddar, Rawalpindi
-- Daihatsu Hijet 2014 2014 — 14.50 lacs, 44,000 km, Kahuta, Rawalpindi
-- Daihatsu Hijet 2010 2010 — 15.67 lacs, 212,000 km, I-14, Islamabad
-- Daihatsu Hijet 2017 2017 — 16.00 lacs, n/a km, Kohat Road, Rawalpindi
+- Daihatsu Mira 2014 X Limited ER — 2.37 lacs, 165,842 km, Islamabad
+- Nissan Roox 2012 E — 18.00 lacs, 100,000 km, Islamabad
+- Daihatsu Hijet 2013 VAN Deluxe — 20.00 lacs, 114,000 km, Islamabad
+- Suzuki Alto 2012 ECO L — 20.90 lacs, 105,864 km, Islamabad
+- Suzuki Alto 2012 2012 — 20.90 lacs, 108,643 km, G-9, Islamabad
+- Daihatsu Mira 2013 2013 — 21.00 lacs, 950,003 km, I-10, Islamabad
+- Daihatsu Move Conte 2014  — 22.50 lacs, 130,000 km, Islamabad
+- Suzuki Alto 2021 VXR — 23.50 lacs, 100,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
@@ -18,4 +18,4 @@ Price drops:
 - Suzuki Every 2014 — down 2.30 to 19.50 lacs, Islamabad
 - Suzuki Alto 2011 — down 2.20 to 16.50 lacs, Rawalpindi
 - Suzuki Every 2016 — down 2.00 to 19.00 lacs, Rawalpindi
-- Suzuki Alto 2022 — down 2.00 to 27.00 lacs, Islamabad
+- Honda Life 2010 — down 2.00 to 23.00 lacs, Islamabad
