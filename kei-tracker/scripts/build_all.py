@@ -30,7 +30,7 @@ def rel2days(s):
     return int(m.group(1))*{'m':1/1440,'h':1/24,'d':1,'w':7,'mo':30.4,'y':365}[m.group(2)]
 
 NOT660=['mehran','bolan','ravi','carry','kix','mitsubishi-i-','cuore']
-MODEL_FIX={'jimny','suzuki-alto-lapin':'Suzuki Alto Lapin','honda-none':'Honda N One','nissan-dayz-roox':'Nissan Dayz Roox',
+MODEL_FIX={'jimny':'jimny','suzuki-alto-lapin':'Suzuki Alto Lapin','honda-none':'Honda N One','nissan-dayz-roox':'Nissan Dayz Roox',
  'daihatsu-move-conte':'Daihatsu Move Conte','suzuki-spacia-gear':'Suzuki Spacia Gear','daihatsu-atrai-wagon':'Daihatsu Atrai Wagon',
  'suzuki-wagon-r':'Suzuki Wagon R','honda-n-wgn':'Honda N Wgn','honda-n-box':'Honda N Box','daihatsu-terios-kid':'Daihatsu Terios Kid',
  'mitsubishi-pajero-mini':'Mitsubishi Pajero Mini','mitsubishi-ek-custom':'Mitsubishi EK Custom','mitsubishi-ek-wagon':'Mitsubishi EK Wagon',
