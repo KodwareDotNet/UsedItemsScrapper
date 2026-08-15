@@ -1,16 +1,16 @@
-**Kei tracker — 15 Aug, 11:46 PM**
-755 live listings (679 PakWheels, 76 OLX)
-**14 new** since last run · **101 price drops** · 18 ads disappeared
+**Kei tracker — 16 Aug, 2:36 AM**
+748 live listings (675 PakWheels, 73 OLX)
+**10 new** since last run · **102 price drops** · 17 ads disappeared
 
 New:
-- Suzuki Wagon R 2015 FX Limited — 2.40 lacs, 101,000 km, Rawalpindi
-- Suzuki Alto 2021 vxr 2021 — 21.00 lacs, 55,000 km, PAEC Employees Cooperative Housing Society, Islamabad
-- Suzuki Wagon R 2012 Limited — 22.00 lacs, 12,000 km, Islamabad
-- Daihatsu Mira ES 2011  — 22.60 lacs, 98,000 km, Islamabad
-- Suzuki Alto 2012 ECO S — 22.95 lacs, 200,000 km, Rawalpindi
-- Suzuki Wagon R 2014 J Style — 23.00 lacs, 10,000 km, Islamabad
-- Suzuki Alto 2021 2021 — 23.20 lacs, 98,000 km, Chaklala Scheme, Rawalpindi
-- Suzuki Alto 2012 2012 /2016 — 24.60 lacs, 162,000 km, Saddar, Rawalpindi
+- Suzuki Alto 2011 2011 — 13.50 lacs, 180,000 km, Jhangi Syedan, Islamabad
+- Suzuki Alto 2012 vxr2012 — 14.50 lacs, 100,000 km, Saddar, Rawalpindi
+- Suzuki Alto 2010 1000CC SZ4 Import 2015 Model 2010 UK Mahruti — 17.75 lacs, 100,000 km, Railway Scheme 9, Rawalpindi
+- Suzuki Alto 2011  — 21.50 lacs, 98,000 km, Islamabad
+- Suzuki Alto 2023 2023 — 25.50 lacs, 76,000 km, Adiala Road, Rawalpindi
+- Suzuki Alto 2013 ECO S — 26.50 lacs, 94,000 km, Rawalpindi
+- Suzuki Alto 2021 2021 — 26.50 lacs, 90,000 km, Satellite Town, Rawalpindi
+- Suzuki Alto 2021 VXL — 26.50 lacs, 90,000 km, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
