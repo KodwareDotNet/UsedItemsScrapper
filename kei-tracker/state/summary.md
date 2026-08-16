@@ -1,14 +1,13 @@
-**Kei tracker — 17 Aug, 12:07 AM**
-776 live listings (668 PakWheels, 108 OLX)
-**6 new** since last run · **113 price drops** · 9 ads disappeared
+**Kei tracker — 17 Aug, 2:56 AM**
+777 live listings (668 PakWheels, 109 OLX)
+**5 new** since last run · **113 price drops** · 4 ads disappeared
 
 New:
-- Suzuki Alto 2019 VXR — 19.50 lacs, 132,000 km, Rawalpindi
-- Suzuki Alto 2022 VXR — 25.75 lacs, 100,000 km, Islamabad
-- Nissan Dayz 2014  — 26.00 lacs, 76,000 km, Rawalpindi
-- Daihatsu Hijet 2020 2020 — 26.85 lacs, 44,000 km, 7th Avenue, Islamabad
-- Suzuki Alto 2015 X — 26.90 lacs, 117,000 km, Rawalpindi
-- Suzuki Alto 2023 L — 29.50 lacs, 53,303 km, Islamabad
+- Daihatsu Mira ES 2014  — 23.50 lacs, 219,000 km, Rawalpindi
+- Nissan Dayz 2014 Highway Star X — 25.00 lacs, 151,000 km, Rawalpindi
+- Nissan Dayz 2014 Highway Star 2014 — 25.10 lacs, 152,000 km, Gulraiz Housing Scheme, Rawalpindi
+- Suzuki Alto 2015  — 26.50 lacs, 177,640 km, Islamabad
+- Suzuki Alto 2024 VXR — 28.00 lacs, 55,338 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
