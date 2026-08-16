@@ -1,16 +1,16 @@
-**Kei tracker — 16 Aug, 5:35 PM**
-699 live listings (665 PakWheels, 34 OLX)
-**45 new** since last run · **111 price drops** · 70 ads disappeared
+**Kei tracker — 16 Aug, 6:13 PM**
+773 live listings (666 PakWheels, 107 OLX)
+**89 new** since last run · **111 price drops** · 15 ads disappeared
 
 New:
-- Daihatsu Mira 2012 2012 model 03266316011 — 13.25 lacs, 129,000 km, Others, Gujar Khan
-- Daihatsu Mira 2012 2012 model 03266316011 — 13.35 lacs, 129,000 km, Others, Jhelum
-- Daihatsu Mira 2012 2012 model 03266316011 — 13.35 lacs, 129,000 km, I-8, Islamabad
-- Daihatsu Mira 2012 2012 model 03266316011 — 13.35 lacs, 129,000 km, 12th Avenue, Islamabad
-- Daihatsu Mira 2012 2012 model 03266316011 — 13.35 lacs, 129,000 km, Others, Rawalpindi
-- Daihatsu Hijet 2011 VAN Deluxe — 15.90 lacs, 135,000 km, Rawalpindi
-- Daihatsu Esse 2011 X — 17.90 lacs, 160,000 km, Rawalpindi
-- Daihatsu Mira 2014 2014 — 20.00 lacs, 200,000 km, Gulraiz Housing Scheme, Rawalpindi
+- Daihatsu Hijet 2014  — 12.75 lacs, 100,000 km, Kuri Road Area, Rawalpindi
+- Other Kei 2010 Suzuki Alto 660cc model 10 — 12.80 lacs, n/a km, Chungi No. 22 Road, Rawalpindi
+- Daihatsu Hijet 2015 2015 — 13.50 lacs, 225,000 km, Blue Area, Islamabad
+- Daihatsu Hijet 2011 2011 — 13.50 lacs, 240,000 km, Golra Road, Islamabad
+- Suzuki Alto Lapin 2010 2010 03365827178 — 14.00 lacs, 120,000 km, Tipu Road, Rawalpindi
+- Daihatsu Hijet 2014 2014 — 14.50 lacs, 44,000 km, Kahuta, Rawalpindi
+- Daihatsu Hijet 2010 2010 — 15.67 lacs, 212,000 km, I-14, Islamabad
+- Daihatsu Hijet 2017 2017 — 16.00 lacs, n/a km, Kohat Road, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
