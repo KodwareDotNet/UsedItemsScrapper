@@ -1,16 +1,16 @@
-**Kei tracker — 16 Aug, 11:58 AM**
-724 live listings (658 PakWheels, 66 OLX)
-**11 new** since last run · **101 price drops** · 11 ads disappeared
+**Kei tracker — 16 Aug, 2:43 PM**
+724 live listings (661 PakWheels, 63 OLX)
+**15 new** since last run · **106 price drops** · 15 ads disappeared
 
 New:
-- Suzuki Alto 2012 2012 — 12.85 lacs, 150 km, Bahria Town, Islamabad
-- Suzuki Alto 2011 2011 — 16.00 lacs, 143,000 km, Chaklala Scheme 3, Rawalpindi
-- Suzuki Alto 2010 G — 21.65 lacs, 100,000 km, Rawalpindi
-- Suzuki Alto 2010 2010/2014 Best condition — 21.90 lacs, 200,000 km, Margalla View Housing Society, Islamabad
-- Suzuki Alto 2014 ECO-s 2010/2014 — 21.90 lacs, 160,000 km, G-11, Islamabad
-- Daihatsu Mira ES 2012  — 23.20 lacs, 88,000 km, Rawalpindi
-- Suzuki Alto 2021 VXR 2021 Model — 24.50 lacs, 75,000 km, Westridge, Rawalpindi
-- Daihatsu Move 2014 L SA — 24.75 lacs, 150,000 km, Islamabad
+- Suzuki Alto 2025 VXL AGS Upgraded — 3.60 lacs, 6,000 km, Islamabad
+- Suzuki Alto 2012 2012 — 13.85 lacs, 148,000 km, Ghauri Garden, Islamabad
+- Suzuki Alto 2011 2011 — 13.90 lacs, 107,000 km, PWD Housing Scheme, Islamabad
+- Daihatsu Hijet 2013 VAN — 15.25 lacs, 123,450 km, Islamabad
+- Nissan Moco 2014 Dolce X — 24.90 lacs, 175,000 km, Islamabad
+- Suzuki Alto 2012 2012 eco, Totally orignal. — 25.00 lacs, 93,000 km, PWD Housing Scheme, Islamabad
+- Suzuki Alto 2022 VX — 25.10 lacs, 47,700 km, Islamabad
+- Suzuki Alto 2023 VXR — 26.50 lacs, 105,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.60 to 10.85 lacs, Rawalpindi
