@@ -38,12 +38,13 @@ RAW = os.path.join(ROOT, 'raw')
 os.makedirs(RAW, exist_ok=True)
 
 CITIES = ['islamabad_g4060615', 'rawalpindi_g4060681']
-PAGES = 3
-BASE_DELAY = 3.0      # increased from 2.0 — OLX tolerates slower traffic better
-DELAY_JITTER = 3.0    # actual delay is BASE_DELAY + uniform(0, DELAY_JITTER)
-TIMEOUT = 45           # increased from 30 — some pages take longer to respond
-RETRIES = 5             # increased from 3 — give OLX more time to recover per-request
-BLOCK_THRESHOLD = 8   # increased from 4 — normal traffic has transient 429s, don't abort early
+PAGES = 1       # OLX returns most listings on page 1; pages 2-3 rarely add value
+BASE_DELAY = 30   # seconds between requests — OLX tolerates very slow traffic from datacenters
+DELAY_JITTER = 30 # actual delay is BASE_DELAY + uniform(0, DELAY_JITTER)
+TIMEOUT = 60      # some pages take a long time to respond
+RETRIES = 2       # fewer retries per request; we have the inter-request cooldown for recovery
+BLOCK_THRESHOLD = 4  # consecutive fully-retried 403/429s -> stop the whole harvest
+MIN_RATELIMIT_WAIT = 60  # never wait less than this on 429 — a 0s Retry-After means "you're done"
 
 # A few realistic desktop UAs; one is picked per process run (a real browser
 # keeps the same UA for its whole session, so we do too, rather than
@@ -80,6 +81,10 @@ KEYWORDS = [
     # Deep set: sellers who title by trim/"660cc" rather than model name
     '660cc', 'kei car', 'jdm spec', 'japanese import',
 ]
+
+# Per-keyword cooldown — OLX rate-limits burst traffic. Adding a pause between
+# keywords helps reset the window and avoids cascading 429s across all searches.
+KEYWORD_COOLDOWN = 30  # seconds between keywords
 
 NEAR = ['Wah', 'Taxila', 'Attock', 'Murree', 'Jhelum', 'Gujar Khan', 'Hasan Abdal',
         'Dina', 'Sarai Alamgir', 'Kahuta', 'Mandra', 'Hazro']
@@ -129,33 +134,40 @@ def compress_ago(s):
 
 
 def get(session, url):
-    """Fetch a URL. Returns the HTML text, None for a clean 404, or raises
-    Blocked if 403/429 responses survive every retry."""
+    """Fetch a URL. Returns the HTML text, None for a clean 404 or unexpected error,
+    or raises Blocked if 403/429 responses survive every retry."""
     was_throttled = False
     for attempt in range(RETRIES):
         try:
             r = session.get(url, headers=HEADERS, timeout=TIMEOUT)
+            content_len = len(r.content)
+            ct = (r.headers.get('Content-Type') or '')[:50]
+            preview = (r.text[:120]).replace('\n', ' ')
+
             if r.status_code == 200:
                 return r.text
-            # Log unexpected status codes so we can diagnose silently-failing requests
-            if r.status_code not in (403, 429, 404):
-                print(f'      -> unexpected HTTP {r.status_code} ({len(r.content)} bytes), skipping', flush=True)
-                return None
+            # Diagnostic log for every non-200 response so we can tell exactly what OLX returned
+            print(f'      -> HTTP {r.status_code} ({content_len}B, CT={ct}): {preview}', flush=True)
             if r.status_code in (403, 429):
                 was_throttled = True
                 retry_after = r.headers.get('Retry-After')
                 if retry_after and retry_after.strip().isdigit():
                     wait = min(90, int(retry_after))
                 else:
-                    wait = min(60, 5 * (2 ** attempt)) + random.uniform(0, 3)
+                    wait = min(90, 60 * (2 ** attempt)) + random.uniform(0, 5)
+                # Never sleep less than MIN_RATELIMIT_WAIT — a 0s Retry-After means "you're done"
+                wait = max(wait, MIN_RATELIMIT_WAIT)
                 print(f'      -> rate limited (HTTP {r.status_code}), waiting {wait:.0f}s...', flush=True)
                 time.sleep(wait)
                 continue
             if r.status_code == 404:
                 return None
+            # Non-403/non-429/non-404 = give up immediately (no point retrying)
+            print(f'      -> non-retriable HTTP {r.status_code}, giving up', flush=True)
+            return None
         except requests.RequestException as e:
-            wait = 2 * (attempt + 1) + random.uniform(0, 2)
-            print(f'      -> connection error: {e}, waiting {wait:.0f}s...', flush=True)
+            wait = 3 * (attempt + 1) + random.uniform(0, 2)
+            print(f'      -> connection error {e.__class__.__name__}: {str(e)[:80]}, retrying ({attempt+1}/{RETRIES})', flush=True)
             time.sleep(wait)
             continue
     if was_throttled:
@@ -175,6 +187,7 @@ def broad_harvest():
     session = requests.Session(impersonate=IMPERSONATE) if IMPERSONATE else requests.Session()
     jsonl_file = os.path.join(ROOT, 'raw', 'olx_live.jsonl')
     consecutive_blocks = 0
+    total_rate_limited = 0  # lifetime 429s seen — stops the sweep once this threshold is hit
 
     # Warm up like a real visitor landing on the homepage first.
     try:
@@ -185,14 +198,15 @@ def broad_harvest():
         print(f'  warm-up request failed ({e}), continuing anyway', flush=True)
 
     # Build list of all URLs to try (KEYWORDS × CITIES × PAGES).
-    urls = []
+    # Track which keyword each URL belongs to for cooldown purposes.
+    urls = []  # list of (kw, url) tuples
     for kw in KEYWORDS:
         for city in ['islamabad_g4060615', 'rawalpindi_g4060681']:
             for page in range(1, PAGES + 1):
                 qs = requests.utils.quote(kw)
-                urls.append(f'https://www.olx.com.pk/{city}/cars_c84/q-{qs}'
+                urls.append((kw, f'https://www.olx.com.pk/{city}/cars_c84/q-{qs}'
                             f'?filter=price_between_0_to_3000000'
-                            + (f'&page={page}' if page > 1 else ''))
+                            + (f'&page={page}' if page > 1 else '')))
 
     print(f'  building keyword-sweep: {len(urls)} URLs to try ({len(KEYWORDS)} keywords x '
           f'{len(CITIES)} cities x {PAGES} pages)', flush=True)
@@ -200,23 +214,31 @@ def broad_harvest():
     total_fresh = 0
     prev_before = len(found)
     url_idx = 0
-    for url in urls:
+    last_kw = None
+    for kw, url in urls:
         url_idx += 1
         short_q = url.split('q-')[1].split('&')[0][:40] if 'q-' in url else url[:50]
-        print(f'  URL {url_idx}/{len(urls)} ({short_q})...', flush=True)
+
+        # Cooldown between keywords — helps reset OLX rate-limit windows
+        if last_kw is not None and kw != last_kw:
+            print(f'  [{kw}] cooling down {KEYWORD_COOLDOWN}s (new keyword) ...', flush=True)
+            time.sleep(KEYWORD_COOLDOWN)
+
+        print(f'    URL {url_idx}/{len(urls)} ({kw}) ... [filter=30lac]...', flush=True)
         try:
             html = get(session, url)
         except Blocked:
             consecutive_blocks += 1
-            if consecutive_blocks >= BLOCK_THRESHOLD:
-                print(f'ABORT: {consecutive_blocks} consecutive rate-limits — '
-                      f'OLX is actively throttling this IP. Stopped after '
+            total_rate_limited += 1
+            if consecutive_blocks >= BLOCK_THRESHOLD or total_rate_limited >= 3:
+                print(f'ABORT: {consecutive_blocks} consecutive + {total_rate_limited} total '
+                      f'rate-limits — OLX has flagged this IP. Stopped after '
                       f'{len(found)} listings.', file=sys.stderr, flush=True)
                 return found
             continue  # try next keyword/page
         consecutive_blocks = 0
         if not html:
-            print(f'    no response, skipping', flush=True)
+            print(f'    get() returned None — check "HTTP" or "connection error" lines above', flush=True)
             continue
 
         soup = BeautifulSoup(html, 'lxml')
@@ -254,6 +276,7 @@ def broad_harvest():
         print(f'    +{fresh} new this page ({added} fresh; total {len(found)})', flush=True)
         prev_before = len(found)
         time.sleep(BASE_DELAY + random.uniform(0, DELAY_JITTER))
+        last_kw = kw
 
     # Write JSONL snapshot.
     if os.path.exists(jsonl_file):
