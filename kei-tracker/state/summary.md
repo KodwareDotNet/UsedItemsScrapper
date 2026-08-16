@@ -1,16 +1,14 @@
-**Kei tracker — 16 Aug, 8:59 PM**
-779 live listings (670 PakWheels, 109 OLX)
-**14 new** since last run · **114 price drops** · 8 ads disappeared
+**Kei tracker — 17 Aug, 12:07 AM**
+776 live listings (668 PakWheels, 108 OLX)
+**6 new** since last run · **113 price drops** · 9 ads disappeared
 
 New:
-- Daihatsu Tanto 2023 2023 — 3.65 lacs, n/a km, Bahria Town Phase 8, Rawalpindi
-- Daihatsu Hijet 2011 cargo TURBO — 16.00 lacs, 168,000 km, G-13/2, Islamabad
-- Daihatsu Hijet 2011 VAN SA 3 2WD — 16.00 lacs, 168,888 km, Islamabad
-- Mitsubishi EK Wagon 2014 E E Assist — 17.35 lacs, 105,000 km, Islamabad
-- Subaru Stella 2013 L Black Interior Selection — 21.95 lacs, 100,325 km, Rawalpindi
-- Suzuki Alto 2020 VXR — 23.50 lacs, 219,803 km, Rawalpindi
-- Honda N Wgn 2014 Custom G — 24.00 lacs, 173,000 km, Rawalpindi
-- Suzuki Spacia 2016 X — 25.00 lacs, 129,206 km, Islamabad
+- Suzuki Alto 2019 VXR — 19.50 lacs, 132,000 km, Rawalpindi
+- Suzuki Alto 2022 VXR — 25.75 lacs, 100,000 km, Islamabad
+- Nissan Dayz 2014  — 26.00 lacs, 76,000 km, Rawalpindi
+- Daihatsu Hijet 2020 2020 — 26.85 lacs, 44,000 km, 7th Avenue, Islamabad
+- Suzuki Alto 2015 X — 26.90 lacs, 117,000 km, Rawalpindi
+- Suzuki Alto 2023 L — 29.50 lacs, 53,303 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
