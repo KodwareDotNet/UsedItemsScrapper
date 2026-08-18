@@ -94,7 +94,7 @@ CORE_RE = re.compile(r',\s*(Islamabad|Rawalpindi)$', re.I)
 # Only genuine Japanese kei models are kept. This whitelist is what keeps Mehran,
 # Bolan, Cultus, City and the rest of the keyword-search noise out of the data.
 MODELS = sorted([
-    'Suzuki Alto Lapin', 'Suzuki Wagon R', 'Suzuki Every', 'Suzuki Hustler',
+    'Suzuki Wagon R', 'Suzuki Every', 'Suzuki Hustler',
     'Suzuki Spacia', 'Suzuki MR Wagon', 'Suzuki Palette', 'Suzuki Cervo', 'Suzuki Kei', 'Suzuki Twin',
     'Daihatsu Mira ES', 'Daihatsu Mira Cocoa', 'Daihatsu Mira', 'Daihatsu Move Conte',
     'Daihatsu Move', 'Daihatsu Hijet', 'Daihatsu Tanto', 'Daihatsu Esse', 'Daihatsu Cast',
