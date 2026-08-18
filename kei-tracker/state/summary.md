@@ -1,16 +1,16 @@
-**Kei tracker — 18 Aug, 6:26 PM**
-766 live listings (659 PakWheels, 107 OLX)
-**13 new** since last run · **104 price drops** · 13 ads disappeared
+**Kei tracker — 18 Aug, 9:10 PM**
+773 live listings (663 PakWheels, 110 OLX)
+**12 new** since last run · **106 price drops** · 5 ads disappeared
 
 New:
-- Mitsubishi EK Wagon 2013 E — 2.40 lacs, 140,000 km, Rawalpindi
-- Daihatsu Esse 2010 Custom — 18.30 lacs, 140,000 km, Islamabad
-- Daihatsu Mira 2014  — 19.00 lacs, 192,000 km, Islamabad
-- Mitsubishi EK Wagon 2011 GS — 19.80 lacs, 102,537 km, Islamabad
-- Suzuki Alto 2012 E — 22.50 lacs, 118,000 km, Islamabad
-- Nissan Dayz Roox 2015 X V Selection — 23.75 lacs, 142,000 km, Rawalpindi
-- Daihatsu Mira 2017 X — 26.50 lacs, 85,000 km, Islamabad
-- Nissan Dayz 2013 2013 — 27.00 lacs, 10,000 km, Shalley Valley, Rawalpindi
+- Suzuki Alto 2019 VXR — 2.20 lacs, 178,000 km, Islamabad
+- Suzuki Alto 2022 VXR — 2.70 lacs, 58,000 km, Rawalpindi
+- Suzuki Every 2025 VX — 8.00 lacs, 14,800 km, Islamabad
+- Suzuki Wagon R 2012 FX — 20.00 lacs, 231,204 km, Islamabad
+- Suzuki Alto 2020 VXL — 21.70 lacs, 47,500 km, Islamabad
+- Suzuki Alto 2014 ECO L — 23.00 lacs, 99,000 km, Islamabad
+- Suzuki Alto 2020 VXL — 24.50 lacs, 110,000 km, Islamabad
+- Daihatsu Mira 2014 2014 — 24.70 lacs, 184,000 km, Janjua Town, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
