@@ -1,12 +1,9 @@
-**Kei tracker — 18 Aug, 7:00 AM**
-757 live listings (646 PakWheels, 111 OLX)
-**4 new** since last run · **105 price drops** · 6 ads disappeared
+**Kei tracker — 18 Aug, 9:20 AM**
+753 live listings (642 PakWheels, 111 OLX)
+**1 new** since last run · **104 price drops** · 5 ads disappeared
 
 New:
-- Suzuki Hustler 2014 2014 / 17 — 22.00 lacs, 130,000 km, Taramrri, Islamabad
-- Suzuki Hustler 2014 2014 — 22.00 lacs, 130,000 km, PWD Colony, Rawalpindi
-- Suzuki Every 2012 Wagon PZ Turbo Special — 24.50 lacs, 145,000 km, Islamabad
-- Suzuki Wagon R 2017  — 28.50 lacs, 88,000 km, Rawalpindi
+- Suzuki Alto 2024 VXR — 26.70 lacs, 890 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
