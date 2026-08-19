@@ -1,9 +1,9 @@
-**Kei tracker — 19 Aug, 7:07 AM**
-763 live listings (654 PakWheels, 109 OLX)
-**1 new** since last run · **106 price drops** · 12 ads disappeared
+**Kei tracker — 19 Aug, 9:23 AM**
+764 live listings (654 PakWheels, 110 OLX)
+**1 new** since last run · **106 price drops** · 0 ads disappeared
 
 New:
-- Suzuki Alto 2021 VXR — 24.50 lacs, 23,500 km, Rawalpindi
+- Nissan Roox 2015 2015 — 23.75 lacs, 142,000 km, Westridge, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
