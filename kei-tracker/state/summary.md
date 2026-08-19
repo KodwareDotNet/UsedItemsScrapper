@@ -1,14 +1,16 @@
-**Kei tracker — 19 Aug, 12:22 PM**
-768 live listings (657 PakWheels, 111 OLX)
-**6 new** since last run · **106 price drops** · 2 ads disappeared
+**Kei tracker — 19 Aug, 3:10 PM**
+776 live listings (665 PakWheels, 111 OLX)
+**16 new** since last run · **108 price drops** · 8 ads disappeared
 
 New:
-- Suzuki MR Wagon 2012 G — 16.50 lacs, 130,000 km, Islamabad
-- Mitsubishi EK Wagon 2014 G — 23.80 lacs, 138,000 km, Islamabad
-- Suzuki Alto 2012 G4 — 24.80 lacs, 134,773 km, Rawalpindi
-- Suzuki Alto 2019 VXL — 24.85 lacs, 83,000 km, Islamabad
-- Suzuki Alto 2024 VXR — 28.90 lacs, 29,000 km, Islamabad
-- Daihatsu Mira 2015 eis 2015 — 29.30 lacs, 83,000 km, Gulzar-e-Quaid Housing Society, Rawalpindi
+- Mitsubishi Minica 2010  — 16.50 lacs, 270,000 km, Rawalpindi
+- Daihatsu Mira ES 2014  — 20.50 lacs, 115,000 km, Islamabad
+- Suzuki Alto 2012 VP — 22.50 lacs, 127,000 km, Islamabad
+- Suzuki Wagon R 2014 FX Limited — 23.80 lacs, 118,000 km, Islamabad
+- Suzuki Alto 2020 VXL — 24.70 lacs, 146,000 km, Islamabad
+- Nissan Dayz 2013 Highway Star — 25.50 lacs, 113,000 km, Islamabad
+- Suzuki Alto 2022 VXR — 26.50 lacs, 65,000 km, Rawalpindi
+- Daihatsu Hijet 2021 VAN Special M T — 26.50 lacs, 25,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
