@@ -1,16 +1,15 @@
-**Kei tracker — 19 Aug, 6:27 PM**
-771 live listings (662 PakWheels, 109 OLX)
-**11 new** since last run · **108 price drops** · 16 ads disappeared
+**Kei tracker — 19 Aug, 9:08 PM**
+770 live listings (660 PakWheels, 110 OLX)
+**7 new** since last run · **106 price drops** · 8 ads disappeared
 
 New:
-- Nissan Dayz 2013 Highway Star X — 20.70 lacs, 188,000 km, Islamabad
-- Nissan Dayz Roox 2015  — 25.00 lacs, 65,000 km, Islamabad
-- Suzuki Alto 2022 VXR — 26.20 lacs, 80,000 km, Islamabad
-- Suzuki Alto 2021 VXR — 26.60 lacs, 69,000 km, Rawalpindi
-- Daihatsu Mira 2014 2014 Islamabad no. — 27.45 lacs, 125,000 km, Murree Road, Rawalpindi
-- Nissan Clipper 2020 E — 27.50 lacs, 105,000 km, Islamabad
-- Suzuki Alto 2024 VXR — 27.70 lacs, 38,000 km, Rawalpindi
-- Suzuki Alto 2021 VXL — 27.80 lacs, 80,000 km, Islamabad
+- Suzuki Alto 2012 G4 — 17.95 lacs, 150,000 km, Islamabad
+- Nissan Moco 2014 X Idling Stop — 22.50 lacs, 180,000 km, Islamabad
+- Honda N Wgn 2014 2014 — 25.00 lacs, 84,000 km, DHA Defence Phase 3, Islamabad
+- Honda N Box 2014 X — 25.90 lacs, 105,000 km, Islamabad
+- Daihatsu Mira 2014 L — 26.00 lacs, 96,000 km, Islamabad
+- Suzuki Alto 2022 VXR — 26.25 lacs, 140,000 km, Islamabad
+- Mazda Carol 2016 GS — 26.50 lacs, 145,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
