@@ -1,16 +1,9 @@
-**Kei tracker — 20 Aug, 12:13 AM**
-772 live listings (661 PakWheels, 111 OLX)
-**8 new** since last run · **106 price drops** · 6 ads disappeared
+**Kei tracker — 20 Aug, 3:02 AM**
+763 live listings (654 PakWheels, 109 OLX)
+**1 new** since last run · **104 price drops** · 10 ads disappeared
 
 New:
-- Mitsubishi EK Wagon 2012 2007/2012 exchang posble 03035522909 WhatsApp — 17.89 lacs, 10,000 km, Murree Road, Rawalpindi
-- Daihatsu Move 2015 Custom RS — 18.60 lacs, 116,000 km, Islamabad
-- Mitsubishi EK Wagon 2011 GS — 19.50 lacs, 132,000 km, Islamabad
-- Suzuki Alto 2020 VXR — 25.20 lacs, 95,000 km, Islamabad
-- Honda N Box 2020 2020 — 25.50 lacs, 86,000 km, Bahria Town Phase 8, Rawalpindi
-- Suzuki Alto 2021 VXR — 25.50 lacs, 140,000 km, Islamabad
-- Suzuki Alto 2024 VXR — 27.50 lacs, 51,000 km, Islamabad
-- Suzuki Alto 2024 VXR — 28.30 lacs, 65,000 km, Rawalpindi
+- Suzuki Hustler 2014 2014 / 17 — 24.50 lacs, 130,000 km, Taramrri, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
