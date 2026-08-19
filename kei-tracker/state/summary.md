@@ -1,15 +1,16 @@
-**Kei tracker — 19 Aug, 9:08 PM**
-770 live listings (660 PakWheels, 110 OLX)
-**7 new** since last run · **106 price drops** · 8 ads disappeared
+**Kei tracker — 20 Aug, 12:13 AM**
+772 live listings (661 PakWheels, 111 OLX)
+**8 new** since last run · **106 price drops** · 6 ads disappeared
 
 New:
-- Suzuki Alto 2012 G4 — 17.95 lacs, 150,000 km, Islamabad
-- Nissan Moco 2014 X Idling Stop — 22.50 lacs, 180,000 km, Islamabad
-- Honda N Wgn 2014 2014 — 25.00 lacs, 84,000 km, DHA Defence Phase 3, Islamabad
-- Honda N Box 2014 X — 25.90 lacs, 105,000 km, Islamabad
-- Daihatsu Mira 2014 L — 26.00 lacs, 96,000 km, Islamabad
-- Suzuki Alto 2022 VXR — 26.25 lacs, 140,000 km, Islamabad
-- Mazda Carol 2016 GS — 26.50 lacs, 145,000 km, Islamabad
+- Mitsubishi EK Wagon 2012 2007/2012 exchang posble 03035522909 WhatsApp — 17.89 lacs, 10,000 km, Murree Road, Rawalpindi
+- Daihatsu Move 2015 Custom RS — 18.60 lacs, 116,000 km, Islamabad
+- Mitsubishi EK Wagon 2011 GS — 19.50 lacs, 132,000 km, Islamabad
+- Suzuki Alto 2020 VXR — 25.20 lacs, 95,000 km, Islamabad
+- Honda N Box 2020 2020 — 25.50 lacs, 86,000 km, Bahria Town Phase 8, Rawalpindi
+- Suzuki Alto 2021 VXR — 25.50 lacs, 140,000 km, Islamabad
+- Suzuki Alto 2024 VXR — 27.50 lacs, 51,000 km, Islamabad
+- Suzuki Alto 2024 VXR — 28.30 lacs, 65,000 km, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
@@ -17,4 +18,4 @@ Price drops:
 - Daihatsu Cast 2016 — down 2.70 to 26.80 lacs, Rawalpindi
 - Suzuki Alto 2022 — down 2.45 to 27.50 lacs, Islamabad
 - Suzuki Alto 2011 — down 2.20 to 16.50 lacs, Rawalpindi
-- Suzuki Wagon R 2011 — down 2.00 to 19.50 lacs, Islamabad
+- Honda Life 2010 — down 2.00 to 23.00 lacs, Islamabad
