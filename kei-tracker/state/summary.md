@@ -1,9 +1,6 @@
-**Kei tracker — 20 Aug, 3:02 AM**
-763 live listings (654 PakWheels, 109 OLX)
-**1 new** since last run · **104 price drops** · 10 ads disappeared
-
-New:
-- Suzuki Hustler 2014 2014 / 17 — 24.50 lacs, 130,000 km, Taramrri, Islamabad
+**Kei tracker — 20 Aug, 7:01 AM**
+754 live listings (645 PakWheels, 109 OLX)
+**0 new** since last run · **100 price drops** · 9 ads disappeared
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
