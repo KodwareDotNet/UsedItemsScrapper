@@ -1,10 +1,13 @@
-**Kei tracker — 20 Aug, 9:23 AM**
-751 live listings (642 PakWheels, 109 OLX)
-**2 new** since last run · **98 price drops** · 5 ads disappeared
+**Kei tracker — 20 Aug, 12:25 PM**
+752 live listings (642 PakWheels, 110 OLX)
+**5 new** since last run · **96 price drops** · 4 ads disappeared
 
 New:
-- Suzuki Alto 2023 VX — 26.75 lacs, 51,000 km, Rawalpindi
-- Suzuki Alto 2016 X — 28.00 lacs, 70,150 km, Islamabad
+- Suzuki Wagon R 2018 Stingray 2018 — 21.75 lacs, 123,456 km, Holy Family Road, Rawalpindi
+- Suzuki Wagon R 2014 X — 24.50 lacs, 100,000 km, Rawalpindi
+- Daihatsu Mira 2014 2014 Islamabad no. — 27.45 lacs, 125,000 km, Murree Road, Rawalpindi
+- Suzuki Alto 2022 VXL — 28.30 lacs, 47,450 km, Islamabad
+- Suzuki Alto 2022 VXL — 29.00 lacs, 29,774 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
