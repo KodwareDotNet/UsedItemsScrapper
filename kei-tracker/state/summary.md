@@ -1,16 +1,11 @@
-**Kei tracker — 20 Aug, 6:29 PM**
-754 live listings (645 PakWheels, 109 OLX)
-**12 new** since last run · **95 price drops** · 14 ads disappeared
+**Kei tracker — 20 Aug, 9:10 PM**
+752 live listings (645 PakWheels, 107 OLX)
+**3 new** since last run · **96 price drops** · 5 ads disappeared
 
 New:
-- Nissan Roox 2011 E — 19.90 lacs, 171,000 km, Islamabad
-- Mazda Carol 2010 2010 — 21.00 lacs, 238,000 km, Dhok Naju, Rawalpindi
-- Mazda Carol 2015 GF — 22.00 lacs, 238,172 km, Islamabad
-- Suzuki Alto 2012  — 22.00 lacs, 130,000 km, Islamabad
-- Honda Life 2011  — 22.00 lacs, 106,000 km, Islamabad
-- Daihatsu Mira 2010 L — 22.50 lacs, 182,000 km, Rawalpindi
-- Mitsubishi EK Wagon 2013 E — 22.80 lacs, 120,000 km, Islamabad
-- Suzuki Wagon R 2014 FX — 25.50 lacs, 84,000 km, Rawalpindi
+- Nissan Clipper 2014 DX — 21.00 lacs, 198,000 km, Rawalpindi
+- Mitsubishi Pajero Mini 2012 Limited — 25.00 lacs, 115,000 km, Islamabad
+- Suzuki Alto 2023 VXR — 26.50 lacs, 42,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
