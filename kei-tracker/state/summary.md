@@ -1,13 +1,16 @@
-**Kei tracker — 20 Aug, 12:25 PM**
-752 live listings (642 PakWheels, 110 OLX)
-**5 new** since last run · **96 price drops** · 4 ads disappeared
+**Kei tracker — 20 Aug, 3:11 PM**
+756 live listings (643 PakWheels, 113 OLX)
+**10 new** since last run · **95 price drops** · 6 ads disappeared
 
 New:
-- Suzuki Wagon R 2018 Stingray 2018 — 21.75 lacs, 123,456 km, Holy Family Road, Rawalpindi
-- Suzuki Wagon R 2014 X — 24.50 lacs, 100,000 km, Rawalpindi
-- Daihatsu Mira 2014 2014 Islamabad no. — 27.45 lacs, 125,000 km, Murree Road, Rawalpindi
-- Suzuki Alto 2022 VXL — 28.30 lacs, 47,450 km, Islamabad
-- Suzuki Alto 2022 VXL — 29.00 lacs, 29,774 km, Islamabad
+- Nissan Clipper 2013  — 15.50 lacs, 145,000 km, Islamabad
+- Mitsubishi EK Wagon 2012 2012 exchang posble 03025271768 WhatsApp — 17.89 lacs, 10,000 km, Murree Road, Rawalpindi
+- Suzuki Every 2011 Wagon — 20.50 lacs, 95,000 km, Islamabad
+- Suzuki Spacia 2014 2014 — 20.80 lacs, 160,000 km, Muslim Town, Rawalpindi
+- Honda Life 2012  — 22.50 lacs, 175,000 km, Islamabad
+- Suzuki Spacia 2014 genuine antique car beterthan mira wagon r box days roox — 23.20 lacs, 99,000 km, Bahria Town, Islamabad
+- Suzuki Every 2018 PA — 24.00 lacs, 240,000 km, Rawalpindi
+- Nissan Moco 2014 X — 24.90 lacs, 100,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
