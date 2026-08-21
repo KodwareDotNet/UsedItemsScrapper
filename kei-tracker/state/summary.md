@@ -1,21 +1,21 @@
-**Kei tracker — 21 Aug, 9:10 PM**
-749 live listings (644 PakWheels, 105 OLX)
-**11 new** since last run · **97 price drops** · 11 ads disappeared
+**Kei tracker — 22 Aug, 12:15 AM**
+753 live listings (647 PakWheels, 106 OLX)
+**8 new** since last run · **98 price drops** · 4 ads disappeared
 
 New:
-- Daihatsu Mira 2010 2010 — 20.00 lacs, 235,000 km, Rawat, Islamabad
-- Daihatsu Mira 2013 G Smart Drive Package — 20.90 lacs, 93,000 km, Islamabad
-- Daihatsu Mira 2013 2013 — 20.90 lacs, 93,000 km, G-9, Islamabad
-- Daihatsu Hijet 2015 2015 — 21.50 lacs, 116,000 km, G-6 Markaz, Islamabad
-- Mazda Carol 2015 GS — 22.80 lacs, 200,000 km, Rawalpindi
-- Mazda Carol 2014 2014 — 24.00 lacs, 160,000 km, Rawal Town, Islamabad
-- Suzuki Alto 2021 VXL — 26.00 lacs, 93,000 km, Rawalpindi
-- Daihatsu Hijet 2019 Cargo — 28.00 lacs, 143,000 km, Bahria Town Phase 8, Rawalpindi
+- Daihatsu Hijet 2011 VAN SA 3 2WD — 15.60 lacs, 168,888 km, Islamabad
+- Suzuki Alto 2012 ECO S — 21.20 lacs, 125,000 km, Islamabad
+- Nissan Kix 2010 2010/15 — 22.00 lacs, 115,000 km, G-15/1, Islamabad
+- Suzuki Hustler 2015 A — 23.90 lacs, 125,000 km, Islamabad
+- Suzuki Alto 2020 VXL — 26.25 lacs, 81,000 km, Islamabad
+- Suzuki Alto 2022 VXR — 26.98 lacs, 55,000 km, Islamabad
+- Suzuki Alto 2021 VX — 27.22 lacs, 76,000 km, Islamabad
+- Suzuki Alto 2022 VXL — 27.80 lacs, 60,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
 - Mitsubishi EK Wagon 2018 — down 4.30 to 22.45 lacs, Islamabad
 - Suzuki Alto 2011 — down 2.20 to 16.50 lacs, Rawalpindi
-- Daihatsu Mira 2016 — down 2.00 to 25.00 lacs, G-5, Islamabad
-- Suzuki Every 2016 — down 2.00 to 19.00 lacs, Rawalpindi
 - Honda Life 2010 — down 2.00 to 23.00 lacs, Islamabad
+- Suzuki Every 2016 — down 2.00 to 19.00 lacs, Rawalpindi
+- Daihatsu Mira 2016 — down 2.00 to 25.00 lacs, G-5, Islamabad
