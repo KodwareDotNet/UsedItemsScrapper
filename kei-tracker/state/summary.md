@@ -1,11 +1,12 @@
-**Kei tracker — 21 Aug, 12:26 PM**
-749 live listings (643 PakWheels, 106 OLX)
-**3 new** since last run · **92 price drops** · 1 ads disappeared
+**Kei tracker — 21 Aug, 3:14 PM**
+747 live listings (642 PakWheels, 105 OLX)
+**4 new** since last run · **96 price drops** · 6 ads disappeared
 
 New:
-- Suzuki Alto 2013 ECO L — 22.70 lacs, 118,000 km, Islamabad
-- Suzuki Alto 2022 VXR — 24.50 lacs, 61,000 km, Islamabad
-- Daihatsu Mira 2013 eis 2013/2017 — 27.50 lacs, 125,000 km, Bangash Colony, Rawalpindi
+- Suzuki Every 2013 Join Turbo — 17.80 lacs, 218,625 km, Islamabad
+- Suzuki Wagon R 2013 J Style — 21.70 lacs, 159,000 km, Rawalpindi
+- Suzuki Alto 2023 VXR — 27.85 lacs, 33,000 km, Islamabad
+- Suzuki Alto 2019 VXL — 29.50 lacs, 75,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
