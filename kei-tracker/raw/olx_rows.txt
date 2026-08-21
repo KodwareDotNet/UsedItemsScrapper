@@ -1,9 +1,9 @@
 1117091917|Other Kei|Suzuki Jimny 660cc|20.25|1989|95808|isb|IJP Road, Islamabad|4w|core|632670551
 1113565878|Daihatsu Mira|X CVT 2008/13|21.5|2008|188000|isb|I-8 Markaz, Islamabad|4w|core|632981230
 1117318790|Daihatsu Mira|2009|17.5|2009|177000|isb|Bhara kahu, Islamabad|3w|core|633999454
-1118292933|Daihatsu Mira|2008/2014 2 Door Automatic in Good Condition|15.5|2008|230|isb|7th Avenue, Islamabad|19h|core|639711030
-1115625221|Daihatsu Mira|2020|28.75|2020|50000|isb|PTV Colony, Islamabad|22h|core|624071652
-1118281677|Suzuki Spacia|genuine antique car beterthan mira wagon r box days roox|23.2|2014|99000|isb|Bahria Town, Islamabad|23h|core|639642362
+1118292933|Daihatsu Mira|2008/2014 2 Door Automatic in Good Condition|15.5|2008|230|isb|7th Avenue, Islamabad|22h|core|639711030
+1115625221|Daihatsu Mira|2020|28.75|2020|50000|isb|PTV Colony, Islamabad|1d|core|624071652
+1118281677|Suzuki Spacia|genuine antique car beterthan mira wagon r box days roox|23.2|2014|99000|isb|Bahria Town, Islamabad|1d|core|639642362
 1118209823|Daihatsu Mira|2006|16|2006|4|isb|G-8/4, Islamabad|3d|core|639218805
 1118192126|Daihatsu Mira|2003|16|2003|140000|isb|Kahuta Road, Islamabad|3d|core|639118816
 1118181987|Daihatsu Mira|2006|16.5|2006|150000|isb|Ghauri Town Phase 4A, Islamabad|3d|core|639054101
@@ -21,8 +21,9 @@
 1117872330|Daihatsu Mira|2012|23.85|2012|91700|isb|I-10, Islamabad|2w|core|637244593
 1118002486|Daihatsu Mira|2006/2011|17.45|2006|149000|rwp|Bahria Town Rawalpindi, Rawalpindi|1w|core|638208684
 1117810989|Daihatsu Mira|2009-2013 Model   Good condition|19.5|2009|171321|rwp|Chur Chowk, Rawalpindi|2d|core|636881238
-1118312093|Daihatsu Mira|2006|14.8|2006|146000|rwp|People Colony, Rawalpindi|10h|core|639823282
-1118294978|Daihatsu Mira|2008|16|2008|144000|rwp|Tench Road, Rawalpindi|18h|core|639723968
+1118320929|Mitsubishi EK Wagon|2012 Exchange posble 03025271768 WhatsApp|17.8|2007|100000|rwp|Murree Road, Rawalpindi|3h|core|639875654
+1118312093|Daihatsu Mira|2006|14.8|2006|146000|rwp|People Colony, Rawalpindi|13h|core|639823282
+1118294978|Daihatsu Mira|2008|16|2008|144000|rwp|Tench Road, Rawalpindi|21h|core|639723968
 1118208870|Daihatsu Mira|2009|20.5|2009|165000|rwp|Dhamial Villas, Rawalpindi|3d|core|639213880
 1118196149|Daihatsu Mira|2014|24.7|2014|184000|rwp|Janjua Town, Rawalpindi|3d|core|639141966
 1118193415|Toyota Pixis|Epoch 2014|24.8|2014|95000|rwp|Bahria Town Phase 7, Rawalpindi|3d|core|639126310
@@ -37,8 +38,7 @@
 1117878129|Daihatsu Mira|2012|23.95|2012|88000|rwp|Airport Housing Society, Rawalpindi|2w|core|637277671
 1117832099|Daihatsu Mira|EIS 2012|23.5|2012|114000|rwp|Westridge 3, Rawalpindi|2w|core|637007398
 1117803790|Daihatsu Mira|2014/2017|23.5|2014|219800|rwp|Afshan Colony, Rawalpindi|2w|core|636840358
-1117795030|Daihatsu Mira|eis 2013/2017|27.5|2013|125000|rwp|Bangash Colony, Rawalpindi|2w|core|636792428
-1118303615|Nissan Dayz|highway star 2015/17|26|2015|75000|isb|G-7, Islamabad|15h|core|639774887
+1118303615|Nissan Dayz|highway star 2015/17|26|2015|75000|isb|G-7, Islamabad|18h|core|639774887
 1118132587|Nissan Dayz|2014|26.5|2014|97000|isb|F-11, Islamabad|4d|core|638760506
 1116714686|Nissan Dayz|2014|26.4|2014|180000|isb|MPCHS - Multi Gardens, Islamabad|1w|core|630452481
 1116394436|Nissan Dayz|2017|26|2017|150000|isb|G-15 Markaz, Islamabad|1w|core|628558289
@@ -74,7 +74,7 @@
 1116802286|Suzuki Spacia|2015|25|2015|86000|isb|G-5, Islamabad|2d|core|630961331
 1116520817|Suzuki Spacia||23.5|2017|180000|isb|Soan Garden, Islamabad|1w|core|629306018
 1114738580|Suzuki Spacia||21.5|2013|190000|isb|G-8 Markaz, Islamabad|3w|core|618871633
-1118145842|Suzuki Spacia|2015|24|2015|150000|isb|Media Town, Rawalpindi|22h|core|638841193
+1118145842|Suzuki Spacia|2015|24|2015|150000|isb|Media Town, Rawalpindi|1d|core|638841193
 1118279405|Suzuki Spacia|2014|20.8|2014|160000|isb|Muslim Town, Rawalpindi|1d|core|639629039
 1117514362|Suzuki Spacia|2017/2021|23.5|2017|80000|isb|Liaquat Bagh, Rawalpindi|3w|core|635142026
 1117484166|Suzuki Spacia|2015|26|2015|1|isb|Gulistan Colony, Rawalpindi|3w|core|634968624
@@ -83,7 +83,7 @@
 1118132524|Daihatsu Hijet|2019|17|2019|196000|isb|Soan Garden - Block H, Islamabad|4d|core|638795322
 1118119206|Daihatsu Hijet|2020|26.85|2020|44000|isb|7th Avenue, Islamabad|5d|core|638680933
 1118115905|Daihatsu Hijet|2008|15.5|2008|200000|isb|Eden Life Islamabad, Islamabad|5d|core|638662345
-1118112666|Daihatsu Hijet|cargo TURBO|16|2011|168000|isb|G-13/2, Islamabad|5d|core|638644341
+1118112666|Daihatsu Hijet|cargo TURBO|15.6|2011|168000|isb|G-13/2, Islamabad|5d|core|638644341
 1116160213|Daihatsu Hijet|2004|12|2004|134680|isb|Koral Town, Islamabad|1w|core|627204781
 1118002119|Daihatsu Hijet|2015|13.5|2015|225000|isb|Blue Area, Islamabad|1w|core|638002173
 1117845366|Daihatsu Hijet|2009|15|2009|150000|isb|G-13, Islamabad|2w|core|637081832
@@ -106,14 +106,14 @@
 1118178518|Mazda Carol|2016 16/19|25|2016||isb|Timber Market, Islamabad|3d|core|639031477
 1117793145|Mazda Carol|2017|26|2017|165000|isb|G-12, Islamabad|2w|core|636781426
 1117275154|Mazda Carol|2016|26.5|2016|145000|isb|Park View City, Islamabad|4w|core|633743909
-1118291584|Mazda Carol|2010|21|2010|238000|isb|Dhok Naju, Rawalpindi|20h|core|639702793
+1118291584|Mazda Carol|2010|21|2010|238000|isb|Dhok Naju, Rawalpindi|22h|core|639702793
 1117923158|Mazda Carol|2008|21.5|2008|150000|isb|Attock Road, Attock|1w|near|637540259
 1117587168|Mazda Carol|Eco 2017|27.2|2017|98000|isb|Bahria Town Phase 8, Rawalpindi|3w|core|635562810
 1113565921|Mazda Carol|2013 registered 2014|22.5|2013|133000|isb|DAV College Road, Rawalpindi|3w|core|611997845
 1117642931|Mazda Flair|2013|22.7|2013|171000|isb|G-11, Islamabad|2w|core|635889087
 1117474666|Mazda Flair|2014|25|2014|97000|isb|Jhang Syedan, Islamabad|3w|core|634913958
 1118131414|Mazda Flair|2013|24.5|2013||isb|Bahria Town Rawalpindi, Rawalpindi|4d|core|638753153
-1116450655|Mazda Flair|/ Wagon R 2014|23.8|2014|128000|isb|Kohistan Enclave, Wah|2w|near|628889644
+1116450655|Mazda Flair|/ Wagon R 2014|23|2014|128000|isb|Kohistan Enclave, Wah|2w|near|628889644
 1117460354|Mazda Flair|2016|26.5|2016|150000|isb|Airport Housing Society, Rawalpindi|3w|core|634830963
 1117618769|Mazda Flair|2015|26.5|2015|116162|isb|Cantt, Jhelum|2w|near|635750661
 1116139575|Daihatsu Tanto|2018|24.5|2018|70000|isb|Fateh Jang Road, Islamabad|6d|core|627087404
@@ -122,7 +122,7 @@
 1117903878|Daihatsu Tanto|2014/2020|25.5|2014|11000|isb|Airport Housing Society, Rawalpindi|1w|core|637426957
 1117673898|Daihatsu Tanto|2013|16.5|2013|120000|isb|GT Road, Dina|2w|near|636073678
 1117128626|Daihatsu Tanto|2014 2018 auto|22.95|2014|76500|isb|Bilal Town, Jhelum|4w|near|632880830
-1118311330|Honda N One||24.5|2007|15000|isb|DHA Defence, Islamabad|11h|core|639818697
+1118311330|Honda N One||24.5|2007|15000|isb|DHA Defence, Islamabad|14h|core|639818697
 1116901683|Mitsubishi Pajero Mini|2007|17.5|2007|93000|isb|DHA Defence, Islamabad|2d|core|631539405
 1118258513|Honda N Wgn|2014|25|2014|84000|isb|DHA Defence Phase 3, Islamabad|2d|core|639503995
 1118208057|Honda N Wgn|2017|29.5|2017|120000|isb|Gulberg Greens, Islamabad|3d|core|639209328
@@ -133,8 +133,7 @@
 1118078908|Honda Zest|2006|19.5|2006|158000|isb|Soan Garden, Islamabad|6d|core|638446329
 1118054475|Honda Zest|660cc Best Economical Family Car|18.75|2012|107000|isb|I-10, Islamabad|6d|core|638303079
 1117479280|Nissan Moco|2014|22.25|2014|120|rwp|Bahria Town Phase 8, Rawalpindi|3w|core|634940627
-1118320929|Mitsubishi EK Wagon|2012 Exchange posble 03025271768 WhatsApp|17.8|2007|100000|rwp|Murree Road, Rawalpindi|24m|core|639875654
-1118306642|Other Kei|wagonR limited Japanese 660cc|18.75|2006|99999|rwp|Committee Chowk, Rawalpindi|14h|core|639791728
+1118306642|Other Kei|wagonR limited Japanese 660cc|18.75|2006|99999|rwp|Committee Chowk, Rawalpindi|17h|core|639791728
 1118278687|Suzuki Wagon R|Stingray 2018|21.75|2018|123456|rwp|Holy Family Road, Rawalpindi|1d|core|639624038
 1118262410|Honda N Box|2020|25.5|2020|86000|rwp|Bahria Town Phase 8, Rawalpindi|2d|core|639526862
 1115725445|Mitsubishi Pajero Mini|1995|8.3|1995|100000|rwp|Baqir Colony, Rawalpindi|3d|core|627506343
@@ -143,4 +142,3 @@
 1118162999|Mitsubishi Pajero Mini|660 2007|12.5|2007|174000|rwp|Rawat Enclave, Rawalpindi|4d|core|638938284
 1118123726|Other Kei|Alto VXR 2005 model 660cc converted|12.85|2005|1000|rwp|Gawal Mandi, Rawalpindi|5d|core|638706954
 1116872010|Other Kei|Suzuki Alto 2008 660cc automatic gear|12.7|2008|10000|rwp|Airport Housing Society - Sector 4, Rawalpindi|5d|core|631366265
-1118081322|Mitsubishi Pajero Mini||13.8|1996|786|rwp|Kahuta, Rawalpindi|5d|core|638460582
