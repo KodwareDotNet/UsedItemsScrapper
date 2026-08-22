@@ -1,10 +1,9 @@
-**Kei tracker — 22 Aug, 3:02 AM**
-754 live listings (648 PakWheels, 106 OLX)
-**2 new** since last run · **97 price drops** · 1 ads disappeared
+**Kei tracker — 22 Aug, 6:58 AM**
+747 live listings (641 PakWheels, 106 OLX)
+**1 new** since last run · **96 price drops** · 8 ads disappeared
 
 New:
-- Suzuki Alto 2023 VXR — 27.65 lacs, 88,000 km, Islamabad
-- Suzuki Alto 2024 VXR — 29.30 lacs, 27,000 km, Islamabad
+- Daihatsu Hijet 2010 2010 — 15.53 lacs, 212,000 km, I-14, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
