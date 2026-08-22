@@ -1,16 +1,16 @@
-**Kei tracker — 23 Aug, 12:09 AM**
-760 live listings (654 PakWheels, 106 OLX)
-**13 new** since last run · **102 price drops** · 5 ads disappeared
+**Kei tracker — 23 Aug, 2:57 AM**
+765 live listings (658 PakWheels, 107 OLX)
+**8 new** since last run · **102 price drops** · 3 ads disappeared
 
 New:
-- Daihatsu Hijet 2016 VAN Special — 15.50 lacs, 210,000 km, Islamabad
-- Daihatsu Hijet 2016 2016 — 15.50 lacs, 210,000 km, University Town - Block C, Islamabad
-- Suzuki Wagon R 2011 Limited — 21.50 lacs, 150,000 km, Islamabad
-- Suzuki Alto 2021  — 22.30 lacs, 125,000 km, Rawalpindi
-- Daihatsu Mira 2013 G Smart Drive Package — 23.00 lacs, 165,000 km, Islamabad
-- Suzuki Alto 2014  — 24.00 lacs, 98,000 km, Islamabad
-- Daihatsu Tanto 2015 Custom RS — 24.00 lacs, 145,400 km, Rawalpindi
-- Daihatsu Mira ES 2014  — 24.90 lacs, 212,689 km, Rawalpindi
+- Daihatsu Hijet 2016 2016 — 17.00 lacs, 306,815 km, Chatha Bakhtawar, Islamabad
+- Daihatsu Hijet 2016 VAN — 17.20 lacs, 306,850 km, Islamabad
+- Daihatsu Mira 2011 2011 bata 2016 — 22.80 lacs, 98,623 km, B-17, Islamabad
+- Suzuki Alto 2014 E — 25.00 lacs, 208,000 km, Islamabad
+- Daihatsu Move 2013 Custom G — 25.30 lacs, 117,000 km, Islamabad
+- Honda N Box 2014 Custom — 27.50 lacs, 107,000 km, Islamabad
+- Suzuki Alto 2024 VX — 27.65 lacs, 21,000 km, Islamabad
+- Suzuki Alto 2023 VXR — 27.70 lacs, 33,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
