@@ -1,16 +1,15 @@
-**Kei tracker — 23 Aug, 6:22 PM**
-762 live listings (654 PakWheels, 108 OLX)
-**14 new** since last run · **98 price drops** · 11 ads disappeared
+**Kei tracker — 23 Aug, 8:59 PM**
+760 live listings (652 PakWheels, 108 OLX)
+**7 new** since last run · **102 price drops** · 9 ads disappeared
 
 New:
-- Suzuki Alto 2015  — 13.00 lacs, 96,000 km, Rawalpindi
-- Daihatsu Hijet 2015 2015 — 16.00 lacs, 115,000 km, Ghauri Town, Rawalpindi
-- Nissan Moco 2011  — 19.00 lacs, 170,000 km, Rawalpindi
-- Daihatsu Move 2015 Custom X — 21.50 lacs, 75,000 km, Rawalpindi
-- Suzuki Spacia 2014  — 22.00 lacs, 118,798 km, Islamabad
-- Suzuki Alto 2019 VXR — 22.80 lacs, 100,000 km, Islamabad
-- Suzuki Wagon R 2015 FX — 23.00 lacs, 140,000 km, Islamabad
-- Mazda Scrum 2014  — 23.50 lacs, 124,000 km, Rawalpindi
+- Mitsubishi EK Wagon 2014  — 19.90 lacs, 165,000 km, Islamabad
+- Nissan Dayz 2016 Highway Star — 24.80 lacs, 30,000 km, Islamabad
+- Daihatsu Mira 2013 2013/17 — 25.50 lacs, 130,000 km, Faisal Town - F-18, Islamabad
+- Suzuki Every 2012 Wagon PZ Turbo Special — 25.50 lacs, 59,000 km, Rawalpindi
+- Daihatsu Mira ES 2016  — 28.25 lacs, 88,000 km, Islamabad
+- Suzuki Alto 2024  — 28.40 lacs, 75,000 km, Islamabad
+- Nissan Dayz Roox 2014  — 29.50 lacs, 190,000 km, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
