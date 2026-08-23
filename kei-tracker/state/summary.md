@@ -1,10 +1,10 @@
-**Kei tracker — 23 Aug, 7:13 AM**
-748 live listings (642 PakWheels, 106 OLX)
-**2 new** since last run · **97 price drops** · 19 ads disappeared
+**Kei tracker — 23 Aug, 9:27 AM**
+750 live listings (644 PakWheels, 106 OLX)
+**2 new** since last run · **97 price drops** · 0 ads disappeared
 
 New:
-- Suzuki Alto 2020 VXR — 24.95 lacs, 115,000 km, Islamabad
-- Suzuki Alto 2021 VXR — 26.20 lacs, 57,300 km, Rawalpindi
+- Suzuki Alto 2012 ECO S — 19.65 lacs, 144,000 km, Islamabad
+- Suzuki Alto 2021 VXL — 29.50 lacs, 10,500 km, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
