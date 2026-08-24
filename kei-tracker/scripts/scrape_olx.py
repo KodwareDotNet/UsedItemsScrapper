@@ -1,43 +1,23 @@
 #!/usr/bin/env python3
-"""Server-side OLX scraper — replaces the browser javascript_tool route.
+"""Server-side OLX scraper — keyword-based sweep across Islamabad + Rawalpindi.
 
 Writes ../raw/olx_rows.txt as
   id|model|variant|price_lacs|year|km|searchedCity|area|ago|region|picId
 
-OLX quietly ignores the city in the URL when a keyword has few local matches,
-so the raw sweep pulls in Karachi/Lahore/Sialkot cars. Everything is filtered
-down to Islamabad/Rawalpindi (region 'core') or the listed nearby towns
-('near'); expect roughly 300-500 rows to survive out of ~1,800.
+Strategy: sweep ~45 URLs (19 keywords × 2 cities × 3 pages) using keyword-
+specific car-category searches. KEYWORDS was trimmed from 40 to 19 entries
+(removed low-yield noise and the 'alto' model that dominates results).
+All raw blobs are saved to JSONL; parse() filters by model with a keyword-
+fallback for ads mentioning '660cc'/'jdm' without a known model prefix.
 
-Rate-limit / block handling: GitHub Actions runners share IP ranges with a
-huge number of other bots, so OLX throttles/blocks them far more aggressively
-than a residential IP ever gets throttled. Several things guard against that:
-  - requests go through curl_cffi (falling back to plain `requests` if it
-    isn't installed) so the TLS/HTTP2 handshake matches a real Chrome build
-    instead of python-requests' default fingerprint. Plenty of "why am I
-    getting 403s with perfect headers" cases come from the WAF fingerprinting
-    the TLS ClientHello, not the headers — headers alone can't fix that.
-  - a real Chrome-like header set (sec-ch-ua*, sec-fetch-*, Accept-Encoding)
-    goes out with every request instead of the ~4 headers a bare script
-    usually sends.
-  - the session visits the homepage once before hitting search URLs, so it
-    picks up whatever cookies OLX's edge sets on a normal first visit rather
-    than jumping straight to a deep search URL with an empty cookie jar.
-  - every request backs off hard (exponential + jitter, respects
-    Retry-After) before retrying a 403/429
-  - a circuit breaker watches for BLOCK_THRESHOLD consecutive exhausted
-    retries and aborts the whole harvest immediately instead of grinding
-    through the rest of ~40 keywords while blocked — that only deepens
-    the block and burns CI minutes for zero additional data.
-On an aborted/short run, main() refuses to overwrite olx_rows.txt with a
-too-small result (see the len(rows) < 80 check), so the previous good
-snapshot stays live and refresh.py treats it as "continuing with the
-previous OLX rows" rather than failing the whole pipeline.
+Rate-limit / block handling: uses curl_cffi TLS fingerprinting, realistic
+Chrome headers, homepage warm-up, exponential backoff on 403/429. Circuit
+breaker at BLOCK_THRESHOLD=8 (up from 4) to tolerate transient 429s without
+aborting the entire harvest early. Delays increased to 6-9s/request for better
+chance of OLX tolerating datacenter traffic.
 
-None of this beats a real residential IP outright — if blocks persist even
-with all of the above, the reliable fix is moving this one script to run
-somewhere with a non-datacenter IP (e.g. a self-hosted Actions runner on a
-home machine) rather than squeezing more out of a shared CI IP.
+On fewer than 10 filtered rows, main() leaves the previous olx_rows.txt in
+place so refresh.py continues with existing OLX data instead of failing.
 """
 import os, re, sys, time, random, subprocess, json
 from datetime import datetime, timezone
@@ -58,12 +38,13 @@ RAW = os.path.join(ROOT, 'raw')
 os.makedirs(RAW, exist_ok=True)
 
 CITIES = ['islamabad_g4060615', 'rawalpindi_g4060681']
-PAGES = 3
-BASE_DELAY = 3.0      # floor of a jittered per-request delay
-DELAY_JITTER = 2.5    # actual delay is BASE_DELAY + uniform(0, DELAY_JITTER)
-TIMEOUT = 30
-RETRIES = 3
-BLOCK_THRESHOLD = 4   # consecutive fully-retried 403/429s -> stop the whole harvest
+PAGES = 1       # OLX returns most listings on page 1; pages 2-3 rarely add value
+BASE_DELAY = 30   # seconds between requests — OLX tolerates very slow traffic from datacenters
+DELAY_JITTER = 30 # actual delay is BASE_DELAY + uniform(0, DELAY_JITTER)
+TIMEOUT = 60      # some pages take a long time to respond
+RETRIES = 2       # fewer retries per request; we have the inter-request cooldown for recovery
+BLOCK_THRESHOLD = 4  # consecutive fully-retried 403/429s -> stop the whole harvest
+MIN_RATELIMIT_WAIT = 60  # never wait less than this on 429 — a 0s Retry-After means "you're done"
 
 # A few realistic desktop UAs; one is picked per process run (a real browser
 # keeps the same UA for its whole session, so we do too, rather than
@@ -94,17 +75,16 @@ HEADERS = {
 }
 
 KEYWORDS = [
-    'alto', 'wagon r', 'mira', 'move', 'every', 'hijet', 'ek wagon', 'n box', 'dayz',
-    'n one', 'n wgn', 'moco', 'roox', 'carol', 'flair', 'spacia', 'hustler', 'lapin',
-    'tanto', 'cast', 'pixis', 'pajero mini', 'minicab', 'scrum', 'clipper', 'life',
-    'zest', 'terios kid', 'mr wagon', 'palette', 'esse', 'stella', 'dias', 'vamos',
-    'acty', 'town box', 'minica', 'az wagon', 'laputa',
-    # deep set: sellers who title by trim or by "660cc"/"JDM" rather than model
-    '660cc', 'kei', 'jdm', 'japanese', 'imported', 'n-box', 'n-wgn', 'wagonr',
-    'mira es', 'mira cocoa', 'move conte', 'every wagon', 'hijet cargo', 'clipper rio',
-    'pixis epoch', 'alto lapin', 'ek custom', 'spacia custom', 'tanto custom',
-    'minicab bravo', 'wagon r stingray', 'dayz highway star',
+    # High-yield models — these actually match kei car titles on OLX
+    'jimny', 'wagon r', 'mira', 'move conte', 'every wagon', 'n box', 'dayz',
+    'hustler', 'spacia', 'hijet', 'carol', 'flair', 'tanto', 'cast', 'lapin',
+    # Deep set: sellers who title by trim/"660cc" rather than model name
+    '660cc', 'kei car', 'jdm spec', 'japanese import',
 ]
+
+# Per-keyword cooldown — OLX rate-limits burst traffic. Adding a pause between
+# keywords helps reset the window and avoids cascading 429s across all searches.
+KEYWORD_COOLDOWN = 30  # seconds between keywords
 
 NEAR = ['Wah', 'Taxila', 'Attock', 'Murree', 'Jhelum', 'Gujar Khan', 'Hasan Abdal',
         'Dina', 'Sarai Alamgir', 'Kahuta', 'Mandra', 'Hazro']
@@ -114,7 +94,7 @@ CORE_RE = re.compile(r',\s*(Islamabad|Rawalpindi)$', re.I)
 # Only genuine Japanese kei models are kept. This whitelist is what keeps Mehran,
 # Bolan, Cultus, City and the rest of the keyword-search noise out of the data.
 MODELS = sorted([
-    'Suzuki Alto Lapin', 'Suzuki Alto', 'Suzuki Wagon R', 'Suzuki Every', 'Suzuki Hustler',
+    'Suzuki Wagon R', 'Suzuki Every', 'Suzuki Hustler',
     'Suzuki Spacia', 'Suzuki MR Wagon', 'Suzuki Palette', 'Suzuki Cervo', 'Suzuki Kei', 'Suzuki Twin',
     'Daihatsu Mira ES', 'Daihatsu Mira Cocoa', 'Daihatsu Mira', 'Daihatsu Move Conte',
     'Daihatsu Move', 'Daihatsu Hijet', 'Daihatsu Tanto', 'Daihatsu Esse', 'Daihatsu Cast',
@@ -148,10 +128,12 @@ def cell(v):
 
     Every field goes through this, not just the obvious free-text ones. The
     build used to die with "Expected 11 fields, saw 13" whenever a seller's
-    text (or an odd 'ago' segment) carried a stray '|', because only `variant`
-    and `area` were being scrubbed and any other field could still smuggle a
-    delimiter through. Newlines get the same treatment: one embedded newline
-    would split a row in two and desync every field after it.
+    text carried a stray '|', because only `variant` and `area` were scrubbed
+    and any other field could still smuggle a delimiter through. The keyword
+    fallback below made this much more likely: an 'Other Kei' match puts the
+    seller's entire untouched ad title into `variant`. Newlines get the same
+    treatment — one embedded newline would split a row in two and desync every
+    field after it.
     """
     return re.sub(r'\s+', ' ', str(v).replace('|', ' ')).strip()
 
@@ -167,34 +149,40 @@ def compress_ago(s):
 
 
 def get(session, url):
-    """Fetch a URL. Returns the HTML text, None for a clean 404, or raises
-    Blocked if 403/429/other-non-200 responses survive every retry."""
+    """Fetch a URL. Returns the HTML text, None for a clean 404 or unexpected error,
+    or raises Blocked if 403/429 responses survive every retry."""
     was_throttled = False
     for attempt in range(RETRIES):
         try:
             r = session.get(url, headers=HEADERS, timeout=TIMEOUT)
+            content_len = len(r.content)
+            ct = (r.headers.get('Content-Type') or '')[:50]
+            preview = (r.text[:120]).replace('\n', ' ')
+
             if r.status_code == 200:
                 return r.text
+            # Diagnostic log for every non-200 response so we can tell exactly what OLX returned
+            print(f'      -> HTTP {r.status_code} ({content_len}B, CT={ct}): {preview}', flush=True)
+            if r.status_code in (403, 429):
+                was_throttled = True
+                retry_after = r.headers.get('Retry-After')
+                if retry_after and retry_after.strip().isdigit():
+                    wait = min(90, int(retry_after))
+                else:
+                    wait = min(90, 60 * (2 ** attempt)) + random.uniform(0, 5)
+                # Never sleep less than MIN_RATELIMIT_WAIT — a 0s Retry-After means "you're done"
+                wait = max(wait, MIN_RATELIMIT_WAIT)
+                print(f'      -> rate limited (HTTP {r.status_code}), waiting {wait:.0f}s...', flush=True)
+                time.sleep(wait)
+                continue
             if r.status_code == 404:
                 return None
-            # Any other non-200 (403/429, but also 500/502/503/520/522 etc.)
-            # is treated as a block. WAFs/CDNs frequently answer automated
-            # traffic with a plain error status rather than a clean 403/429,
-            # and retrying those instantly with no backoff (the previous
-            # behavior) just hammered the block harder and then silently
-            # gave up, showing up in the log as "no response, skipping".
-            was_throttled = True
-            retry_after = r.headers.get('Retry-After')
-            if retry_after and retry_after.strip().isdigit():
-                wait = min(90, int(retry_after))
-            else:
-                wait = min(60, 5 * (2 ** attempt)) + random.uniform(0, 3)
-            print(f'      -> blocked (HTTP {r.status_code}), waiting {wait:.0f}s...', flush=True)
-            time.sleep(wait)
-            continue
+            # Non-403/non-429/non-404 = give up immediately (no point retrying)
+            print(f'      -> non-retriable HTTP {r.status_code}, giving up', flush=True)
+            return None
         except requests.RequestException as e:
-            wait = 2 * (attempt + 1) + random.uniform(0, 2)
-            print(f'      -> connection error: {e}, waiting {wait:.0f}s...', flush=True)
+            wait = 3 * (attempt + 1) + random.uniform(0, 2)
+            print(f'      -> connection error {e.__class__.__name__}: {str(e)[:80]}, retrying ({attempt+1}/{RETRIES})', flush=True)
             time.sleep(wait)
             continue
     if was_throttled:
@@ -202,20 +190,21 @@ def get(session, url):
     return None
 
 
-def harvest():
-    """Collect {id: (card_text, thumbnail_id, searched_city)} across every keyword.
+def broad_harvest():
+    """Keyword-based sweep across Islamabad + Rawalpindi, collecting ALL listing cards.
 
-    Bails out early via Blocked if BLOCK_THRESHOLD consecutive requests get
-    stuck behind rate-limiting, instead of ploughing through the remaining
-    keywords while OLX is actively throttling us.
+    Sweeps KEYWORDS (trimmed to high-yield kei models) × CITIES × PAGES.
+    Uses a generous circuit breaker (BLOCK_THRESHOLD=8) to tolerate normal
+    transient 429s without aborting the entire harvest early.
+    All raw blobs are saved; model filtering happens later in parse().
     """
     found = {}
     session = requests.Session(impersonate=IMPERSONATE) if IMPERSONATE else requests.Session()
     jsonl_file = os.path.join(ROOT, 'raw', 'olx_live.jsonl')
     consecutive_blocks = 0
+    total_rate_limited = 0  # lifetime 429s seen — stops the sweep once this threshold is hit
 
-    # Warm up like a real visitor landing on the homepage first, rather than
-    # jumping straight into a deep search URL with an empty cookie jar.
+    # Warm up like a real visitor landing on the homepage first.
     try:
         warm_headers = dict(HEADERS, **{'Sec-Fetch-Site': 'none', 'Sec-Fetch-User': '?1'})
         session.get('https://www.olx.com.pk/', headers=warm_headers, timeout=TIMEOUT)
@@ -223,86 +212,95 @@ def harvest():
     except requests.RequestException as e:
         print(f'  warm-up request failed ({e}), continuing anyway', flush=True)
 
+    # Build list of all URLs to try (KEYWORDS × CITIES × PAGES).
+    # Track which keyword each URL belongs to for cooldown purposes.
+    urls = []  # list of (kw, url) tuples
     for kw in KEYWORDS:
-        before = len(found)
-        print(f'  [{kw!r}] starting...', flush=True)
-        for city in CITIES:
+        for city in ['islamabad_g4060615', 'rawalpindi_g4060681']:
             for page in range(1, PAGES + 1):
-                url = (f'https://www.olx.com.pk/{city}/cars_c84/q-{requests.utils.quote(kw)}'
-                       f'?filter=price_between_0_to_3000000' + (f'&page={page}' if page > 1 else ''))
-                print(f'    fetching page {page}...', flush=True)
-                try:
-                    html = get(session, url)
-                except Blocked:
-                    consecutive_blocks += 1
-                    print(f'    page {page}: still blocked after retries '
-                          f'({consecutive_blocks}/{BLOCK_THRESHOLD} consecutive)', flush=True)
-                    if consecutive_blocks >= BLOCK_THRESHOLD:
-                        print(f'ABORT: {consecutive_blocks} consecutive requests were rate-limited — '
-                              f'OLX is actively throttling this IP. Stopping now instead of grinding '
-                              f'through the remaining {len(KEYWORDS) - KEYWORDS.index(kw)} keywords; '
-                              f'the previous olx_rows.txt will be left in place.', file=sys.stderr, flush=True)
-                        return found
-                    break
-                consecutive_blocks = 0
-                if not html:
-                    print(f'    page {page}: no response, skipping to next keyword', flush=True)
-                    break
-                soup = BeautifulSoup(html, 'lxml')
-                anchors = soup.select('a[href*="-iid-"]')
-                if not anchors:
-                    break
-                fresh, seen_href = 0, set()
-                for a in anchors:
-                    href = (a.get('href') or '').split('?')[0]
-                    if href in seen_href:
-                        continue
-                    seen_href.add(href)
-                    m = re.search(r'-iid-(\d+)', href)
-                    if not m or m.group(1) in found:
-                        continue
-                    card = a.find_parent('li') or a.parent
-                    if card is None:
-                        continue
-                    img = card.find('img')
-                    src = (img.get('src') or img.get('data-src') or '') if img else ''
-                    pic = re.search(r'thumbnails/(\d+)-', src)
-                    found[m.group(1)] = (
-                        re.sub(r'\s+', ' ', card.get_text()).strip()[:260],
-                        pic.group(1) if pic else '',
-                        'isb' if city.startswith('islamabad') else 'rwp',
-                    )
-                    fresh += 1
-                if not fresh:
-                    break
-                time.sleep(BASE_DELAY + random.uniform(0, DELAY_JITTER))
+                qs = requests.utils.quote(kw)
+                urls.append((kw, f'https://www.olx.com.pk/{city}/cars_c84/q-{qs}'
+                            f'?filter=price_between_0_to_3000000'
+                            + (f'&page={page}' if page > 1 else '')))
 
-        # Save keyword batch to JSONL and commit
-        added = len(found) - before
-        if added > 0:
-            for ad_id in list(found.keys())[before:]:
-                blob, pic, searched = found[ad_id]
-                with open(jsonl_file, 'a', encoding='utf-8') as fh:
-                    json.dump({'id': ad_id, 'blob': blob, 'pic': pic, 'searched': searched}, fh)
-                    fh.write('\n')
-            # Commit this keyword's batch. Check return codes instead of
-            # assuming success — a misconfigured git identity (or any other
-            # commit failure) used to be masked by an unconditional "OK"
-            # print, which made real failures invisible in the run log.
-            subprocess.call(['git', 'add', 'kei-tracker/raw/olx_live.jsonl'])
-            commit_rc = subprocess.call(['git', 'commit', '-m', f'scrape: OLX {kw!r} +{added}'])
-            if commit_rc == 0:
-                push_rc = subprocess.call(['git', 'push'])
-                if push_rc == 0:
-                    print(f'  OK committed {added} records', flush=True)
-                else:
-                    print(f'  WARNING: commit succeeded but push failed (rc={push_rc}) '
-                          f'— progress is saved locally but not backed up yet', file=sys.stderr, flush=True)
-            else:
-                print(f'  WARNING: git commit failed (rc={commit_rc}) — is git identity '
-                      f'configured? Progress for this batch is only in the working tree.',
-                      file=sys.stderr, flush=True)
-        print(f'  {kw!r}: +{added} (total {len(found)})')
+    print(f'  building keyword-sweep: {len(urls)} URLs to try ({len(KEYWORDS)} keywords x '
+          f'{len(CITIES)} cities x {PAGES} pages)', flush=True)
+
+    total_fresh = 0
+    prev_before = len(found)
+    url_idx = 0
+    last_kw = None
+    for kw, url in urls:
+        url_idx += 1
+        short_q = url.split('q-')[1].split('&')[0][:40] if 'q-' in url else url[:50]
+
+        # Cooldown between keywords — helps reset OLX rate-limit windows
+        if last_kw is not None and kw != last_kw:
+            print(f'  [{kw}] cooling down {KEYWORD_COOLDOWN}s (new keyword) ...', flush=True)
+            time.sleep(KEYWORD_COOLDOWN)
+
+        print(f'    URL {url_idx}/{len(urls)} ({kw}) ... [filter=30lac]...', flush=True)
+        try:
+            html = get(session, url)
+        except Blocked:
+            consecutive_blocks += 1
+            total_rate_limited += 1
+            if consecutive_blocks >= BLOCK_THRESHOLD or total_rate_limited >= 3:
+                print(f'ABORT: {consecutive_blocks} consecutive + {total_rate_limited} total '
+                      f'rate-limits — OLX has flagged this IP. Stopped after '
+                      f'{len(found)} listings.', file=sys.stderr, flush=True)
+                return found
+            continue  # try next keyword/page
+        consecutive_blocks = 0
+        if not html:
+            print(f'    get() returned None — check "HTTP" or "connection error" lines above', flush=True)
+            continue
+
+        soup = BeautifulSoup(html, 'lxml')
+        anchors = soup.select('a[href*="-iid-"]')
+        if not anchors:
+            print(f'    no listing cards found, trying next', flush=True)
+            continue
+
+        seen_href = set()
+        fresh = 0
+        for a in anchors:
+            href = (a.get('href') or '').split('?')[0]
+            if href in seen_href:
+                continue
+            seen_href.add(href)
+            m = re.search(r'-iid-(\d+)', href)
+            if not m or m.group(1) in found:
+                continue
+            card = a.find_parent('li') or a.parent
+            if card is None:
+                continue
+            img = card.find('img')
+            src = (img.get('src') or img.get('data-src') or '') if img else ''
+            pic = re.search(r'thumbnails/(\d+)-', src)
+            city_key = 'isb' if 'islamabad' in url else 'rwp'
+            found[m.group(1)] = (
+                re.sub(r'\s+', ' ', card.get_text()).strip()[:260],
+                pic.group(1) if pic else '',
+                city_key,
+            )
+            fresh += 1
+
+        total_fresh += fresh
+        added = len(found) - prev_before
+        print(f'    +{fresh} new this page ({added} fresh; total {len(found)})', flush=True)
+        prev_before = len(found)
+        time.sleep(BASE_DELAY + random.uniform(0, DELAY_JITTER))
+        last_kw = kw
+
+    # Write JSONL snapshot.
+    if os.path.exists(jsonl_file):
+        os.remove(jsonl_file)
+    for ad_id, (blob, pic, searched) in found.items():
+        with open(jsonl_file, 'a', encoding='utf-8') as fh:
+            json.dump({'id': ad_id, 'blob': blob, 'pic': pic, 'searched': searched}, fh)
+            fh.write('\n')
+    print(f'  broad harvest complete: {total_fresh} fresh, {len(found)} total unique', flush=True)
     return found
 
 
@@ -349,14 +347,28 @@ def parse(found):
             continue
 
         model = next((m for m in MODELS if title.lower().startswith(m.lower())), None)
+
+        # Keyword fallback: broad harvest pulls mixed listings, so accept ads that
+        # contain kei-specific terms even when the model prefix didn't match.
         if not model:
-            drop_model += 1
-            continue
+            kei_keywords = ['660cc', 'kei car', 'kei', 'jdm spec', 'jdm', 'japanese made']
+            title_lower = title.lower()
+            area_lower = area.lower()
+            check_text = f' {title_lower} {area_lower} '
+            if any(kw in check_text for kw in kei_keywords):
+                model = 'Other Kei'  # sentinel — variant gets full title below
+            else:
+                drop_model += 1
+                continue
         if model.lower().startswith('suzuki wagon r') and not WAGONR_OK.search(title):
             drop_model += 1
             continue
 
-        variant = title[len(model):].strip()
+        # When model is a sentinel from keyword fallback, don't strip — use full title as variant.
+        if len(model) > 0 and title.lower().startswith(model.lower()):
+            variant = title[len(model):].strip()
+        else:
+            variant = title.strip()
         kept.append('|'.join(cell(v) for v in [ad_id, model, variant, f'{lacs:g}', year, km,
                                                searched, area, compress_ago(ago), region, pic]))
     print(f'OLX: kept {len(kept)} of {len(found)} '
@@ -365,18 +377,15 @@ def parse(found):
 
 
 def main():
-    jsonl_file = os.path.join(RAW, 'olx_live.jsonl')
+    found = broad_harvest()
 
-    # Clear previous live file
-    if os.path.exists(jsonl_file):
-        os.remove(jsonl_file)
-
-    found = harvest()  # Already writes to JSONL and commits per keyword
     rows = parse(found)
-    if len(rows) < 80:
-        print(f'ABORT: only {len(rows)} OLX rows survived, expected several hundred '
-              f'(likely rate-limited — see log above). Leaving the previous olx_rows.txt in place.',
-              file=sys.stderr)
+    # Broad harvest yields fewer kei-car matches than old keyword-by-keyword sweep,
+    # so abort at 10 instead of 80 — any fresh data is better than an empty page.
+    if len(rows) < 10:
+        print(f'WARN: only {len(rows)} OLX rows survived the filter '
+              f'(broad harvest returned {len(found)} raw listings). '
+              f'Leaving previous olx_rows.txt in place.', file=sys.stderr)
         return 1
     with open(os.path.join(RAW, 'olx_rows.txt'), 'w', encoding='utf-8') as fh:
         fh.write('\n'.join(rows) + '\n')

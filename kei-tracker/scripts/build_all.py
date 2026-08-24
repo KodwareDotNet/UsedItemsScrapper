@@ -59,8 +59,8 @@ def read_pipe(path,names):
               f'(stray "|" in a field). First: line {bad[0][0]}: {bad[0][1][:160]}')
     return pd.DataFrame(rows,columns=names,dtype=str)
 
-NOT660=['mehran','bolan','ravi','carry','kix','mitsubishi-i-','cuore','jimny']
-MODEL_FIX={'suzuki-alto-lapin':'Suzuki Alto Lapin','honda-none':'Honda N One','nissan-dayz-roox':'Nissan Dayz Roox',
+NOT660=['mehran','bolan','ravi','carry','kix','mitsubishi-i-','cuore']
+MODEL_FIX={'jimny':'jimny','suzuki-alto-lapin':'Suzuki Alto Lapin','honda-none':'Honda N One','nissan-dayz-roox':'Nissan Dayz Roox',
  'daihatsu-move-conte':'Daihatsu Move Conte','suzuki-spacia-gear':'Suzuki Spacia Gear','daihatsu-atrai-wagon':'Daihatsu Atrai Wagon',
  'suzuki-wagon-r':'Suzuki Wagon R','honda-n-wgn':'Honda N Wgn','honda-n-box':'Honda N Box','daihatsu-terios-kid':'Daihatsu Terios Kid',
  'mitsubishi-pajero-mini':'Mitsubishi Pajero Mini','mitsubishi-ek-custom':'Mitsubishi EK Custom','mitsubishi-ek-wagon':'Mitsubishi EK Wagon',
@@ -209,9 +209,25 @@ new_snap.to_csv(snap_path,index=False)
 open(last_run_path,'w').write(STAMP)
 
 # ---------- JSON for the page ----------
+def _uid(u):
+    """Stable per-listing id extracted from the URL.
+    PakWheels: https://www.pakwheels.com/used-cars/suzuki-wagon-r-2015-for-sale-in-islamabad-11901671
+               -> 'pw_11901671'   (the id is the TRAILING number; the one before
+               "-for-sale-in-" is the model year, which is shared by hundreds of
+               ads and made every car of the same year look like the same listing)
+    OLX:       https://www.olx.com.pk/item/-iid-678901  ->  'olx_678901'      """
+    u = (u or '').lower()
+    if 'pakwheels.com' in u:
+        m = re.search(r'-(\d+)$', u)
+        return f'pw_{m.group(1)}' if m else ''
+    if 'olx.com.pk' in u:
+        m = re.search(r'-iid-(\d+)', u)
+        return f'olx_{m.group(1)}' if m else ''
+    return ''
+
 recs=[]
 for _,r in df.iterrows():
-    recs.append({'s':r['source'][:2],'m':r['model_full'],'v':(r['variant'] or '')[:34],'y':int(r['year']),
+    recs.append({'id':_uid(r['url']),'s':r['source'][:2],'m':r['model_full'],'v':(r['variant'] or '')[:34],'y':int(r['year']),
       'p':round(float(r['price_lacs']),2),
       'k':None if pd.isna(r['mileage_km']) else int(r['mileage_km']),
       't':(r['transmission'] or '')[:1],'c':r['city'],'a':r['area'],'d':r['posted_date'],
