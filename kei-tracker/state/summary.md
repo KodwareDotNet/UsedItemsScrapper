@@ -1,16 +1,10 @@
-**Kei tracker — 24 Aug, 11:41 PM**
-743 live listings (640 PakWheels, 103 OLX)
-**38 new** since last run · **99 price drops** · 33 ads disappeared
+**Kei tracker — 25 Aug, 12:20 AM**
+743 live listings (639 PakWheels, 104 OLX)
+**2 new** since last run · **99 price drops** · 2 ads disappeared
 
 New:
-- Daihatsu Hijet 2010 2010 — 14.20 lacs, 80,000 km, Benazir Colony, Wah
-- Daihatsu Hijet 2015 VAN Cruise — 16.00 lacs, 197,414 km, Islamabad
-- Daihatsu Hijet 2010 VAN Deluxe — 16.00 lacs, 115,000 km, Rawalpindi
-- Daihatsu Hijet 2011 VAN Special — 16.00 lacs, 317,327 km, Islamabad
-- Daihatsu Hijet 2010 VAN Cruise Turbo — 16.50 lacs, 115,000 km, Islamabad
-- Suzuki Every 2010 Join Turbo — 17.50 lacs, 100,000 km, Rawalpindi
-- Suzuki Every 2012 Join Turbo — 18.50 lacs, 175,000 km, Rawalpindi
-- Suzuki Wagon R 2014  — 20.50 lacs, 150,000 km, Islamabad
+- Suzuki Wagon R 2011 Stingray 2011 — 23.50 lacs, 150,000 km, Tarnol, Islamabad
+- Suzuki Alto Lapin 2014  — 24.00 lacs, 79,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
