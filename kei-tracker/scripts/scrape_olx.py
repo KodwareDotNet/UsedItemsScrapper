@@ -59,8 +59,8 @@ os.makedirs(RAW, exist_ok=True)
 
 CITIES = ['islamabad_g4060615', 'rawalpindi_g4060681']
 PAGES = 3
-BASE_DELAY = 2.0      # floor of a jittered per-request delay
-DELAY_JITTER = 2.0    # actual delay is BASE_DELAY + uniform(0, DELAY_JITTER)
+BASE_DELAY = 3.0      # floor of a jittered per-request delay
+DELAY_JITTER = 2.5    # actual delay is BASE_DELAY + uniform(0, DELAY_JITTER)
 TIMEOUT = 30
 RETRIES = 3
 BLOCK_THRESHOLD = 4   # consecutive fully-retried 403/429s -> stop the whole harvest
@@ -143,6 +143,19 @@ class Blocked(Exception):
     specifically (as opposed to a 404 or a one-off connection error)."""
 
 
+def cell(v):
+    """Make a value safe for the pipe-delimited dump.
+
+    Every field goes through this, not just the obvious free-text ones. The
+    build used to die with "Expected 11 fields, saw 13" whenever a seller's
+    text (or an odd 'ago' segment) carried a stray '|', because only `variant`
+    and `area` were being scrubbed and any other field could still smuggle a
+    delimiter through. Newlines get the same treatment: one embedded newline
+    would split a row in two and desync every field after it.
+    """
+    return re.sub(r'\s+', ' ', str(v).replace('|', ' ')).strip()
+
+
 def compress_ago(s):
     s = re.sub(r'\s*ago.*$', '', s or '').strip()
     if re.fullmatch(r'today', s, re.I):
@@ -155,25 +168,30 @@ def compress_ago(s):
 
 def get(session, url):
     """Fetch a URL. Returns the HTML text, None for a clean 404, or raises
-    Blocked if 403/429 responses survive every retry."""
+    Blocked if 403/429/other-non-200 responses survive every retry."""
     was_throttled = False
     for attempt in range(RETRIES):
         try:
             r = session.get(url, headers=HEADERS, timeout=TIMEOUT)
             if r.status_code == 200:
                 return r.text
-            if r.status_code in (403, 429):
-                was_throttled = True
-                retry_after = r.headers.get('Retry-After')
-                if retry_after and retry_after.strip().isdigit():
-                    wait = min(90, int(retry_after))
-                else:
-                    wait = min(60, 5 * (2 ** attempt)) + random.uniform(0, 3)
-                print(f'      -> rate limited (HTTP {r.status_code}), waiting {wait:.0f}s...', flush=True)
-                time.sleep(wait)
-                continue
             if r.status_code == 404:
                 return None
+            # Any other non-200 (403/429, but also 500/502/503/520/522 etc.)
+            # is treated as a block. WAFs/CDNs frequently answer automated
+            # traffic with a plain error status rather than a clean 403/429,
+            # and retrying those instantly with no backoff (the previous
+            # behavior) just hammered the block harder and then silently
+            # gave up, showing up in the log as "no response, skipping".
+            was_throttled = True
+            retry_after = r.headers.get('Retry-After')
+            if retry_after and retry_after.strip().isdigit():
+                wait = min(90, int(retry_after))
+            else:
+                wait = min(60, 5 * (2 ** attempt)) + random.uniform(0, 3)
+            print(f'      -> blocked (HTTP {r.status_code}), waiting {wait:.0f}s...', flush=True)
+            time.sleep(wait)
+            continue
         except requests.RequestException as e:
             wait = 2 * (attempt + 1) + random.uniform(0, 2)
             print(f'      -> connection error: {e}, waiting {wait:.0f}s...', flush=True)
@@ -267,11 +285,23 @@ def harvest():
                 with open(jsonl_file, 'a', encoding='utf-8') as fh:
                     json.dump({'id': ad_id, 'blob': blob, 'pic': pic, 'searched': searched}, fh)
                     fh.write('\n')
-            # Commit this keyword's batch
+            # Commit this keyword's batch. Check return codes instead of
+            # assuming success — a misconfigured git identity (or any other
+            # commit failure) used to be masked by an unconditional "OK"
+            # print, which made real failures invisible in the run log.
             subprocess.call(['git', 'add', 'kei-tracker/raw/olx_live.jsonl'])
-            subprocess.call(['git', 'commit', '-m', f'scrape: OLX {kw!r} +{added}'])
-            subprocess.call(['git', 'push'])
-            print(f'  OK committed {added} records', flush=True)
+            commit_rc = subprocess.call(['git', 'commit', '-m', f'scrape: OLX {kw!r} +{added}'])
+            if commit_rc == 0:
+                push_rc = subprocess.call(['git', 'push'])
+                if push_rc == 0:
+                    print(f'  OK committed {added} records', flush=True)
+                else:
+                    print(f'  WARNING: commit succeeded but push failed (rc={push_rc}) '
+                          f'— progress is saved locally but not backed up yet', file=sys.stderr, flush=True)
+            else:
+                print(f'  WARNING: git commit failed (rc={commit_rc}) — is git identity '
+                      f'configured? Progress for this batch is only in the working tree.',
+                      file=sys.stderr, flush=True)
         print(f'  {kw!r}: +{added} (total {len(found)})')
     return found
 
@@ -326,9 +356,9 @@ def parse(found):
             drop_model += 1
             continue
 
-        variant = title[len(model):].strip().replace('|', ' ')
-        kept.append('|'.join([ad_id, model, variant, f'{lacs:g}', year, km,
-                              searched, area.replace('|', ' '), compress_ago(ago), region, pic]))
+        variant = title[len(model):].strip()
+        kept.append('|'.join(cell(v) for v in [ad_id, model, variant, f'{lacs:g}', year, km,
+                                               searched, area, compress_ago(ago), region, pic]))
     print(f'OLX: kept {len(kept)} of {len(found)} '
           f'(dropped {drop_loc} out-of-area, {drop_model} not-a-kei, {drop_parse} unparseable)')
     return kept

@@ -31,8 +31,11 @@ button.on{background:#16233d;color:#fff;border-color:#16233d}
 .ph .noimg{display:flex;align-items:center;justify-content:center;height:100%;color:#9aa3b3;font-size:12px}
 .src{position:absolute;top:8px;left:8px;font-size:10.5px;font-weight:700;letter-spacing:.4px;padding:3px 7px;border-radius:4px;color:#fff}
 .src.PW{background:#0b6b3a}.src.OL{background:#5a2d9e}
-.fav{position:absolute;top:6px;right:6px;background:rgba(255,255,255,.92);border:none;border-radius:50%;width:29px;height:29px;font-size:15px;line-height:1;cursor:pointer;color:#b9c0cc;padding:0}
+.acts{position:absolute;top:6px;right:6px;display:flex;gap:5px}
+.act{background:rgba(255,255,255,.92);border:none;border-radius:50%;width:29px;height:29px;font-size:15px;line-height:1;cursor:pointer;color:#b9c0cc;padding:0;box-shadow:0 1px 3px rgba(0,0,0,.15)}
 .fav.on{color:#e0245e}
+.nope.on{color:#fff;background:#9a2020}
+.card.hidden{opacity:.55}
 .rib{position:absolute;top:8px;right:42px;font-size:10.5px;font-weight:700;padding:3px 7px;border-radius:4px;background:#0b6b3a;color:#fff}
 .rib.drop{background:#c2410c;right:8px;top:40px}
 .npix{position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.62);color:#fff;font-size:10.5px;padding:2px 6px;border-radius:4px}
@@ -87,7 +90,7 @@ footer{padding:18px 22px 40px;font-size:11.5px;color:#7a8396;border-top:1px soli
   .price{font-size:16.5px}
   .price small{display:block;font-size:10.5px}
   .ttl{font-size:12.5px}
-  .fav{width:36px;height:36px;font-size:17px}
+  .act{width:36px;height:36px;font-size:17px}
   .go{padding:11px 8px;font-size:13px}
   footer{padding:16px 13px 34px;font-size:11px}
 }
@@ -121,6 +124,7 @@ footer{padding:18px 22px 40px;font-size:11.5px;color:#7a8396;border-top:1px soli
   <button id="onlyDrop">Price drops</button>
   <button id="clean" class="on">Hide flagged</button>
   <button id="shortOnly">Shortlist <span id="sc">0</span></button>
+  <button id="nopeOnly">Hidden <span id="nc">0</span></button>
   <button id="copy">Copy links</button>
   <button id="reset">Reset</button>
   <span class="count" id="count"></span>
@@ -154,8 +158,16 @@ function tickCap(){
   if(a>4*3600000){s.style.display='block';
     s.innerHTML='<b>This snapshot is '+human(a)+' old.</b> Every "posted" time below is estimated forward from the capture, and some of these cars will already be sold. The tracker refreshes at 9am, 12pm, 3pm, 6pm and 9pm while the Claude app is open.';}
   else s.style.display='none';}
-const fav=new Set();
-let shortOnly=false, clean=true, onlyNew=false, onlyDrop=false;
+// Shortlist and hidden listings live in localStorage, keyed by the ad URL.
+// They used to be a plain in-memory Set, which meant every heart was lost on
+// reload — and since the page is rebuilt and re-uploaded every few hours, a
+// shortlist never survived long enough to be useful. Ad URLs are stable for
+// the life of a listing on both sites, so they make a safe key.
+const STORE='kei:v1:';
+function load(k){try{const v=localStorage.getItem(STORE+k);return v?new Set(JSON.parse(v)):new Set()}catch(e){return new Set()}}
+function save(k,set){try{localStorage.setItem(STORE+k,JSON.stringify([...set]))}catch(e){}}
+const fav=load('fav'), nope=load('nope');
+let shortOnly=false, nopeMode=false, clean=true, onlyNew=false, onlyDrop=false;
 
 const el=id=>document.getElementById(id);
 const models=[...new Set(D.map(x=>x.m))].sort();
@@ -177,6 +189,10 @@ function hay(x){return (x.m+' '+x.v+' '+x.a+' '+x.c+' '+x.b+' '+x.bd+' '+x.f+' '
 function matches(x){
   const hides=hideTerms();
   if(hides.length && hides.some(t=>hay(x).includes(t))) return false;
+  // Hidden listings are excluded everywhere except the Hidden view, which
+  // shows only them so they can be put back.
+  if(nopeMode){ if(!nope.has(x.u)) return false }
+  else if(nope.has(x.u)) return false;
   if(clean && x.f) return false;
   if(shortOnly && !fav.has(x.u)) return false;
   if(onlyNew && !x.nw) return false;
@@ -217,9 +233,13 @@ function card(x){
   const ribs=(x.nw?'<span class="rib">NEW</span>':'')+(x.pd!=null?`<span class="rib drop">&#9660; ${x.pd.toFixed(2)} lacs</span>`:'');
   const img=x.i?`<img loading="lazy" src="${esc(x.i)}" alt="" onerror="this.parentNode.innerHTML='<div class=noimg>photo unavailable</div>'">`
                 :`<div class="noimg">no photo</div>`;
-  return `<div class="card">
+  const hid=nope.has(x.u);
+  return `<div class="card${hid?' hidden':''}">
     <div class="ph">${img}<span class="src ${x.s==='Pa'?'PW':'OL'}">${site}</span>${ribs}
-      <button class="fav${fav.has(x.u)?' on':''}" data-u="${esc(x.u)}" title="Shortlist">&#9829;</button>
+      <div class="acts">
+        <button class="act fav${fav.has(x.u)?' on':''}" data-fav="${esc(x.u)}" title="Shortlist">&#9829;</button>
+        <button class="act nope${hid?' on':''}" data-nope="${esc(x.u)}" title="${hid?'Put back':'Not interested — hide this'}">&#10005;</button>
+      </div>
       ${x.n?`<span class="npix">${x.n} photos</span>`:''}</div>
     <div class="body">
       <div class="price">${x.p.toFixed(2)} lacs <small>PKR ${(x.p*100000).toLocaleString('en-US')}</small></div>
@@ -245,6 +265,7 @@ function render(){
   const med=ps.length?ps[Math.floor(ps.length/2)].toFixed(2):'-';
   el('count').textContent=`${tot} of ${D.length} shown${tot?` · median ${med} lacs · cheapest ${ps[0].toFixed(2)} · dearest ${ps[ps.length-1].toFixed(2)}`:''}`;
   el('sc').textContent=fav.size;
+  el('nc').textContent=nope.size;
   const hides=hideTerms(), hb=el('hidebar');
   if(hides.length){
     const n=D.filter(x=>hides.some(t=>hay(x).includes(t))).length;
@@ -256,10 +277,20 @@ function render(){
   syncHash();
 }
 document.addEventListener('click',e=>{
-  const b=e.target.closest('.fav'); if(!b) return;
-  const u=b.dataset.u; fav.has(u)?fav.delete(u):fav.add(u);
-  b.classList.toggle('on'); el('sc').textContent=fav.size;
-  if(shortOnly) render();
+  const f=e.target.closest('[data-fav]');
+  if(f){
+    const u=f.dataset.fav; fav.has(u)?fav.delete(u):fav.add(u); save('fav',fav);
+    f.classList.toggle('on'); el('sc').textContent=fav.size;
+    if(shortOnly) render();
+    return;
+  }
+  const n=e.target.closest('[data-nope]');
+  if(n){
+    const u=n.dataset.nope;
+    if(nope.has(u)){ nope.delete(u) } else { nope.add(u); fav.delete(u); save('fav',fav) }
+    save('nope',nope);
+    render();   // the card either leaves the grid or comes back into it
+  }
 });
 ['q','fm','fs','fb','fc','pmin','pmax','ymin','kmax','ff','so','hide'].forEach(id=>{
   el(id).addEventListener((id==='q'||id==='hide')?'input':'change',render)});
@@ -271,7 +302,10 @@ document.addEventListener('click',e=>{
 el('onlyNew').onclick=()=>{onlyNew=!onlyNew;el('onlyNew').classList.toggle('on',onlyNew);render()};
 el('onlyDrop').onclick=()=>{onlyDrop=!onlyDrop;el('onlyDrop').classList.toggle('on',onlyDrop);render()};
 el('clean').onclick=()=>{clean=!clean;el('clean').classList.toggle('on',clean);render()};
-el('shortOnly').onclick=()=>{shortOnly=!shortOnly;el('shortOnly').classList.toggle('on',shortOnly);render()};
+el('shortOnly').onclick=()=>{shortOnly=!shortOnly;el('shortOnly').classList.toggle('on',shortOnly);
+  if(shortOnly&&nopeMode){nopeMode=false;el('nopeOnly').classList.remove('on')} render()};
+el('nopeOnly').onclick=()=>{nopeMode=!nopeMode;el('nopeOnly').classList.toggle('on',nopeMode);
+  if(nopeMode&&shortOnly){shortOnly=false;el('shortOnly').classList.remove('on')} render()};
 el('copy').onclick=()=>{
   const rows=(fav.size?shown.filter(x=>fav.has(x.u)):shown);
   const txt=rows.map(x=>`${x.m} ${x.y} ${x.v} - ${x.p} lacs - ${fmtK(x.k)} - ${x.a} - ${x.u}`).join('\n');
@@ -280,6 +314,7 @@ el('copy').onclick=()=>{
 el('reset').onclick=()=>{['q','pmin','pmax','ymin','kmax','hide'].forEach(i=>el(i).value='');
   ['fm','fs','fb','fc','ff'].forEach(i=>el(i).value='');el('so').value='new';
   clean=true;el('clean').classList.add('on');shortOnly=false;el('shortOnly').classList.remove('on');
+  nopeMode=false;el('nopeOnly').classList.remove('on');
   onlyNew=false;onlyDrop=false;el('onlyNew').classList.remove('on');el('onlyDrop').classList.remove('on');render()};
 const FIELDS=['q','fm','fs','fb','fc','pmin','pmax','ymin','kmax','ff','so','hide'];
 let hashLock=false;

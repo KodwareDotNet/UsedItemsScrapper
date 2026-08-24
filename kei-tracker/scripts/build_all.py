@@ -29,6 +29,36 @@ def rel2days(s):
     if not m: return None
     return int(m.group(1))*{'m':1/1440,'h':1/24,'d':1,'w':7,'mo':30.4,'y':365}[m.group(2)]
 
+def read_pipe(path,names):
+    """Read one of the pipe-delimited raw dumps, tolerating malformed lines.
+
+    pd.read_csv aborts the entire build on the first row with the wrong field
+    count ("Expected 11 fields in line 129, saw 13"), which is a terrible
+    trade: one seller who typed a '|' in their ad title took down a run that
+    had several hundred perfectly good listings in it. The scrapers now scrub
+    delimiters out of every field, so this is a safety net — a bad row is
+    dropped and reported rather than fatal. Dropping is deliberate: folding the
+    extra pieces back into some guessed column would silently misalign price,
+    year and mileage, and a wrong price on a car is worse than a missing car.
+    """
+    rows,bad=[],[]
+    with open(path,encoding='utf-8') as fh:
+        for n,line in enumerate(fh,1):
+            line=line.rstrip('\n').rstrip('\r')
+            if not line.strip(): continue
+            parts=line.split('|')
+            if len(parts)==len(names):
+                rows.append(parts)
+            elif len(parts)<len(names):
+                # short rows are safe to pad: the missing fields are trailing
+                rows.append(parts+['']*(len(names)-len(parts)))
+            else:
+                bad.append((n,line))
+    if bad:
+        print(f'WARNING: skipped {len(bad)} malformed line(s) in {os.path.basename(path)} '
+              f'(stray "|" in a field). First: line {bad[0][0]}: {bad[0][1][:160]}')
+    return pd.DataFrame(rows,columns=names,dtype=str)
+
 NOT660=['mehran','bolan','ravi','carry','kix','mitsubishi-i-','cuore','jimny']
 MODEL_FIX={'suzuki-alto-lapin':'Suzuki Alto Lapin','honda-none':'Honda N One','nissan-dayz-roox':'Nissan Dayz Roox',
  'daihatsu-move-conte':'Daihatsu Move Conte','suzuki-spacia-gear':'Suzuki Spacia Gear','daihatsu-atrai-wagon':'Daihatsu Atrai Wagon',
@@ -48,15 +78,15 @@ STATIC=['id','title','loc','spec','badge','rating','pics','cache','slug','path']
 stat_path=os.path.join(ST,'pw_static.csv')
 if os.path.exists(os.path.join(RAW,'pw_rows.txt')) and os.path.getsize(os.path.join(RAW,'pw_rows.txt'))>0:
     # full dump mode
-    pw=pd.read_csv(os.path.join(RAW,'pw_rows.txt'),sep='|',header=None,dtype=str,names=COLS)
+    pw=read_pipe(os.path.join(RAW,'pw_rows.txt'),COLS)
     stat=pw[STATIC]
 else:
     # delta mode: pw_core.txt = id|pkr|ago for every live ad, pw_new.txt = full rows for ads we have not seen
-    core=pd.read_csv(os.path.join(RAW,'pw_core.txt'),sep='|',header=None,dtype=str,names=['id','pkr','ago'])
+    core=read_pipe(os.path.join(RAW,'pw_core.txt'),['id','pkr','ago'])
     stat=pd.read_csv(stat_path,dtype=str) if os.path.exists(stat_path) else pd.DataFrame(columns=STATIC)
     np_=os.path.join(RAW,'pw_new.txt')
     if os.path.exists(np_) and os.path.getsize(np_):
-        fresh=pd.read_csv(np_,sep='|',header=None,dtype=str,names=COLS)
+        fresh=read_pipe(np_,COLS)
         stat=pd.concat([stat,fresh[STATIC]],ignore_index=True).drop_duplicates(subset=['id'],keep='last')
     pw=core.merge(stat,on='id',how='inner')
     missing=len(core)-len(pw)
@@ -99,8 +129,8 @@ pw['img']=pw.apply(pwimg,axis=1)
 # ---------- OLX ----------
 olx_path = os.path.join(RAW,'olx_rows.txt')
 if os.path.exists(olx_path) and os.path.getsize(olx_path) > 0:
-    ol=pd.read_csv(olx_path,sep='|',header=None,dtype=str,
-       names=['id','model_full','variant','price_lacs','year','mileage_km','searched','area','ago','region','pic'])
+    ol=read_pipe(olx_path,['id','model_full','variant','price_lacs','year','mileage_km',
+                           'searched','area','ago','region','pic'])
     ol['source']='OLX'
     ol['url']='https://www.olx.com.pk/item/-iid-'+ol['id']
     for c in ['price_lacs','year','mileage_km']: ol[c]=pd.to_numeric(ol[c],errors='coerce')
