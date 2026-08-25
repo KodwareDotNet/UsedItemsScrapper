@@ -60,7 +60,7 @@ def read_pipe(path,names):
     return pd.DataFrame(rows,columns=names,dtype=str)
 
 NOT660=['mehran','bolan','ravi','carry','kix','mitsubishi-i-','cuore']
-MODEL_FIX={'jimny':'jimny','suzuki-alto-lapin':'Suzuki Alto Lapin','honda-none':'Honda N One','nissan-dayz-roox':'Nissan Dayz Roox',
+MODEL_FIX={ 'passo':'passo', 'jimny':'jimny','suzuki-alto-lapin':'Suzuki Alto Lapin','honda-none':'Honda N One','nissan-dayz-roox':'Nissan Dayz Roox',
  'daihatsu-move-conte':'Daihatsu Move Conte','suzuki-spacia-gear':'Suzuki Spacia Gear','daihatsu-atrai-wagon':'Daihatsu Atrai Wagon',
  'suzuki-wagon-r':'Suzuki Wagon R','honda-n-wgn':'Honda N Wgn','honda-n-box':'Honda N Box','daihatsu-terios-kid':'Daihatsu Terios Kid',
  'mitsubishi-pajero-mini':'Mitsubishi Pajero Mini','mitsubishi-ek-custom':'Mitsubishi EK Custom','mitsubishi-ek-wagon':'Mitsubishi EK Wagon',
