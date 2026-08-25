@@ -76,8 +76,8 @@ HEADERS = {
 
 KEYWORDS = [
     # High-yield models — these actually match kei car titles on OLX
-    'jimny', 'wagon r', 'mira', 'move conte', 'every wagon', 'n box', 'dayz',
-    'hustler', 'spacia', 'hijet', 'carol', 'flair', 'tanto', 'cast', 'lapin',
+    'passo', 'jimny', 'wagon r', 'mira', 'move conte', 'every wagon', 'n box', 'dayz',
+    'hustler', 'carol', 'flair', 'tanto', 'cast', 'lapin',
     # Deep set: sellers who title by trim/"660cc" rather than model name
     '660cc', 'kei car', 'jdm spec', 'japanese import',
 ]
