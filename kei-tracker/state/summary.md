@@ -1,16 +1,16 @@
-**Kei tracker — 25 Aug, 9:19 PM**
+**Kei tracker — 26 Aug, 12:16 AM**
 730 live listings (656 PakWheels, 74 OLX)
-**16 new** since last run · **91 price drops** · 4 ads disappeared
+**8 new** since last run · **93 price drops** · 8 ads disappeared
 
 New:
-- Honda Acty 2012 Basegrade — 17.00 lacs, 300,000 km, Islamabad
-- Daihatsu Hijet 2012 VAN Cruise — 17.00 lacs, 140,000 km, Rawalpindi
-- Suzuki Wagon R 2012 X — 22.25 lacs, 165,000 km, Islamabad
-- Suzuki Wagon R 2014 X — 22.50 lacs, 145,000 km, Islamabad
-- Daihatsu Mira 2014  — 23.00 lacs, 114,000 km, Islamabad
-- Suzuki Wagon R 2017 FA M T — 23.50 lacs, 144,000 km, Islamabad
-- Suzuki Wagon R 2012 Limited — 24.75 lacs, 128,000 km, Islamabad
-- Nissan Dayz Roox 2015 X V Selection — 25.00 lacs, 189,790 km, Islamabad
+- Suzuki Wagon R 2015  — 2.80 lacs, 163,000 km, Islamabad
+- Suzuki Alto 2021 VX — 23.50 lacs, 103,000 km, Islamabad
+- Daihatsu Mira ES 2012  — 24.50 lacs, 1,100 km, Islamabad
+- Daihatsu Mira 2018 2018 — 24.50 lacs, 1 km, Tamma, Islamabad
+- Suzuki Alto 2022 VXR — 26.20 lacs, 79,000 km, Islamabad
+- Mazda Carol 2013 2013 — 27.10 lacs, 98,000 km, Others, Attock
+- Suzuki Alto 2021 VXL — 28.25 lacs, 90,000 km, Islamabad
+- Suzuki Alto 2024 VXR — 28.50 lacs, 63,500 km, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
