@@ -1,16 +1,15 @@
-**Kei tracker — 26 Aug, 12:16 AM**
-730 live listings (656 PakWheels, 74 OLX)
-**8 new** since last run · **93 price drops** · 8 ads disappeared
+**Kei tracker — 26 Aug, 3:03 AM**
+731 live listings (658 PakWheels, 73 OLX)
+**7 new** since last run · **93 price drops** · 6 ads disappeared
 
 New:
-- Suzuki Wagon R 2015  — 2.80 lacs, 163,000 km, Islamabad
-- Suzuki Alto 2021 VX — 23.50 lacs, 103,000 km, Islamabad
-- Daihatsu Mira ES 2012  — 24.50 lacs, 1,100 km, Islamabad
-- Daihatsu Mira 2018 2018 — 24.50 lacs, 1 km, Tamma, Islamabad
-- Suzuki Alto 2022 VXR — 26.20 lacs, 79,000 km, Islamabad
-- Mazda Carol 2013 2013 — 27.10 lacs, 98,000 km, Others, Attock
-- Suzuki Alto 2021 VXL — 28.25 lacs, 90,000 km, Islamabad
-- Suzuki Alto 2024 VXR — 28.50 lacs, 63,500 km, Rawalpindi
+- Suzuki Alto 2022 VXR — 25.30 lacs, 171,000 km, Islamabad
+- Suzuki Alto 2017  — 25.92 lacs, 120,000 km, Rawalpindi
+- Daihatsu Mira ES 2013  — 26.50 lacs, 81,321 km, Rawalpindi
+- Daihatsu Mira 2013 2013 — 26.50 lacs, 81,321 km, Fazaia Colony, Rawalpindi
+- Daihatsu Mira 2019 X SA LLL — 30.00 lacs, 90,000 km, Islamabad
+- Daihatsu Mira 2019 2019 — 30.00 lacs, n/a km, Airport Avenue, Islamabad
+- Daihatsu Mira 2019 X SA III 2019 for sale. — 30.00 lacs, 90,000 km, G-10/1, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
