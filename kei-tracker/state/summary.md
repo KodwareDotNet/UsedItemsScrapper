@@ -1,16 +1,16 @@
-**Kei tracker — 26 Aug, 12:27 PM**
-725 live listings (650 PakWheels, 75 OLX)
-**8 new** since last run · **92 price drops** · 4 ads disappeared
+**Kei tracker — 26 Aug, 3:19 PM**
+727 live listings (653 PakWheels, 74 OLX)
+**11 new** since last run · **92 price drops** · 9 ads disappeared
 
 New:
-- Suzuki Alto 2012 G4 — 18.10 lacs, 126,000 km, Rawalpindi
-- Suzuki Every 2012 Join Turbo — 22.50 lacs, 112,331 km, Rawalpindi
-- Daihatsu Mira ES 2012  — 22.75 lacs, 141,000 km, Islamabad
-- Suzuki Alto 2020 VXR — 24.00 lacs, 136,000 km, Islamabad
-- Subaru Pleo 2013  — 24.25 lacs, 97,000 km, Islamabad
-- Nissan Dayz 2016 2016 — 25.00 lacs, 12,345 km, Gharibabad, Rawalpindi
-- Suzuki Wagon R 2020 FA M T — 25.80 lacs, 50,000 km, Islamabad
-- Suzuki Alto 2021 VXR — 26.50 lacs, 60,000 km, Islamabad
+- Nissan Dayz 2010  — 16.89 lacs, 6,000 km, Rawalpindi
+- Daihatsu Hijet 2014 VAN Cruise Turbo — 17.00 lacs, 150,000 km, Rawalpindi
+- Suzuki Every 2013  — 19.00 lacs, 100,000 km, Rawalpindi
+- Suzuki Alto 2020 VXL — 23.50 lacs, 195,000 km, Rawalpindi
+- Suzuki Alto 2015 X — 23.85 lacs, 132,000 km, Islamabad
+- Nissan Dayz 2019 2019 — 25.00 lacs, n/a km, G-9, Islamabad
+- Suzuki Alto 2019 VXL — 25.25 lacs, 84,000 km, Rawalpindi
+- Suzuki Every 2024 VXR — 28.49 lacs, 41,921 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
