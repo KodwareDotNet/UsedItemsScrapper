@@ -1,16 +1,16 @@
-**Kei tracker — 26 Aug, 9:52 PM**
-740 live listings (666 PakWheels, 74 OLX)
-**9 new** since last run · **91 price drops** · 8 ads disappeared
+**Kei tracker — 27 Aug, 1:23 AM**
+747 live listings (673 PakWheels, 74 OLX)
+**13 new** since last run · **93 price drops** · 6 ads disappeared
 
 New:
-- Suzuki Alto 2021  — 2.60 lacs, 80,000 km, Islamabad
-- Suzuki Alto 2019 VXR — 22.00 lacs, 122,900 km, Islamabad
-- Mazda Carol 2014  — 24.50 lacs, 97,337 km, Rawalpindi
-- Suzuki Alto 2022 VX — 25.10 lacs, 76,000 km, Islamabad
-- Suzuki Wagon R 2013 J Style — 25.50 lacs, 96,000 km, Rawalpindi
-- Daihatsu Move 2014 Custom G — 25.90 lacs, 126,000 km, Rawalpindi
-- Suzuki Alto 2021 VXR — 26.90 lacs, 90,900 km, Islamabad
-- Suzuki Alto 2022 VX — 27.00 lacs, 79,378 km, Islamabad
+- Suzuki Every 2012 Join — 18.50 lacs, 206,552 km, Islamabad
+- Suzuki Wagon R 2013 X — 22.80 lacs, 223,000 km, Rawalpindi
+- Suzuki Alto 2014 ECO S — 22.90 lacs, 89,000 km, Islamabad
+- Nissan Moco 2013 X Idling Stop — 23.00 lacs, 250,000 km, Rawalpindi
+- Nissan Dayz 2014 2014 — 23.80 lacs, 100,000 km, Airport Road, Rawalpindi
+- Nissan Dayz 2014 X — 23.80 lacs, 100,000 km, Rawalpindi
+- Daihatsu Mira ES 2012  — 24.75 lacs, 115,000 km, Rawalpindi
+- Suzuki Hustler 2015 2015/18 — 24.90 lacs, 99,000 km, Mandra, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
