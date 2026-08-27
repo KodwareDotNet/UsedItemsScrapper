@@ -171,7 +171,13 @@ df['model_full']=df['model_full'].fillna('Unknown').astype(str).str.strip()
 for c in ['variant','transmission','city','area','badge','ago','region','url','img','source',
           'color','reg_city','assembly','pw_body']:
     df[c]=df[c].fillna('').astype(str).replace({'nan':'','None':'','<NA>':''})
-df=df[(df['price_lacs']>0)&(df['price_lacs']<=30.01)&(df['year']>=2010)&(df['year']<=NOW.year)]
+# MIN_YEAR is a sanity floor against a mis-parsed year, NOT a shopping filter.
+# There used to be a hard year>=2010 cut here; it silently hid every older car
+# (2004-2009 Passos among them). Age is now filtered on the page instead, where
+# it can be changed without a re-scrape.
+MIN_YEAR=1980
+df=df[(df['price_lacs']>0)&(df['price_lacs']<=30.01)
+      &(df['year']>=MIN_YEAR)&(df['year']<=NOW.year)]
 df=df.drop_duplicates(subset=['id'])
 df['days']=df['ago'].apply(rel2days)
 
@@ -203,7 +209,10 @@ def _tier(r):
     if t: return '660cc kei' if t=='kei' else '1000-1300cc'
     cc=r['engine_cc']
     if pd.notna(cc): return '660cc kei' if cc<=680 else '1000-1300cc'
-    return ''
+    # Keyword-fallback OLX rows ('Other JDM') match no model and state no cc.
+    # Labelling them rather than leaving the field blank keeps them reachable
+    # from the Engine dropdown instead of silently visible only under "All".
+    return 'engine unstated'
 df['tier']=df.apply(_tier,axis=1)
 df['posted_date']=df['days'].apply(lambda d: (CAP-dt.timedelta(days=d)).date().isoformat() if pd.notna(d) else '')
 df['dupkey']=(df['model_full'].str.lower()+'|'+df['year'].astype('Int64').astype(str)+'|'
@@ -237,12 +246,25 @@ df['price_drop']=np.where(df['prev_high'].notna()&(df['price_lacs']<df['prev_hig
 gone=set(old['id'])-set(df['id']) if len(old) else set()
 
 def flags(r):
+    # "Too cheap" and "too many km" are only meaningful relative to a car's age.
+    # These were flat thresholds set back when the search itself was capped at
+    # 2010+; with that cap gone they fire on perfectly ordinary old cars, and a
+    # flagged row is hidden by default, so the effect was to re-hide exactly the
+    # cars the year filter used to exclude.
     f=[]
-    if r['price_lacs']<8: f.append('price too low - verify')
+    age=NOW.year-r['year'] if pd.notna(r['year']) else 0
+    # A 1992 Alto at 3 lacs is just a 1992 Alto. A 2018 one at 3 lacs is an
+    # instalment ad or a typo.
+    if r['price_lacs'] < (8 if age<=20 else 2): f.append('price too low - verify')
     if r['year']>=NOW.year-4 and r['price_lacs']<22: f.append('too cheap for year - likely instalment ad')
     if pd.notna(r['mileage_km']):
+        # Low mileage stays suspicious at any age — more so on an old car.
         if r['mileage_km']<5000: f.append('mileage implausibly low')
-        elif r['mileage_km']>300000: f.append('very high mileage')
+        # High mileage needs both a high total AND a high yearly rate, so a
+        # 33-year-old car with 346,000 km (10.5k/yr) reads as normal while a
+        # 6-year-old one with 320,000 km (53k/yr) does not.
+        elif r['mileage_km']>300000 and r['mileage_km']/max(age,1)>20000:
+            f.append('very high mileage')
     if r['dup']: f.append('duplicate listing')
     if r['region']=='near': f.append('outside city - Wah/Taxila/Attock/Jhelum area')
     return '; '.join(f)

@@ -36,10 +36,13 @@ os.makedirs(RAW, exist_ok=True)
 
 CITY = 'ct_islamabad/ct_rawalpindi'
 PRICE = 'pr_0_3000000'
-YEARS = 'yr_2010_2026'
+# No year segment in these URLs on purpose. PakWheels supports one (yr_2010_2026)
+# and it used to be here, but it is a hard gate: a 2004 Passo is never fetched,
+# so nothing downstream can put it back. Age is a judgement call per car, so it
+# belongs in the page's "Year from" filter, which is applied after the fact.
 SWEEPS = [
-    ('660cc kei', f'https://www.pakwheels.com/used-cars/search/-/{CITY}/{PRICE}/ec_600_660/{YEARS}/'),
-    ('1000-1300cc', f'https://www.pakwheels.com/used-cars/search/-/{CITY}/{PRICE}/ec_670_1350/{YEARS}/'),
+    ('660cc kei', f'https://www.pakwheels.com/used-cars/search/-/{CITY}/{PRICE}/ec_600_660/'),
+    ('1000-1300cc', f'https://www.pakwheels.com/used-cars/search/-/{CITY}/{PRICE}/ec_670_1350/'),
 ]
 MAX_PAGES = 45
 DELAY = 0.5          # be polite
