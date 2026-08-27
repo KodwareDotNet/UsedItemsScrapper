@@ -23,6 +23,9 @@ import os, re, sys, time, random, subprocess, json
 from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from models import MODEL_NAMES, is_van, match_title
+
 try:
     from curl_cffi import requests  # TLS/HTTP2 fingerprint matches real Chrome
     IMPERSONATE = 'chrome124'
@@ -75,11 +78,14 @@ HEADERS = {
 }
 
 KEYWORDS = [
-    # High-yield models — these actually match kei car titles on OLX
-    'passo', 'jimny', 'wagon r', 'mira', 'move conte', 'every wagon', 'n box', 'dayz',
+    # 660cc kei — these actually match kei car titles on OLX
+    'jimny', 'wagon r', 'mira', 'move conte', 'n box', 'dayz',
     'hustler', 'carol', 'flair', 'tanto', 'cast', 'lapin',
+    # 1000cc / 1300cc JDM hatches
+    'passo', 'boon', 'vitz', 'march', 'note', 'honda fit', 'belta',
+    'porte', 'ractis', 'sirion', 'mirage', 'raize', 'roomy',
     # Deep set: sellers who title by trim/"660cc" rather than model name
-    '660cc', 'kei car', 'jdm spec', 'japanese import',
+    '660cc', '1000cc', 'kei car', 'jdm spec', 'japanese import',
 ]
 
 # Per-keyword cooldown — OLX rate-limits burst traffic. Adding a pause between
@@ -91,27 +97,15 @@ NEAR = ['Wah', 'Taxila', 'Attock', 'Murree', 'Jhelum', 'Gujar Khan', 'Hasan Abda
 NEAR_RE = [re.compile(r'(^|[,\s])' + re.escape(n) + r'\b', re.I) for n in NEAR]
 CORE_RE = re.compile(r',\s*(Islamabad|Rawalpindi)$', re.I)
 
-# Only genuine Japanese kei models are kept. This whitelist is what keeps Mehran,
-# Bolan, Cultus, City and the rest of the keyword-search noise out of the data.
-MODELS = sorted([
-  'passo',
-    'Suzuki Wagon R', 'Suzuki Every', 'Suzuki Hustler',
-    'Suzuki Spacia', 'Suzuki MR Wagon', 'Suzuki Palette', 'Suzuki Cervo', 'Suzuki Kei', 'Suzuki Twin',
-    'Daihatsu Mira ES', 'Daihatsu Mira Cocoa', 'Daihatsu Mira', 'Daihatsu Move Conte',
-    'Daihatsu Move', 'Daihatsu', 'Daihatsu', 'Daihatsu Esse', 'Daihatsu Cast',
-    'Daihatsu Wake', 'Daihatsu Atrai Wagon', 'Daihatsu Atrai', 'Daihatsu Terios Kid',
-    'Daihatsu Copen', 'Daihatsu Naked',
-    'Honda N Box', 'Honda N One', 'Honda N Wgn', 'Honda N-Box', 'Honda N-One', 'Honda N-Wgn',
-    'Honda Life', 'Honda Zest', 'Honda Acty', 'Honda Vamos', 'Honda That S', 'Honda Beat',
-    'Nissan Moco', 'Nissan Roox', 'Nissan Dayz Roox', 'Nissan Dayz', 'Nissan Clipper',
-    'Nissan Otti', 'Nissan Pino', 'Nissan Kix',
-    'Mitsubishi EK Custom', 'Mitsubishi EK Wagon', 'Mitsubishi EK Space', 'Mitsubishi Minicab',
-    'Mitsubishi Pajero Mini', 'Mitsubishi Town Box', 'Mitsubishi Minica', 'Mitsubishi Toppo',
-    'Mazda Flair', 'Mazda Carol', 'Mazda Scrum', 'Mazda AZ Wagon', 'Mazda Laputa', 'Mazda Spiano',
-    'Subaru Pleo', 'Subaru Stella', 'Subaru Dias Wagon', 'Subaru Dias', 'Subaru Sambar',
-    'Subaru R2', 'Subaru Vivio',
-    'Toyota Pixis',
-], key=len, reverse=True)
+# The whitelist lives in models.py so the two scrapers and the builder cannot
+# drift apart. It is what keeps Mehran, Bolan, Cultus, City and the rest of the
+# keyword-search noise out of the data — and, since the vans were dropped, what
+# keeps Hijet/Every/Carry/Scrum out too.
+#
+# Matching is on the FULL display name ('Toyota Passo'), not a bare model word:
+# OLX titles read "Toyota Passo X 2012", so a whitelist entry of just 'passo'
+# never matched a single ad. That was the Passo bug on this side.
+MODELS = MODEL_NAMES
 
 FUEL_RE = re.compile(r'^(Petrol|Diesel|Hybrid|LPG|CNG|Electric)', re.I)
 UNIT = {'minute': 'm', 'hour': 'h', 'day': 'd', 'week': 'w', 'month': 'mo', 'year': 'y'}
@@ -347,17 +341,19 @@ def parse(found):
             drop_loc += 1
             continue
 
-        model = next((m for m in MODELS if title.lower().startswith(m.lower())), None)
+        # match_title() handles both 'Toyota Passo X 2012' and the bare
+        # 'Passo X 2012' that OLX sellers actually type, and returns None for
+        # vans so Hijet/Every/Carry/Scrum never reach the page.
+        model = match_title(title)
 
         # Keyword fallback: broad harvest pulls mixed listings, so accept ads that
-        # contain kei-specific terms even when the model prefix didn't match.
+        # advertise themselves as JDM imports even when no model name matched.
         if not model:
-            kei_keywords = ['660cc', 'kei car', 'kei', 'jdm spec', 'jdm', 'japanese made']
-            title_lower = title.lower()
-            area_lower = area.lower()
-            check_text = f' {title_lower} {area_lower} '
-            if any(kw in check_text for kw in kei_keywords):
-                model = 'Other Kei'  # sentinel — variant gets full title below
+            jdm_keywords = ['660cc', '1000cc', 'kei car', 'kei', 'jdm spec', 'jdm',
+                            'japanese made', 'japanese import']
+            check_text = f' {title.lower()} {area.lower()} '
+            if any(kw in check_text for kw in jdm_keywords) and not is_van(title):
+                model = 'Other JDM'  # sentinel — variant gets full title below
             else:
                 drop_model += 1
                 continue
@@ -377,8 +373,38 @@ def parse(found):
     return kept
 
 
+def load_jsonl():
+    """Re-read the last harvest's raw blobs from disk.
+
+    The harvest is the slow, rate-limited part; filtering is pure local logic.
+    Whenever models.py changes, `--reparse` rebuilds olx_rows.txt from the blobs
+    already on disk instead of spending 40 minutes re-fetching pages OLX has
+    already given us.
+    """
+    path = os.path.join(RAW, 'olx_live.jsonl')
+    if not os.path.exists(path):
+        print(f'ABORT: {path} not found — run a real harvest first.', file=sys.stderr)
+        return {}
+    found = {}
+    with open(path, encoding='utf-8') as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+            except ValueError:
+                continue
+            found[d['id']] = (d.get('blob', ''), d.get('pic', ''), d.get('searched', ''))
+    print(f'  reparse: {len(found)} raw listings loaded from olx_live.jsonl')
+    return found
+
+
 def main():
-    found = broad_harvest()
+    reparse = '--reparse' in sys.argv
+    found = load_jsonl() if reparse else broad_harvest()
+    if not found:
+        return 1
 
     rows = parse(found)
     # Broad harvest yields fewer kei-car matches than old keyword-by-keyword sweep,
@@ -392,8 +418,12 @@ def main():
         fh.write('\n'.join(rows) + '\n')
     # Freshness is recorded in a file rather than inferred from mtime: git does
     # not preserve mtimes, so on a fresh checkout every file looks brand new.
-    with open(os.path.join(RAW, 'olx_captured_at.txt'), 'w') as fh:
-        fh.write(datetime.now(timezone.utc).isoformat(timespec='seconds'))
+    # Freshness is NOT restamped on --reparse: the blobs are as old as the last
+    # real harvest, and pretending otherwise would let refresh.py skip OLX and
+    # make the page claim data it does not have.
+    if not reparse:
+        with open(os.path.join(RAW, 'olx_captured_at.txt'), 'w') as fh:
+            fh.write(datetime.now(timezone.utc).isoformat(timespec='seconds'))
     return 0
 
 

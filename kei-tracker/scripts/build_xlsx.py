@@ -23,7 +23,9 @@ COLS=[('source','Source',11),('model_full','Make & Model',22),('variant','Varian
       ('mileage_km','Mileage (km)',13),('transmission','Transmission',13),('city','City',14),
       ('area','Area / Locality',30),('posted_date','Posted / Updated',17),('ago','Ad age',9),
       ('freshness','Freshness',18),('badge','Seller Badge',22),('rating','Inspection /10',14),
-      ('pics','Photos',8),('body','Body Type',16),('flags','Notes / Flags',40),('url','Listing URL',66)]
+      ('pics','Photos',8),('body','Body Type',16),('engine_cc','Engine cc',10),('tier','Engine tier',14),
+      ('color','Colour',22),('reg_city','Registered In',15),('assembly','Assembly',11),
+      ('flags','Notes / Flags',40),('url','Listing URL',66)]
 
 def sheet(ws,frame,name,start=1,link_col='url'):
     keys=[c[0] for c in COLS]
@@ -60,7 +62,7 @@ ws=wb.active; ws.title='Read Me'
 rows=[('660cc Japanese Kei Cars - Islamabad & Rawalpindi',None),
 ('Auto-refreshed every 3 hours, 9am-9pm, while the Claude app is open. Sources: PakWheels and OLX Pakistan. Companion file: kei_cars_islamabad_rawalpindi.html (browsable gallery with photos).',None),(None,None),
 ('Search criteria',None),
-('Engine capacity','600-660 cc'),('Cities','Islamabad, Rawalpindi (plus a small number of nearby towns, flagged)'),
+('Engine capacity','600-660 cc and 670-1350 cc (two searches)'),('Cities','Islamabad, Rawalpindi (plus a small number of nearby towns, flagged)'),
 ('Max price','PKR 3,000,000 (30 lacs)'),('Model year','2010 and newer'),('Mileage','no limit'),
 ('Body types','all - hatchback, tall-boy/MPV, van'),(None,None),
 ('Listing counts',None),

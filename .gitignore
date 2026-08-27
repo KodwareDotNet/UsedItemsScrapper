@@ -2,3 +2,8 @@
 __pycache__/
 *.pyc
 .env
+
+# Regenerated every run and uploaded straight from disk by deploy_ftp.py.
+# It only started existing once build_all.py stopped invoking build_xlsx.py
+# with the system python3, which has no pandas.
+660cc_kei_cars_isb_rwp.xlsx

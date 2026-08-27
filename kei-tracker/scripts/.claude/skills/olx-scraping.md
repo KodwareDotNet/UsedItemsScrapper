@@ -19,8 +19,10 @@ Where `city` = `islamabad_g4060615` or `rawalpindi_g4060681`, and the price filt
 
 ### 2. Minimize keywords aggressively
 - Remove low-yield models that generate thousands of non-relevant results (e.g., Suzuki Alto)
-- Keep only high-yield kei car keywords: `jimny`, `wagon r`, `mira`, `move conte`, `every wagon`, `n box`, `dayz`, `hustler`, `spacia`, `hijet`, `carol`, `flair`, `tanto`, `cast`, `lapin`
-- Add deep-set: `660cc`, `kei car`, `jdm spec`, `japanese import`
+- Keep only high-yield keywords. 660cc: `jimny`, `wagon r`, `mira`, `move conte`, `n box`, `dayz`, `hustler`, `carol`, `flair`, `tanto`, `cast`, `lapin`
+- 1000/1300cc: `passo`, `boon`, `vitz`, `march`, `note`, `honda fit`, `belta`, `porte`, `ractis`, `sirion`, `mirage`, `raize`, `roomy`
+- Add deep-set: `660cc`, `1000cc`, `kei car`, `jdm spec`, `japanese import`
+- Van keywords (`hijet`, `every wagon`) are gone — commercial vans are no longer tracked.
 - Target: ~15-20 keywords max, not 40+
 
 ### 3. Aggressive rate-limit tolerance settings
@@ -94,3 +96,22 @@ When an OLX scrape fails, check for:
 ## Reference Files
 - `scrape_olx.py` — main scraper implementation
 - `build_all.py` — parsing and model filtering (line ~103)
+- `models.py` — **the model whitelist, aliases and van deny-list live here**, shared by both scrapers and the builder
+
+## Re-filtering without re-scraping
+
+Every harvest writes raw blobs to `raw/olx_live.jsonl`. After editing `models.py`, run:
+
+```
+python3 scripts/scrape_olx.py --reparse
+```
+
+This rebuilds `raw/olx_rows.txt` from those blobs in about a second with no network calls, and deliberately
+does **not** restamp `olx_captured_at.txt` — the data is only as fresh as the last real harvest.
+
+## Matching ad titles
+
+OLX sellers write "Toyota Passo X 2012" *and* bare "Passo Hana 2014". A whitelist entry of just `passo`
+matches neither, because matching is `title.startswith(model)` on the **full display name**. That is why
+Passo returned zero rows for weeks despite 44 of them sitting in the harvest. Use `models.match_title()`,
+which tries full names first and then the `ALIASES` table of bare model names.

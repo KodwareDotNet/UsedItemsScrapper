@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>660cc Kei Cars - Islamabad &amp; Rawalpindi</title>
+<title>Japanese Small Cars - Islamabad &amp; Rawalpindi</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#f4f5f7;color:#1a1f2b}
@@ -45,6 +45,10 @@ button.on{background:#16233d;color:#fff;border-color:#16233d}
 .var{font-size:12px;color:#5c6678;margin-top:-3px}
 .specs{font-size:12px;color:#39415280;color:#4a5364;display:flex;flex-wrap:wrap;gap:4px 9px}
 .specs b{font-weight:600;color:#1a1f2b}
+.specs.kv{font-size:11.5px;gap:4px 10px;align-items:center}
+.specs.kv .dim{color:#9aa3b3}
+.sw{display:inline-flex;align-items:center;gap:5px}
+.sw i{width:11px;height:11px;border-radius:50%;border:1px solid rgba(0,0,0,.22);flex:0 0 auto}
 .loc{font-size:11.5px;color:#6b7488}
 .when{font-size:11.5px;color:#6b7488}
 .when b{color:#0b6b3a}
@@ -128,19 +132,23 @@ footer{padding:18px 22px 40px;font-size:11.5px;color:#7a8396;border-top:1px soli
 </style></head><body>
 
 <header>
-  <h1>660cc Japanese Kei Cars &mdash; Islamabad &amp; Rawalpindi</h1>
+  <h1>Japanese 660cc, 1000cc &amp; 1300cc Cars &mdash; Islamabad &amp; Rawalpindi</h1>
   <div class="sub">COUNT_HERE live listings &middot; under PKR 30 lacs &middot; 2010 and newer &middot; refreshed STAMP_HERE <span id="cap"></span> &middot; <b style="color:#7ee2a8">NEW_HERE new</b> since last run, DROP_HERE price drops</div>
 </header>
 <div class="warn" id="stale" style="display:none"></div>
 <div class="warn" id="howto"><span id="howtoTxt"><b>How to use this:</b> filter and shortlist here, then click <b>Open listing</b> to go to the real ad on PakWheels or OLX for photos, seller phone number and full description. Prices are asking prices. Ads older than about two weeks are often already sold.</span> <span class="more" id="howtoMore">more</span></div>
 
 <div class="bar" id="bar">
-  <label class="lq">Search<input type="text" id="q" placeholder="alto vxr, mira es, G-11..."></label>
+  <label class="lq">Search<input type="text" id="q" placeholder="passo hana, mira es, white, G-11..."></label>
   <button id="ftog">Filters</button>
   <label>Model<select id="fm"></select></label>
   <label>Site<select id="fs"><option value="">Both</option><option value="Pa">PakWheels</option><option value="OL">OLX</option></select></label>
-  <label>Body<select id="fb"><option value="">All</option><option>Hatchback</option><option>Tall-boy</option><option>Van</option></select></label>
+  <label>Engine<select id="fe"><option value="">All sizes</option></select></label>
+  <label>Body<select id="fb"><option value="">All</option></select></label>
+  <label>Colour<select id="fcol"><option value="">All</option></select></label>
   <label>City<select id="fc"><option value="">All</option></select></label>
+  <label>Registered in<select id="frg"><option value="">Anywhere</option></select></label>
+  <label title="From each PakWheels ad's own page. Imported = JDM. Local = Pakistani-assembled (Swift, Wagon R VXL/VXR, Alto)."><span>Assembly</span><select id="fas"><option value="">All</option></select></label>
   <label>Price lacs<span style="display:flex;gap:4px"><input type="number" id="pmin" placeholder="min"><input type="number" id="pmax" placeholder="max"></span></label>
   <label>Year from<input type="number" id="ymin" placeholder="2010"></label>
   <label>Max km<input type="number" id="kmax" placeholder="any"></label>
@@ -167,8 +175,10 @@ footer{padding:18px 22px 40px;font-size:11.5px;color:#7a8396;border-top:1px soli
 <div class="empty" id="empty" style="display:none">Nothing matches those filters.</div>
 
 <footer>
-Auto-refreshed every 3 hours between 9am and 9pm while the Claude app is open. Built from PakWheels' 600&ndash;660cc filtered search (every result page) and ~40 kei model keyword searches on OLX, then location-verified against the area on each ad.
-Seven listings PakWheels tagged as 660cc were actually Mehran, Bolan, Ravi, Carry, Cuore or Kix and have been removed.
+Auto-refreshed every 3 hours between 9am and 9pm while the Claude app is open. Built from two PakWheels searches &mdash; 600&ndash;660cc and 670&ndash;1350cc &mdash; plus model keyword searches on OLX, then filtered to a fixed list of Japanese models and location-verified against the area on each ad.
+Commercial vans (Hijet, Every, Carry, Scrum, Minicab, Clipper, Acty, Vamos, Town Box, Sambar, Dias, Atrai) are excluded, as are Mehran, Bolan, Ravi, Cuore, Charade and Kix.
+Colour and registration city are read from each PakWheels ad's own page and cached; OLX listing cards carry neither, so those two fields are blank on OLX rows &mdash; open the ad to check.
+&quot;Reg&quot; is where the car is registered, not where it is parked. A Punjab- or Lahore-registered car being sold in Islamabad means transfer paperwork and cost.
 OLX fields come from seller-written text, so variant and mileage are only as reliable as what was typed.
 Pakistani-assembled Suzuki Wagon R is 1000cc &mdash; OLX Wagon Rs were only kept where the ad said Stingray, FX, FZ or Hybrid, so some genuine JDM 660cc cars may be missing.
 Always get an auction sheet verification before paying for a JDM import.
@@ -229,11 +239,41 @@ function recOf(x){return {id:x.id||'',u:x.u,s:x.s,m:x.m,y:x.y,v:x.v,p:x.p,a:x.a}
 let shortOnly=false, clean=true, onlyNew=false, onlyDrop=false;
 
 const el=id=>document.getElementById(id);
+// PakWheels colours are marketing names ('Silky Silver Metallic', 'Pearl White'),
+// so the dot is drawn from whichever basic colour word the name contains rather
+// than from any fixed list of PakWheels values.
+const SWATCH=[['white','#f2f3f5'],['pearl','#f4f2ec'],['silver','#c3c8cf'],['grey','#8b9199'],['gray','#8b9199'],
+  ['black','#22262c'],['blue','#2f6ad0'],['red','#d33b34'],['maroon','#7d2b2b'],['green','#2f8f52'],
+  ['yellow','#e8c33c'],['orange','#e8853c'],['brown','#7a5b3c'],['beige','#d9cba9'],['gold','#c9a94e'],
+  ['purple','#7a4fb5'],['pink','#dd7ea8'],['bronze','#a97142'],['navy','#243a6b'],
+  ['turquoise','#3bb3ad'],['burgundy','#6d2233'],['indigo','#4b3fa8'],['magenta','#c2429a'],
+  ['magneta','#c2429a'],['peach','#e9a67f'],['champagne','#e0d3b8'],['cream','#efe6cf']];
+function swatch(c){const s=String(c||'').toLowerCase();
+  const hit=SWATCH.find(([k])=>s.includes(k)); return hit?hit[1]:'#b9c0cc'}
+// The basic colour word, used for the colour filter — grouping 47 marketing
+// names into a dozen buckets is the only way that dropdown is usable.
+function baseColor(c){const s=String(c||'').toLowerCase();
+  const hit=SWATCH.find(([k])=>s.includes(k)); if(!hit)return c?'Other':'';
+  const k=hit[0]; return k==='gray'?'Grey':k==='pearl'?'White':k.charAt(0).toUpperCase()+k.slice(1)}
 const models=[...new Set(D.map(x=>x.m))].sort();
 el('fm').innerHTML='<option value="">All models</option>'+models.map(m=>{
   const n=D.filter(x=>x.m===m).length; return `<option value="${m}">${m} (${n})</option>`}).join('');
 const cities=[...new Set(D.map(x=>x.c).filter(Boolean))].sort();
 el('fc').innerHTML='<option value="">All</option>'+cities.map(c=>`<option>${c}</option>`).join('');
+// Every remaining dropdown is built from the data, so a filter never offers a
+// value nothing matches (the old hard-coded Body list still offered "Van" long
+// after the vans were dropped).
+function fill(id,vals,allLabel){
+  el(id).innerHTML=`<option value="">${allLabel}</option>`+
+    vals.map(([v,n])=>`<option value="${esc(v)}">${esc(v)} (${n})</option>`).join('')}
+function tally(f){const m=new Map();
+  D.forEach(x=>{const v=f(x); if(v) m.set(v,(m.get(v)||0)+1)});
+  return [...m].sort((a,b)=>b[1]-a[1])}
+fill('fe',tally(x=>x.tg).sort(),'All sizes');
+fill('fb',tally(x=>x.b),'All');
+fill('fcol',tally(x=>baseColor(x.cl)),'All');
+fill('frg',tally(x=>x.rg),'Anywhere');
+fill('fas',tally(x=>x.asm),'All');
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function agoDays(g){const m=/^(\d+)(m|h|d|w|mo|y)$/.exec(g||'');if(!m)return 9999;
@@ -244,7 +284,7 @@ function fmtK(k){return k==null?'km n/a':k.toLocaleString('en-US')+' km'}
 function score(x){return (x.y-2009)*2 - x.p*0.55 - (x.k==null?3:x.k/40000)}
 
 function hideTerms(){return el('hide').value.split(/[,\n]+/).map(s=>s.trim().toLowerCase()).filter(Boolean)}
-function hay(x){return (x.m+' '+x.v+' '+x.a+' '+x.c+' '+x.b+' '+x.bd+' '+x.f+' '+x.y).toLowerCase()}
+function hay(x){return (x.m+' '+x.v+' '+x.a+' '+x.c+' '+x.b+' '+x.bd+' '+x.f+' '+x.y+' '+(x.cl||'')+' '+(x.rg||'')+' '+(x.asm||'')+' '+(x.tg||'')).toLowerCase()}
 function matches(x){
   const hides=hideTerms();
   if(hides.length && hides.some(t=>hay(x).includes(t))) return false;
@@ -254,12 +294,16 @@ function matches(x){
   if(onlyNew && !x.nw) return false;
   if(onlyDrop && x.pd==null) return false;
   const q=el('q').value.trim().toLowerCase();
-  if(q){const hay=(x.m+' '+x.v+' '+x.a+' '+x.y+' '+x.bd).toLowerCase();
+  if(q){const hay=(x.m+' '+x.v+' '+x.a+' '+x.y+' '+x.bd+' '+(x.cl||'')+' '+(x.rg||'')+' '+(x.tg||'')).toLowerCase();
     if(!q.split(/\s+/).every(t=>hay.includes(t))) return false}
   if(el('fm').value && x.m!==el('fm').value) return false;
   if(el('fs').value && x.s!==el('fs').value) return false;
+  if(el('fe').value && x.tg!==el('fe').value) return false;
   if(el('fb').value && x.b!==el('fb').value) return false;
+  if(el('fcol').value && baseColor(x.cl)!==el('fcol').value) return false;
   if(el('fc').value && x.c!==el('fc').value) return false;
+  if(el('frg').value && x.rg!==el('frg').value) return false;
+  if(el('fas').value && x.asm!==el('fas').value) return false;
   const pmin=parseFloat(el('pmin').value), pmax=parseFloat(el('pmax').value);
   if(!isNaN(pmin)&&x.p<pmin) return false;
   if(!isNaN(pmax)&&x.p>pmax) return false;
@@ -301,7 +345,8 @@ function card(x){
       <div class="price">${x.p.toFixed(2)} lacs <small>PKR ${(x.p*100000).toLocaleString('en-US')}</small></div>
       <div class="ttl">${esc(x.m)} ${x.y}</div>
       ${x.v?`<div class="var">${esc(x.v)}</div>`:''}
-      <div class="specs"><span><b>${fmtK(x.k)}</b></span>${x.t?`<span>${x.t==='A'?'Automatic':'Manual'}</span>`:''}<span>660 cc</span></div>
+      <div class="specs"><span><b>${fmtK(x.k)}</b></span>${x.t?`<span>${x.t==='A'?'Automatic':'Manual'}</span>`:''}<span>${x.cc?x.cc+' cc':esc(x.tg||'')}</span>${x.asm?`<span>${esc(x.asm)}</span>`:''}</div>
+      <div class="specs kv">${x.cl?`<span class="sw"><i style="background:${swatch(x.cl)}"></i>${esc(x.cl)}</span>`:'<span class="dim">colour n/a</span>'}${x.rg?`<span title="city the car is registered in \u2014 a Punjab-registered car sold in Islamabad usually means transfer paperwork">Reg <b>${esc(x.rg)}</b></span>`:'<span class="dim">reg n/a</span>'}</div>
       <div class="loc">${esc(x.a||x.c)}</div>
       <div class="when">${(()=>{const t=postedAt(x);
         return t? `Posted <b>${human(Date.now()-t.getTime())} ago</b> <span title="exact time the ad was posted or last bumped">&middot; ${t.toLocaleString('en-GB',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'})}</span>`
@@ -400,7 +445,7 @@ function paintBlk(){
     : '<p style="color:#9aa3b3;font-size:12.5px;margin:0">Nothing blocked — tap the &times; on a listing you are not interested in.</p>';
 }
 el('btlk').onclick=()=>openPanel('blk');
-['q','fm','fs','fb','fc','pmin','pmax','ymin','kmax','ff','so','hide'].forEach(id=>{
+['q','fm','fs','fe','fb','fcol','fc','frg','fas','pmin','pmax','ymin','kmax','ff','so','hide'].forEach(id=>{
   el(id).addEventListener((id==='q'||id==='hide')?'input':'change',render)});
 document.addEventListener('click',e=>{
   const d=e.target.closest('[data-drop]');
@@ -417,10 +462,10 @@ el('copy').onclick=()=>{
   navigator.clipboard.writeText(txt).then(()=>{el('copy').textContent='Copied '+rows.length;
     setTimeout(()=>el('copy').textContent='Copy links',1600)})};
 el('reset').onclick=()=>{['q','pmin','pmax','ymin','kmax','hide'].forEach(i=>el(i).value='');
-  ['fm','fs','fb','fc','ff'].forEach(i=>el(i).value='');el('so').value='new';
+  ['fm','fs','fe','fb','fcol','fc','frg','fas','ff'].forEach(i=>el(i).value='');el('so').value='new';
   clean=true;el('clean').classList.add('on');shortOnly=false;el('shortOnly').classList.remove('on');
   onlyNew=false;onlyDrop=false;el('onlyNew').classList.remove('on');el('onlyDrop').classList.remove('on');render()};
-const FIELDS=['q','fm','fs','fb','fc','pmin','pmax','ymin','kmax','ff','so','hide'];
+const FIELDS=['q','fm','fs','fe','fb','fcol','fc','frg','fas','pmin','pmax','ymin','kmax','ff','so','hide'];
 let hashLock=false;
 function syncHash(){
   if(hashLock) return;

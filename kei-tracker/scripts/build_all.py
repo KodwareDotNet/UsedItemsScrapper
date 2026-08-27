@@ -10,6 +10,9 @@ Outputs : ~/Downloads/kei_cars_islamabad_rawalpindi.html
 """
 import pandas as pd, numpy as np, re, json, os, sys, datetime as dt
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from models import PW_SLUG, VANS, is_van, tier
+
 HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)
 RAW=os.path.join(ROOT,'raw'); ST=os.path.join(ROOT,'state'); OUT=os.path.dirname(ROOT)
 NOW=dt.datetime.now()
@@ -59,18 +62,10 @@ def read_pipe(path,names):
               f'(stray "|" in a field). First: line {bad[0][0]}: {bad[0][1][:160]}')
     return pd.DataFrame(rows,columns=names,dtype=str)
 
-NOT660=['mehran','bolan','ravi','carry','kix','mitsubishi-i-','cuore']
-MODEL_FIX={ 'passo':'passo', 'jimny':'jimny','suzuki-alto-lapin':'Suzuki Alto Lapin','honda-none':'Honda N One','nissan-dayz-roox':'Nissan Dayz Roox',
- 'daihatsu-move-conte':'Daihatsu Move Conte','suzuki-spacia-gear':'Suzuki Spacia Gear','daihatsu-atrai-wagon':'Daihatsu Atrai Wagon',
- 'suzuki-wagon-r':'Suzuki Wagon R','honda-n-wgn':'Honda N Wgn','honda-n-box':'Honda N Box','daihatsu-terios-kid':'Daihatsu Terios Kid',
- 'mitsubishi-pajero-mini':'Mitsubishi Pajero Mini','mitsubishi-ek-custom':'Mitsubishi EK Custom','mitsubishi-ek-wagon':'Mitsubishi EK Wagon',
- 'mitsubishi-minicab':'Mitsubishi Minicab','daihatsu-hijet':'Daihatsu Hijet','toyota-pixis':'Toyota Pixis','mazda-flair':'Mazda Flair',
- 'daihatsu-mira-es':'Daihatsu Mira ES','suzuki-mr-wagon':'Suzuki MR Wagon','subaru-pleo':'Subaru Pleo','daihatsu-cast':'Daihatsu Cast',
- 'daihatsu-wake':'Daihatsu Wake','nissan-clipper':'Nissan Clipper','suzuki-every':'Suzuki Every','suzuki-hustler':'Suzuki Hustler',
- 'suzuki-spacia':'Suzuki Spacia','nissan-otti':'Nissan Otti','honda-zest':'Honda Zest','honda-life':'Honda Life','mazda-scrum':'Mazda Scrum',
- 'mazda-carol':'Mazda Carol','daihatsu-tanto':'Daihatsu Tanto','daihatsu-esse':'Daihatsu Esse','daihatsu-move':'Daihatsu Move',
- 'daihatsu-mira':'Daihatsu Mira','nissan-moco':'Nissan Moco','nissan-roox':'Nissan Roox','nissan-dayz':'Nissan Dayz',
- 'suzuki-alto':'Suzuki Alto','subaru-stella':'Subaru Stella','honda-acty':'Honda Acty','honda-vamos':'Honda Vamos'}
+# Junk that PakWheels tags as 600-660cc but is not a kei car, plus the
+# commercial vans Atif asked to drop. Model names themselves live in models.py.
+NOT_WANTED=['mehran','bolan','ravi','carry','kix','mitsubishi-i-','cuore','charade']
+MODEL_FIX=PW_SLUG
 
 # ---------- PakWheels ----------
 COLS=['id','title','pkr','ago','loc','spec','badge','rating','pics','cache','slug','path']
@@ -103,7 +98,7 @@ pw['city']=pw['loc'].fillna('').str.strip(); pw['area']=pw['city']
 pw['badge']=pw['badge'].map({'M':'Managed by PakWheels','C':'PakWheels Certified','I':'PakWheels Inspected','A':'Auction Sheet Verified'}).fillna('')
 pw['rating']=pd.to_numeric(pw['rating'],errors='coerce'); pw['pics']=pd.to_numeric(pw['pics'],errors='coerce')
 pw['region']='core'
-pw=pw[~pw['slug'].fillna('').apply(lambda s: any(b in s for b in NOT660))]
+pw=pw[~pw['slug'].fillna('').apply(lambda s: any(b in s for b in NOT_WANTED))]
 def from_slug(s,field):
     if not isinstance(s,str): return None
     base=re.sub(r'-\d{4}-\d+$','',s)
@@ -124,6 +119,29 @@ def pwimg(r):
         return f"https://cache{r['cache'] or 1}.pakwheels.com/ad_pictures/{pic[:4]}/{r['slug']}.jpg"
     return ''
 pw['img']=pw.apply(pwimg,axis=1)
+# Engine size comes free on the search card ("2014 126,876 km Petrol 660 cc Automatic").
+pw['engine_cc']=pd.to_numeric(sp.str.extract(r'(\d{3,4})\s*cc')[0],errors='coerce')
+
+# Colour / registered-city / assembly are only on the ad's own page, so the
+# scraper caches them in raw/pw_detail.csv (one fetch per ad, ever) and we merge
+# by id here. Missing rows just mean that ad has not been enriched yet — the
+# card renders without those lines rather than the build failing.
+det_path=os.path.join(RAW,'pw_detail.csv')
+DET=['color','reg_city','assembly','cc','body']
+if os.path.exists(det_path) and os.path.getsize(det_path)>0:
+    det=pd.read_csv(det_path,dtype=str).drop_duplicates(subset=['id'],keep='last')
+    for c in DET:
+        if c not in det.columns: det[c]=''
+    pw=pw.merge(det[['id']+DET],on='id',how='left',suffixes=('','_det'))
+    # Prefer the detail page's engine size where the card did not carry one.
+    fallback=pd.to_numeric(pw['cc'].fillna('').str.extract(r'(\d{3,4})')[0],errors='coerce')
+    pw['engine_cc']=pw['engine_cc'].fillna(fallback)
+    print(f"PakWheels detail: {pw['color'].notna().sum()} of {len(pw)} ads have colour/registration")
+else:
+    for c in ['color','reg_city','assembly','body']: pw[c]=''
+    print('PakWheels detail: raw/pw_detail.csv missing — colour and registration city '
+          'will be blank until the scraper has run once')
+pw['pw_body']=pw.get('body','')
 
 # ---------- OLX ----------
 # ---------- OLX ----------
@@ -137,24 +155,56 @@ if os.path.exists(olx_path) and os.path.getsize(olx_path) > 0:
     ol['city']=ol['area'].fillna('').str.split(',').str[-1].str.strip()
     ol['transmission']=''; ol['badge']=''; ol['rating']=np.nan; ol['pics']=np.nan
     ol['img']=ol['pic'].fillna('').apply(lambda p: f"https://images.olx.com.pk/thumbnails/{p}-600x450.jpeg" if p else '')
+    # OLX listing cards carry neither colour nor registration city, and its
+    # detail pages are far too rate-limited to fetch one-by-one, so these stay
+    # blank rather than being guessed from the seller's free text.
+    ol['color']=''; ol['reg_city']=''; ol['assembly']=''; ol['pw_body']=''
+    ol['engine_cc']=np.nan
 else:
     print("WARNING: olx_rows.txt not found or empty (--skip-olx mode?). Building with PakWheels data only.")
-    ol=pd.DataFrame(columns=['id','model_full','variant','price_lacs','year','mileage_km','searched','area','ago','region','pic','source','url','city','transmission','badge','rating','pics','img'])
+    ol=pd.DataFrame(columns=['id','model_full','variant','price_lacs','year','mileage_km','searched','area','ago','region','pic','source','url','city','transmission','badge','rating','pics','img','color','reg_city','assembly','pw_body','engine_cc'])
 
 cols=['id','source','model_full','variant','year','price_lacs','mileage_km','transmission','city','area',
-      'badge','rating','pics','ago','region','url','img']
+      'badge','rating','pics','ago','region','url','img','color','reg_city','assembly','pw_body','engine_cc']
 df=pd.concat([pw[cols],ol[cols]],ignore_index=True)
 df['model_full']=df['model_full'].fillna('Unknown').astype(str).str.strip()
-for c in ['variant','transmission','city','area','badge','ago','region','url','img','source']:
+for c in ['variant','transmission','city','area','badge','ago','region','url','img','source',
+          'color','reg_city','assembly','pw_body']:
     df[c]=df[c].fillna('').astype(str).replace({'nan':'','None':'','<NA>':''})
 df=df[(df['price_lacs']>0)&(df['price_lacs']<=30.01)&(df['year']>=2010)&(df['year']<=NOW.year)]
 df=df.drop_duplicates(subset=['id'])
 df['days']=df['ago'].apply(rel2days)
 
-VANS=['Every','Hijet','Clipper','Scrum','Minicab','Acty','Vamos','Town Box','Sambar','Dias','Atrai']
-TALL=['N Box','N One','N Wgn','Spacia','Flair','Tanto','Roox','EK Space','Palette','Hustler','Wagon R','Move','Cast','Wake','Terios Kid','Pajero Mini','Zest']
-df['body']=df['model_full'].apply(lambda m: 'Van' if any(v.lower() in str(m).lower() for v in VANS)
-                                  else ('Tall-boy' if any(v.lower() in str(m).lower() for v in TALL) else 'Hatchback'))
+# Commercial vans are dropped outright (Hijet, Every, Carry, Scrum, Minicab,
+# Clipper, Acty, Vamos, Town Box, Sambar, Dias, Atrai). The scrapers already
+# filter them, but a keyword-fallback OLX row can still smuggle one in, so this
+# is the last gate before the page.
+vans_out=df['model_full'].apply(is_van)
+if vans_out.any(): print(f'Dropped {int(vans_out.sum())} commercial van listing(s)')
+df=df[~vans_out]
+
+# PakWheels' own body type is used only as an extra van gate — it catches
+# "Micro Van"/"Van" bodies on models the name-based list does not know about.
+# It is deliberately NOT used as the displayed category: PakWheels has its own
+# taxonomy (Station Wagon, MPV, Crossover) and OLX has none at all, so mixing
+# them would make the Body filter mean two different things per row.
+pwvan=df['pw_body'].str.contains(r'\bvan\b',case=False,na=False)
+if pwvan.any(): print(f'Dropped {int(pwvan.sum())} listing(s) PakWheels classifies as a van')
+df=df[~pwvan]
+
+TALL=['N Box','N One','N Wgn','Spacia','Flair','Tanto','Roox','EK Space','Palette','Hustler','Wagon R','Move','Cast','Wake','Terios Kid','Pajero Mini','Zest','Thor','Roomy','Tank','Solio','Porte','Spade','Cube']
+df['body']=df['model_full'].apply(lambda m: 'Tall-boy' if any(v.lower() in str(m).lower() for v in TALL) else 'Hatchback')
+
+# Engine tier: which of Atif's two shopping lists a car belongs to. Derived from
+# the model, not the cc reading, because OLX never states engine size — a Passo
+# with no cc on the ad still needs to land in the 1000-1300cc bucket.
+def _tier(r):
+    t=tier(r['model_full'])
+    if t: return '660cc kei' if t=='kei' else '1000-1300cc'
+    cc=r['engine_cc']
+    if pd.notna(cc): return '660cc kei' if cc<=680 else '1000-1300cc'
+    return ''
+df['tier']=df.apply(_tier,axis=1)
 df['posted_date']=df['days'].apply(lambda d: (CAP-dt.timedelta(days=d)).date().isoformat() if pd.notna(d) else '')
 df['dupkey']=(df['model_full'].str.lower()+'|'+df['year'].astype('Int64').astype(str)+'|'
               +df['price_lacs'].round(2).astype(str)+'|'+df['mileage_km'].fillna(-1).astype(int).astype(str))
@@ -235,6 +285,8 @@ for _,r in df.iterrows():
       'r':None if pd.isna(r['rating']) else float(r['rating']),
       'n':None if pd.isna(r['pics']) else int(r['pics']),
       'f':r['flags'],'u':r['url'],'i':r['img'],
+      'cl':r['color'],'rg':r['reg_city'],'asm':r['assembly'],'tg':r['tier'],
+      'cc':None if pd.isna(r['engine_cc']) else int(r['engine_cc']),
       'nw':bool(r['is_new']),'pd':None if pd.isna(r['price_drop']) else float(r['price_drop'])})
 
 tpl=open(os.path.join(HERE,'page_template.html')).read()
@@ -270,5 +322,14 @@ print('\n'.join(L))
 print(f"\nWROTE {os.path.join(OUT,'kei_cars_islamabad_rawalpindi.html')}")
 
 # ---------- spreadsheet ----------
-rc=os.system(f'python3 {os.path.join(HERE,"build_xlsx.py")} >/dev/null 2>&1')
-print('xlsx rebuilt' if rc==0 else 'xlsx build FAILED')
+# sys.executable, not 'python3': the scripts run under scripts/.venv, and the
+# system python3 has no pandas, so the hard-coded interpreter made every run
+# report "xlsx build FAILED" while the spreadsheet built fine by hand.
+import subprocess
+r=subprocess.run([sys.executable,os.path.join(HERE,'build_xlsx.py')],
+                 capture_output=True,text=True)
+if r.returncode==0:
+    print('xlsx rebuilt')
+else:
+    print(f'xlsx build FAILED (rc={r.returncode})')
+    print((r.stderr or r.stdout).strip()[-800:])
