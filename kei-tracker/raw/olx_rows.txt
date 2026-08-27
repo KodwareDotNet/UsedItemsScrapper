@@ -49,7 +49,6 @@
 1117534138|Suzuki Jimny|japnis|25|2013|2500|isb|Adiala Road, Rawalpindi|4w|core|635255319
 1118298768|Daihatsu Mira|X SA III 2019 for sale.|30|2019|90000|isb|G-10/1, Islamabad|6d|core|640975416
 1118231930|Daihatsu Mira|2006 2 Door|13.9|2006|100000|isb|F-11 Markaz, Islamabad|1w|core|639349897
-1117318790|Daihatsu Mira|2009|17.5|2009|177000|isb|Bhara kahu, Islamabad|4w|core|633999454
 1118523638|Suzuki Alto|2006|10.8|2006|20008|isb|Mira Abadi, Islamabad|17h|core|641083199
 1118482376|Daihatsu Mira|2007|19.25|2007|200000|isb|Blue Area, Islamabad|19h|core|640832187
 1118516131|Daihatsu Mira|2019|30|2019||isb|Airport Avenue, Islamabad|1d|core|641038507
@@ -68,6 +67,7 @@
 1118292933|Daihatsu Mira|2008/2014 2 Door Automatic in Good Condition|15.5|2008|230|isb|7th Avenue, Islamabad|1w|core|639711030
 1115625221|Daihatsu Mira|2020|28.75|2020|150000|isb|PTV Colony, Islamabad|1w|core|624071652
 1118281677|Suzuki Spacia|genuine antique car beterthan mira wagon r box days roox|23.2|2014|99000|isb|Bahria Town, Islamabad|1w|core|639642362
+1118192126|Daihatsu Mira|2003|16|2003|140000|isb|Kahuta Road, Islamabad|1w|core|639118816
 1117810989|Daihatsu Mira|2009-2013 Model Good condition|19.5|2009|171321|rwp|Chur Chowk, Rawalpindi|3d|core|636881238
 1118551066|Daihatsu Mira|2012|23|2012|100000|rwp|Bahria Town Phase 8, Rawalpindi|2m|core|641242508
 1117271655|Daihatsu Mira|Mira 2016 2018|27.5|2016|80000|rwp|KRL Road, Rawalpindi|5h|core|634117919
@@ -172,3 +172,5 @@
 1118402897|Suzuki Alto|2005|14.5|2005|40000|rwp|Rawal Road, Rawalpindi|4d|core|640363434
 1118374715|Other JDM|uzuki Alto 2007 660cc|9.85|2007|999999|rwp|KRL Road, Rawalpindi|5d|core|640197792
 1118371311|Suzuki Alto|2007|10.85|2007|750000|rwp|Dhok Sayedan Road, Rawalpindi|5d|core|640176464
+1118370832|Suzuki Alto|Automatic|10|2001|50000|rwp|Rabia Bungalows Road, Rawalpindi|5d|core|640172762
+1117318790|Daihatsu Mira|2009|17.5|2009|177000|isb|Bhara kahu, Islamabad|4w|core|633999454
