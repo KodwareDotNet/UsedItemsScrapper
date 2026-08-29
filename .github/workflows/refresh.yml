@@ -4,7 +4,7 @@ on:
   schedule:
     # Every 3 hours. GitHub cron is UTC; Pakistan is UTC+5, so this fires at
     # 05:00, 08:00, 11:00, 14:00, 17:00, 20:00, 23:00 and 02:00 PKT.
-    - cron: '0 0,3,6,9,12,15,18,21 * * *'
+    - cron: '0 3,6,9,12,15,18 * * *'
   workflow_dispatch:          # lets you run it by hand from the Actions tab
     inputs:
       skip_olx:
