@@ -1,16 +1,16 @@
-**Kei tracker — 30 Aug, 12:23 PM**
-1403 live listings (1129 PakWheels, 274 OLX)
-**68 new** since last run · **126 price drops** · 69 ads disappeared
+**Kei tracker — 30 Aug, 3:03 PM**
+1416 live listings (1138 PakWheels, 278 OLX)
+**46 new** since last run · **129 price drops** · 33 ads disappeared
 
 New:
-- Suzuki Wagon R 2018 VXL — 2.42 lacs, 102,000 km, Rawalpindi
-- Suzuki Baleno 2000 ELI — 9.60 lacs, 132,000 km, Rawalpindi
-- Suzuki Baleno 2001 GLI — 9.80 lacs, 213,250 km, Islamabad
-- Suzuki Alto 2002  — 11.00 lacs, 145,000 km, Rawalpindi
-- Suzuki Baleno 2003  — 11.50 lacs, 150,000 km, Islamabad
-- Suzuki Alto 2010 VXR — 11.50 lacs, 100,000 km, Islamabad
-- Suzuki Baleno 2004 JXR — 12.30 lacs, 181,000 km, Rawalpindi
-- Suzuki Alto 2007 EII — 12.80 lacs, 52,000 km, Rawalpindi
+- Suzuki Baleno 2000 GLI P — 7.90 lacs, 250,000 km, Islamabad
+- Other JDM 2010 uzuki Mehran VX 2010 660cc auto gair — 9.50 lacs, 100,050 km, Chur Chowk, Rawalpindi
+- Suzuki Alto 2007 2007 — 10.80 lacs, 140,000 km, Westridge, Rawalpindi
+- Suzuki Baleno 2005 JXR — 12.95 lacs, 338,000 km, Islamabad
+- Mitsubishi Pajero Mini 1995 Limited — 14.75 lacs, 150,800 km, Rawalpindi
+- Suzuki Alto 2011  — 15.50 lacs, 111,774 km, Islamabad
+- Daihatsu Mira 2006 X — 15.50 lacs, 160,000 km, Islamabad
+- Toyota Vitz 1999 1999 — 15.50 lacs, 260,363 km, G-9/2, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
