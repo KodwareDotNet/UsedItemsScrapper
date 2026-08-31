@@ -1,16 +1,16 @@
-**Kei tracker — 31 Aug, 8:19 PM**
-1409 live listings (1125 PakWheels, 284 OLX)
-**41 new** since last run · **151 price drops** · 39 ads disappeared
+**Kei tracker — 01 Sep, 12:57 AM**
+1405 live listings (1121 PakWheels, 284 OLX)
+**34 new** since last run · **151 price drops** · 38 ads disappeared
 
 New:
-- Suzuki Alto 1993  — 5.00 lacs, 100,000 km, Rawalpindi
-- Suzuki Alto 2007 VXR CNG — 9.30 lacs, 208,000 km, Rawalpindi
-- Suzuki Alto 2008 VXR CNG — 10.50 lacs, 197,000 km, Rawalpindi
-- Suzuki Alto 2006 G — 11.00 lacs, 125,000 km, Islamabad
-- Suzuki Baleno 2005 JXR — 12.20 lacs, 295,000 km, Rawalpindi
-- Suzuki Wagon R 2017 VXL — 12.90 lacs, 170,009 km, Rawalpindi
-- Mitsubishi Pajero Mini 1998  — 15.00 lacs, 150,000 km, Rawalpindi
-- Suzuki Alto 2007 G — 18.00 lacs, 184,500 km, Rawalpindi
+- Suzuki Swift 1992  — 4.00 lacs, 195,320 km, Islamabad
+- Toyota Vitz 2018 2018 — 4.09 lacs, 99,000 km, I-14, Islamabad
+- Other JDM 1997 uzuki Wagon R 1997 660cc automatic price is dead final — 8.80 lacs, 100,000 km, Commercial Market, Rawalpindi
+- Mitsubishi Pajero Mini 1995 1995 — 10.75 lacs, 100,000 km, I-9, Islamabad
+- Suzuki Alto 2008 VX CNG — 10.80 lacs, 10,000 km, Islamabad
+- Suzuki Baleno 2004 JXL — 12.30 lacs, 118,000 km, Islamabad
+- Suzuki Baleno 2005 JXR — 13.50 lacs, 168,000 km, Islamabad
+- Toyota Vitz 1999 1999 — 17.20 lacs, 259,403 km, Green Avenue, Islamabad
 
 Price drops:
 - Suzuki Alto 2010 — down 6.00 to 11.45 lacs, Rawalpindi
