@@ -63,8 +63,13 @@ def read_pipe(path,names):
     return pd.DataFrame(rows,columns=names,dtype=str)
 
 # Junk that PakWheels tags as 600-660cc but is not a kei car, plus the
-# commercial vans Atif asked to drop. Model names themselves live in models.py.
-NOT_WANTED=['mehran','bolan','ravi','carry','kix','mitsubishi-i-','cuore','charade']
+# locally-assembled cars Atif does not want. Model names themselves live in
+# models.py, and this list must not contradict it: 'kix' and 'mitsubishi-i-'
+# used to sit here, which silently deleted the Nissan Kix and Mitsubishi i
+# after models.py had already accepted them. Both are real JDM kei (the i is
+# rear-mid-engined, the Kix is the Pajero Mini's twin), so they are gone from
+# here. What remains is Pakistani-market only.
+NOT_WANTED=['mehran','bolan','ravi','carry','cuore','charade']
 MODEL_FIX=PW_SLUG
 
 # ---------- PakWheels ----------

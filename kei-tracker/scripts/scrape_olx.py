@@ -4,9 +4,10 @@
 Writes ../raw/olx_rows.txt as
   id|model|variant|price_lacs|year|km|searchedCity|area|ago|region|picId
 
-Strategy: sweep ~45 URLs (19 keywords × 2 cities × 3 pages) using keyword-
-specific car-category searches. KEYWORDS was trimmed from 40 to 19 entries
-(removed low-yield noise and the 'alto' model that dominates results).
+Strategy: sweep 28 URLs (14 keywords × 2 cities × 1 page) using keyword-
+specific car-category searches. KEYWORDS has been trimmed twice, most recently
+from 30 to 14 entries: anything that produced zero rows in a full run is gone,
+because each keyword costs ~2 minutes of wall clock.
 All raw blobs are saved to JSONL; parse() filters by model with a keyword-
 fallback for ads mentioning '660cc'/'jdm' without a known model prefix.
 
@@ -77,15 +78,22 @@ HEADERS = {
     'DNT': '1',
 }
 
+# Trimmed Sep 2026 from 30 keywords to 14. Each keyword costs two requests
+# (one per city) at ~45s apiece plus a 30s cooldown, i.e. roughly two minutes
+# of wall clock, so a keyword has to earn its place. These are the ones that
+# carried the last full run. Dropped: 'cast', 'note', 'ractis', 'raize',
+# 'roomy', 'porte', 'honda fit', 'n box', 'move conte', 'sirion', '1000cc',
+# 'kei car', 'jdm spec', 'japanese import' (zero rows each) plus 'wagon r' and
+# 'mirage' (two rows each — not worth two minutes). Every model cut here is
+# still fully covered on PakWheels; the allow-list in models.py is unchanged.
 KEYWORDS = [
-    # 660cc kei — these actually match kei car titles on OLX
-    'jimny', 'wagon r', 'mira', 'move conte', 'n box', 'dayz',
-    'hustler', 'carol', 'flair', 'tanto', 'cast', 'lapin',
+    # 660cc kei
+    'mira', 'dayz', 'carol', 'hustler', 'tanto', 'lapin', 'flair', 'jimny',
     # 1000cc / 1300cc JDM hatches
-    'passo', 'boon', 'vitz', 'march', 'note', 'honda fit', 'belta',
-    'porte', 'ractis', 'sirion', 'mirage', 'raize', 'roomy',
-    # Deep set: sellers who title by trim/"660cc" rather than model name
-    '660cc', '1000cc', 'kei car', 'jdm spec', 'japanese import',
+    'passo', 'vitz', 'belta', 'march', 'boon',
+    # Catch-all for sellers who title by "660cc" rather than by model — this is
+    # where the 'Other JDM' rows come from, so it stays.
+    '660cc',
 ]
 
 # Per-keyword cooldown — OLX rate-limits burst traffic. Adding a pause between

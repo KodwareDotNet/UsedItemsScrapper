@@ -3,8 +3,11 @@
 
 Run from anywhere:  python3 kei-tracker/scripts/refresh.py
 
-OLX is only re-scraped when its data is older than OLX_MAX_AGE_HOURS (default 36),
-because OLX moves far more slowly than PakWheels and the sweep is ~350 requests.
+OLX is only re-scraped when its data is older than OLX_MAX_AGE_HOURS (default 20),
+because OLX moves far more slowly than PakWheels and its sweep is the expensive
+half of a run: 28 requests that must be spaced 30-60s apart to avoid a block,
+roughly 25 minutes, against 2-3 minutes for all of PakWheels. The default used
+to be 0, which meant every single run paid that cost.
 Pass --force-olx to override, or --skip-olx to never touch it.
 """
 import argparse, os, subprocess, sys
@@ -15,7 +18,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 RAW = os.path.join(ROOT, 'raw')
 TZ = ZoneInfo(os.environ.get('TZ', 'Asia/Karachi'))
-OLX_MAX_AGE_HOURS = float(os.environ.get('OLX_MAX_AGE_HOURS', '0'))
+OLX_MAX_AGE_HOURS = float(os.environ.get('OLX_MAX_AGE_HOURS', '20'))
 
 
 def run(script, label):

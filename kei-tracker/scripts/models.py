@@ -92,6 +92,14 @@ KEI_SLUG = {
     'subaru-r2': 'Subaru R2',
     'subaru-vivio': 'Subaru Vivio',
     'toyota-pixis': 'Toyota Pixis',
+    # Added Sep 2026 after sweeping the raw 600-660cc band and finding these
+    # sitting in Islamabad/Rawalpindi with nothing on the allow-list to catch
+    # them. All genuine JDM kei; none of them are locally assembled.
+    'mitsubishi-i': 'Mitsubishi i',
+    'daihatsu-sonica': 'Daihatsu Sonica',
+    'nissan-kix': 'Nissan Kix',
+    'mazda-az-offroad': 'Mazda AZ Offroad',
+    'subaru-chiffon': 'Subaru Chiffon',
 }
 
 # ------------------------------------------- tier 2: 1000cc / 1300cc JDM small
@@ -128,6 +136,8 @@ SMALL_SLUG = {
     'suzuki-splash': 'Suzuki Splash',
     'mitsubishi-mirage': 'Mitsubishi Mirage',
     'mitsubishi-colt': 'Mitsubishi Colt',
+    'toyota-platz': 'Toyota Platz',
+    'suzuki-sierra': 'Suzuki Sierra',
 }
 
 PW_SLUG = dict(KEI_SLUG, **SMALL_SLUG)
@@ -192,6 +202,9 @@ ALIASES = {
     'laputa': 'Mazda Laputa', 'spiano': 'Mazda Spiano',
     'pleo': 'Subaru Pleo', 'stella': 'Subaru Stella', 'vivio': 'Subaru Vivio',
     'pixis': 'Toyota Pixis',
+    'sonica': 'Daihatsu Sonica', 'kix': 'Nissan Kix',
+    'az offroad': 'Mazda AZ Offroad', 'az-offroad': 'Mazda AZ Offroad',
+    'chiffon': 'Subaru Chiffon', 'platz': 'Toyota Platz',
 }
 ALIAS_KEYS = sorted(ALIASES, key=len, reverse=True)
 
