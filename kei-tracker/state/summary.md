@@ -1,21 +1,21 @@
-**Kei tracker — 03 Sep, 7:58 PM**
-1405 live listings (1151 PakWheels, 254 OLX)
-**9 new** since last run · **168 price drops** · 6 ads disappeared
+**Kei tracker — 03 Sep, 11:03 PM**
+1414 live listings (1160 PakWheels, 254 OLX)
+**22 new** since last run · **170 price drops** · 13 ads disappeared
 
 New:
-- Daihatsu Mira 2008 TL 4WD — 18.50 lacs, 200,000 km, Islamabad
-- Suzuki Wagon R 2018 VXL — 22.10 lacs, 204,045 km, Islamabad
-- Daihatsu Move 2013 Custom X — 23.50 lacs, 124,500 km, Islamabad
-- Suzuki Swift 2013 1 3L DLX — 25.00 lacs, 160,000 km, Rawalpindi
-- Toyota Belta 2012 X Business A Package 1 — 25.90 lacs, 89,500 km, Islamabad
-- Suzuki Alto 2023 VX — 26.00 lacs, 55,664 km, Islamabad
-- Toyota Vitz 2011 B Intelligent Package — 27.50 lacs, 102,000 km, Rawalpindi
-- Daihatsu Mira 2017 X SA LLL — 29.00 lacs, 100,097 km, Rawalpindi
+- Suzuki Alto 1992  — 6.00 lacs, 189,897 km, Islamabad
+- Suzuki Alto 2007 VXR — 9.90 lacs, 153,343 km, Rawalpindi
+- Suzuki Alto 2011 VXR CNG — 11.50 lacs, 10,000 km, Islamabad
+- Mitsubishi Pajero Mini 1997  — 14.20 lacs, 130,656 km, Islamabad
+- Suzuki Alto 2010 VXR — 15.90 lacs, 77,500 km, Islamabad
+- Suzuki Wagon R 2016 VXL — 17.50 lacs, 150,000 km, Rawalpindi
+- Toyota Vitz 1999 1 0 FL — 17.80 lacs, 250,000 km, Rawalpindi
+- Toyota Platz 2007  — 18.20 lacs, 210,000 km, Rawalpindi
 
 Price drops:
 - Suzuki Alto 2020 — down 7.30 to 18.50 lacs, Islamabad
 - Suzuki Swift 2011 — down 2.70 to 19.80 lacs, Rawalpindi
 - Suzuki Hustler 2015 — down 2.50 to 25.50 lacs, Stadium Road, Rawalpindi
-- Mitsubishi i 2006 — down 2.20 to 14.90 lacs, Islamabad
 - Suzuki Alto 2011 — down 2.20 to 16.50 lacs, Rawalpindi
-- Suzuki Spacia 2014 — down 2.00 to 20.00 lacs, Islamabad
+- Mitsubishi i 2006 — down 2.20 to 14.90 lacs, Islamabad
+- Suzuki Wagon R 2018 — down 2.00 to 23.00 lacs, Islamabad
