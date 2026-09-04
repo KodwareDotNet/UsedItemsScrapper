@@ -1,16 +1,16 @@
-**Kei tracker — 04 Sep, 1:22 PM**
-1390 live listings (1139 PakWheels, 251 OLX)
-**78 new** since last run · **171 price drops** · 101 ads disappeared
+**Kei tracker — 04 Sep, 5:25 PM**
+1395 live listings (1144 PakWheels, 251 OLX)
+**30 new** since last run · **179 price drops** · 25 ads disappeared
 
 New:
-- Suzuki Alto 2005  — 10.25 lacs, 100,000 km, Islamabad
-- Suzuki Alto 2006 E — 10.80 lacs, 50,000 km, Islamabad
-- Suzuki Alto 2005  — 11.75 lacs, 8,000 km, Islamabad
-- Suzuki Jimny 1988  — 12.00 lacs, 200,000 km, Islamabad
-- Suzuki Baleno 2004  — 12.40 lacs, 180,000 km, Islamabad
-- Suzuki Alto 2004 2004 VXR Automatic 660CC — 12.65 lacs, 25,000 km, Ghauri Town, Islamabad
-- Suzuki Alto 2010 2010 — 13.00 lacs, 100,000 km, Range Road, Rawalpindi
-- Suzuki Alto 2011 VXR — 13.50 lacs, 150,000 km, Rawalpindi
+- Suzuki Alto 2001 Lepo — 9.60 lacs, 100 km, Rawalpindi
+- Suzuki Alto 2007 EII — 11.40 lacs, 600 km, Rawalpindi
+- Suzuki Alto 2012 VXR — 13.35 lacs, 209,032 km, Islamabad
+- Suzuki Kei 2008  — 15.75 lacs, 170,000 km, Islamabad
+- Toyota Vitz 1999 1 0 FL — 16.00 lacs, 299,999 km, Rawalpindi
+- Suzuki Alto 2007 VXR — 17.80 lacs, 100,000 km, Islamabad
+- Daihatsu Mira 2006 L — 18.30 lacs, 165,000 km, Islamabad
+- Suzuki Swift 2011 1 3L DLX — 19.75 lacs, 103,000 km, Islamabad
 
 Price drops:
 - Suzuki Alto 2020 — down 7.30 to 18.50 lacs, Islamabad
@@ -18,4 +18,4 @@ Price drops:
 - Suzuki Hustler 2015 — down 2.50 to 25.50 lacs, Stadium Road, Rawalpindi
 - Suzuki Alto 2011 — down 2.20 to 16.50 lacs, Rawalpindi
 - Mitsubishi i 2006 — down 2.20 to 14.90 lacs, Islamabad
-- Nissan Dayz Roox 2014 — down 2.00 to 27.50 lacs, Rawalpindi
+- Toyota Vitz 2009 — down 2.00 to 27.50 lacs, Rawalpindi
