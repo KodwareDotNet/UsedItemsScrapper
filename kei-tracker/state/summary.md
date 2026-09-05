@@ -1,21 +1,21 @@
-**Kei tracker — 05 Sep, 5:33 PM**
-1406 live listings (1158 PakWheels, 248 OLX)
-**68 new** since last run · **173 price drops** · 49 ads disappeared
+**Kei tracker — 05 Sep, 10:16 PM**
+1405 live listings (1157 PakWheels, 248 OLX)
+**32 new** since last run · **177 price drops** · 33 ads disappeared
 
 New:
-- Suzuki Alto 1992  — 4.50 lacs, 900,000 km, Islamabad
-- Suzuki Alto 2006 VXR — 9.75 lacs, 335,000 km, Islamabad
-- Suzuki Alto 2009 VXR CNG — 10.80 lacs, 238,436 km, Islamabad
-- Suzuki Alto 2008 E — 11.90 lacs, 120,000 km, Islamabad
-- Mitsubishi Pajero Mini 1995 Limited — 11.99 lacs, 100,000 km, Islamabad
-- Suzuki Alto 2012 VXR — 14.00 lacs, 166,276 km, Rawalpindi
-- Daihatsu Mira 2007 X — 14.90 lacs, 138,000 km, Rawalpindi
-- Mitsubishi Pajero Mini 2000 Limited — 15.00 lacs, 146,000 km, Rawalpindi
+- Toyota Vitz 2004 1 0 FL — 1.97 lacs, 250,000 km, Islamabad
+- Suzuki Baleno 2003 JXR — 8.00 lacs, 200,000 km, Rawalpindi
+- Suzuki Alto 2004 VXR — 9.00 lacs, 102,000 km, Islamabad
+- Suzuki Alto 2005 VXR — 10.00 lacs, 160,000 km, Islamabad
+- Suzuki Baleno 1999 GLI — 12.35 lacs, 235,000 km, Islamabad
+- Daihatsu Mira 2007 L — 15.20 lacs, 160,000 km, Rawalpindi
+- Daihatsu Mira 2007  — 15.40 lacs, 160,000 km, Islamabad
+- Mitsubishi EK Wagon 2008  — 17.95 lacs, 125,125 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 3.20 to 17.80 lacs, Islamabad
 - Suzuki Hustler 2015 — down 2.50 to 25.50 lacs, Stadium Road, Rawalpindi
 - Mitsubishi i 2006 — down 2.20 to 14.90 lacs, Islamabad
 - Suzuki Alto 2011 — down 2.20 to 16.50 lacs, Rawalpindi
-- Suzuki Spacia 2014 — down 2.00 to 20.00 lacs, Islamabad
+- Suzuki Wagon R 2018 — down 2.00 to 23.00 lacs, Islamabad
 - Suzuki Alto 2015 — down 2.00 to 27.50 lacs, Rawalpindi
