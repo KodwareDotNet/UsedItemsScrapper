@@ -1,9 +1,41 @@
-11953667|Suzuki Alto 2016 Works Edition|2950000|24m|Rawalpindi|2016 91,000 km Petrol 658 cc Automatic|||6|1|suzuki-alto-works-edition-2016-150741601|/used-cars/suzuki-alto-2016-for-sale-in-rawalpindi-11953667
-11953491|Suzuki Alto 2014 ECO-S|2550000|1h|Islamabad|2014 121,000 km Petrol 660 cc Automatic|||17|4|suzuki-alto-eco-s-2014-150739052|/used-cars/suzuki-alto-2014-for-sale-in-islamabad-11953491
-11953478|Toyota Pixis Epoch 2018|2975000|1h|Islamabad|2018 26,000 km Petrol 660 cc Automatic|||11|1|toyota-pixis-2018-150738926|/used-cars/toyota-pixis-epoch-2018-for-sale-in-islamabad-11953478
-11953464|Nissan Dayz 2015|2485000|2h|Rawalpindi|2015 118,000 km Petrol 660 cc Automatic|||7|3|nissan-dayz-2015-150738745|/used-cars/nissan-dayz-2015-for-sale-in-rawalpindi-11953464
-11953418|Suzuki Alto 2024 VX|2950000|2h|Islamabad|2024 27,500 km Petrol 660 cc Manual|||8|4|suzuki-alto-vx-14-2024-150738262|/used-cars/suzuki-alto-2024-for-sale-in-islamabad-11953418
-11953379|Daihatsu Copen 2007 Active Top|2350000|2h|Islamabad|2007 80,700 km Petrol 660 cc Automatic|||5|2|daihatsu-copen-active-top-2007-150737566|/used-cars/daihatsu-copen-2007-for-sale-in-islamabad-11953379
-11953586|Toyota Vitz 2013 F 1.0|2880000|1h|Islamabad|2013 144,000 km Petrol 1000 cc Automatic|||9|3|toyota-vitz-1-0-f-2013-150740061|/used-cars/toyota-vitz-2013-for-sale-in-islamabad-11953586
-11953574|Toyota Passo 2004|1960000|1h|Islamabad|2004 100,000 km Petrol 1000 cc Automatic|||18|3|toyota-passo-2004-150740261|/used-cars/toyota-passo-2004-for-sale-in-islamabad-11953574
-11953515|Suzuki Baleno 2005 JXR|1300000|1h|Rawalpindi|2005 300,000 km Petrol 1300 cc Manual|||9|2|suzuki-baleno-jxr-2005-150739533|/used-cars/suzuki-baleno-2005-for-sale-in-rawalpindi-11953515
+11954654|Suzuki Wagon R 2016|2700000|2h|Rawalpindi|2016 114,000 km Petrol 660 cc Automatic|||10|1|suzuki-wagon-r-2016-150754599|/used-cars/suzuki-wagon-r-2016-for-sale-in-rawalpindi-11954654
+11954580|Suzuki Alto 2022 VXR AGS|2850000|2h|Islamabad|2022 61,200 km Petrol 660 cc Automatic|||17|2|suzuki-alto-vxr-ags-2022-150753845|/used-cars/suzuki-alto-2022-for-sale-in-islamabad-11954580
+11954518|Suzuki Alto 2022 VXL AGS|2840000|3h|Islamabad|2022 65,000 km Petrol 660 cc Automatic|||8|4|suzuki-alto-vxl-2-2022-150752849|/used-cars/suzuki-alto-2022-for-sale-in-islamabad-11954518
+11954517|Suzuki Alto 2021 VXL AGS|2725000|3h|Islamabad|2021 63,000 km Petrol 660 cc Automatic|||9|2|suzuki-alto-vxl-2-2021-150752685|/used-cars/suzuki-alto-2021-for-sale-in-islamabad-11954517
+11954500|Daihatsu Move 2014 L SA|2450000|3h|Islamabad|2014 150,000 km Petrol 658 cc Automatic|||8|1|daihatsu-move-l-sa-3-2014-150752543|/used-cars/daihatsu-move-2014-for-sale-in-islamabad-11954500
+11955045|Mazda Carol 2012 GS|2300000|5m|Rawalpindi|2012 13,000 km Petrol 660 cc Automatic|||5|3|mazda-carol-gs-3-2012-150761803|/used-cars/mazda-carol-2012-for-sale-in-rawalpindi-11955045
+11954945|Suzuki Alto 2026 VXR Upgraded|1500000|30m|Rawalpindi|2026 1 km Petrol 660 cc Manual|||4|2|suzuki-alto-vxr-upgraded-2026-150760080|/used-cars/suzuki-alto-2026-for-sale-in-rawalpindi-11954945
+11951943|Nissan Dayz 2017 Bolero J|2650000|39m|Islamabad|2017 114,000 km Petrol 660 cc Automatic|||5|3|nissan-dayz-bolero-x-2-2017-150715475|/used-cars/nissan-dayz-2017-for-sale-in-islamabad-11951943
+11954850|Suzuki Alto 2022 VX|2445000|1h|Rawalpindi|2022 47,000 km Petrol 660 cc Manual|||20|4|suzuki-alto-vx-14-2022-150758647|/used-cars/suzuki-alto-2022-for-sale-in-rawalpindi-11954850
+11954666|Suzuki Alto 2022 VXR|2700000|2h|Rawalpindi|2022 1 km Petrol 660 cc Manual|||4|4|suzuki-alto-vxr-2-2022-150755469|/used-cars/suzuki-alto-2022-for-sale-in-rawalpindi-11954666
+11954612|Suzuki Jimny 1997|2300000|2h|Islamabad|1997 120,000 km Petrol 660 cc Manual|||1|3|suzuki-jimny-1997-150754414|/used-cars/suzuki-jimny-1997-for-sale-in-islamabad-11954612
+11954462|Mazda Carol 2014 GS|2350000|3h|Islamabad|2014 145,000 km Petrol 660 cc Automatic|||14|2|mazda-carol-gs-4-2014-150752037|/used-cars/mazda-carol-2014-for-sale-in-islamabad-11954462
+11954346|Suzuki Wagon R 2017 Stingray T|2700000|4h|Islamabad|2017 85,000 km Petrol 660 cc Automatic|||11|3|suzuki-wagon-r-t-4-2017-150750607|/used-cars/suzuki-wagon-r-2017-for-sale-in-islamabad-11954346
+11668890|Suzuki Alto 2017|2000000|9h|Islamabad|2017 100,000 km Petrol 600 cc Manual|||9|1|suzuki-alto-2017-146379765|/used-cars/suzuki-alto-2017-for-sale-in-islamabad-11668890
+11954157|Suzuki Alto 2022 VXR|2735000|10h|Islamabad|2022 49,000 km Petrol 660 cc Manual|||20|2|suzuki-alto-vxr-2-2022-150747937|/used-cars/suzuki-alto-2022-for-sale-in-islamabad-11954157
+11953885|Suzuki Alto 2014 ECO-S|2600000|10h|Islamabad|2014 150,753 km Petrol 660 cc Automatic|||13|1|suzuki-alto-eco-l-2014-150744525|/used-cars/suzuki-alto-2014-for-sale-in-islamabad-11953885
+10740570|Mitsubishi Ek Wagon 2017 G Safety Plus Edition|2650000|10h|Rawalpindi|2017 150,000 km Petrol 660 cc Automatic|||4|2|mitsubishi-ek-wagon-g-safety-plus-edition-2017-131783304|/used-cars/mitsubishi-ek-wagon-2017-for-sale-in-rawalpindi-10740570
+11953955|Daihatsu Mira 2014|2500000|12h|Islamabad|2014 98,000 km Petrol 660 cc Automatic|||7|3|daihatsu-mira-2014-150745444|/used-cars/daihatsu-mira-2014-for-sale-in-islamabad-11953955
+11953791|Suzuki Alto 2014|2350000|12h|Islamabad|2014 80,000 km Petrol 660 cc Automatic|||10|2|suzuki-alto-2014-150743175|/used-cars/suzuki-alto-2014-for-sale-in-islamabad-11953791
+11953911|Suzuki Alto 2019 VXR|2350000|12h|Rawalpindi|2019 98,000 km Petrol 660 cc Manual|||7|2|suzuki-alto-vxr-2-2019-150744891|/used-cars/suzuki-alto-2019-for-sale-in-rawalpindi-11953911
+11953053|Suzuki Alto 2021 VXL AGS|2695000|13h|Rawalpindi|2021 72,530 km Petrol 660 cc Automatic|||20|1|suzuki-alto-vxl-2-2021-150732744|/used-cars/suzuki-alto-2021-for-sale-in-rawalpindi-11953053
+11955004|Daihatsu Esse 2007 X Special|1680000|14m|Rawalpindi|2007 120,000 km Petrol 660 cc Automatic|||18|1|daihatsu-esse-x-special-5-2007-150759894|/used-cars/daihatsu-esse-2007-for-sale-in-rawalpindi-11955004
+11954973|Suzuki Alto 2008 GII|1820000|23m|Rawalpindi|2008 160,800 km Petrol 660 cc Automatic|||6|1|suzuki-alto-gii-2008-150760636|/used-cars/suzuki-alto-2008-for-sale-in-rawalpindi-11954973
+11954723|Suzuki Alto 2007 G|2000000|1h|Islamabad|2007 100,000 km Petrol 660 cc Automatic|||10|1|suzuki-alto-g-4-2007-150756238|/used-cars/suzuki-alto-2007-for-sale-in-islamabad-11954723
+11741771|Mitsubishi Ek Wagon 2007 GS|1765000|13h|Rawalpindi|2007 125,000 km Petrol 660 cc Automatic|||20|2|mitsubishi-ek-wagon-gs-2007-147499883|/used-cars/mitsubishi-ek-wagon-2007-for-sale-in-rawalpindi-11741771
+11954946|Toyota Passo 2013 X G Package|2750000|26m|Islamabad|2013 130,000 km Petrol 1000 cc Automatic|||6|1|toyota-passo-x-g-package-2013-150760015|/used-cars/toyota-passo-2013-for-sale-in-islamabad-11954946
+11954538|Suzuki Wagon R 2017 VXL|2390000|3h|Islamabad|2017 124,000 km Petrol 1000 cc Manual|||13|1|suzuki-wagon-r-vxl-2017-150753093|/used-cars/suzuki-wagon-r-2017-for-sale-in-islamabad-11954538
+11954856|Suzuki Swift 2018 DLX 1.3 Navigation|2750000|1h|Islamabad|2018 92,000 km Petrol 1300 cc Manual|||8|4|suzuki-swift-dlx-1-3-navigation-2018-150758756|/used-cars/suzuki-swift-2018-for-sale-in-islamabad-11954856
+11770160|Suzuki Alto 2007 VXR|1150000|1h|Rawalpindi|2007 195,739 km Petrol 1000 cc Manual|||20|2|suzuki-alto-vxr-2-2007-147940568|/used-cars/suzuki-alto-2007-for-sale-in-rawalpindi-11770160
+11954823|Toyota Vitz 2005 F 1.3|2145000|1h|Islamabad|2005 142,000 km Petrol 1300 cc Automatic|||10|4|toyota-vitz-1-3-f-2005-150757906|/used-cars/toyota-vitz-2005-for-sale-in-islamabad-11954823
+11954685|Suzuki Alto 2007 VXR|750000|2h|Rawalpindi|2007 36,000 km Petrol 1000 cc Manual|||11|4|suzuki-alto-vxr-2-2007-150755646|/used-cars/suzuki-alto-2007-for-sale-in-rawalpindi-11954685
+11954043|Toyota Passo 2009 G F Package|1865000|11h|Rawalpindi|2009 150,000 km Petrol 1000 cc Automatic|||11|1|toyota-passo-g-f-package-2009-150746606|/used-cars/toyota-passo-2009-for-sale-in-rawalpindi-11954043
+11750135|Toyota Belta 2006 X 1.0|2300000|11h|Islamabad|2006 92,000 km Petrol 1000 cc Automatic|||20|4|toyota-belta-x-1-0-2006-147630088|/used-cars/toyota-belta-2006-for-sale-in-islamabad-11750135
+11830832|Toyota Belta 2009 G 1.3|2755000|2h|Rawalpindi|2009 165,000 km Petrol 1300 cc Automatic|||15|1|toyota-belta-g-1-3-2-2009-148867157|/used-cars/toyota-belta-2009-for-sale-in-rawalpindi-11830832
+11954620|Suzuki Alto 2008 VXR|1100000|2h|Rawalpindi|2008 200,000 km Petrol 1000 cc Manual|||8|3|suzuki-alto-vxr-2-2008-150754435|/used-cars/suzuki-alto-2008-for-sale-in-rawalpindi-11954620
+11954071|Suzuki Alto 2024 VXR|2900000|9h|Islamabad|2024 47,000 km Petrol 1000 cc Manual|||6|3|suzuki-alto-vxr-2-2024-150746754|/used-cars/suzuki-alto-2024-for-sale-in-islamabad-11954071
+11954223|Toyota Belta 2010 X Business A Package 1.0|2900000|9h|Islamabad|2010 86,000 km Petrol 1000 cc Automatic|||15|2|toyota-belta-x-business-a-package-1-0-2010-150748928|/used-cars/toyota-belta-2010-for-sale-in-islamabad-11954223
+11954021|Daihatsu Terios Kid 1997|2300000|11h|Islamabad|1997 190,000 km Petrol 1300 cc Automatic|||4|1|daihatsu-terios-kid-1997-150746134|/used-cars/daihatsu-terios-kid-1997-for-sale-in-islamabad-11954021
+11953821|Suzuki Alto 2012 VXR|1400000|13h|Rawalpindi|2012 166,276 km Petrol 1000 cc Manual|||5|1|suzuki-alto-vxr-2-2012-150743499|/used-cars/suzuki-alto-2012-for-sale-in-rawalpindi-11953821
+11953782|Suzuki Baleno 2004 JXR|1000000|13h|Islamabad|2004 350,000 km Petrol 1300 cc Manual|||9|2|suzuki-baleno-jxr-2004-150742920|/used-cars/suzuki-baleno-2004-for-sale-in-islamabad-11953782
+11947687|Toyota Passo 2014 X L Package|2990000|2d|Islamabad|2014 106,104 km Petrol 1000 cc Automatic|||19|2|toyota-passo-x-l-package-2014-150650671|/used-cars/toyota-passo-2014-for-sale-in-islamabad-11947687
