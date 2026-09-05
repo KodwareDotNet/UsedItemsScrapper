@@ -1,16 +1,16 @@
-**Kei tracker — 05 Sep, 10:16 PM**
-1405 live listings (1157 PakWheels, 248 OLX)
-**32 new** since last run · **177 price drops** · 33 ads disappeared
+**Kei tracker — 06 Sep, 1:12 AM**
+1408 live listings (1160 PakWheels, 248 OLX)
+**17 new** since last run · **178 price drops** · 14 ads disappeared
 
 New:
-- Toyota Vitz 2004 1 0 FL — 1.97 lacs, 250,000 km, Islamabad
-- Suzuki Baleno 2003 JXR — 8.00 lacs, 200,000 km, Rawalpindi
-- Suzuki Alto 2004 VXR — 9.00 lacs, 102,000 km, Islamabad
-- Suzuki Alto 2005 VXR — 10.00 lacs, 160,000 km, Islamabad
-- Suzuki Baleno 1999 GLI — 12.35 lacs, 235,000 km, Islamabad
-- Daihatsu Mira 2007 L — 15.20 lacs, 160,000 km, Rawalpindi
-- Daihatsu Mira 2007  — 15.40 lacs, 160,000 km, Islamabad
-- Mitsubishi EK Wagon 2008  — 17.95 lacs, 125,125 km, Islamabad
+- Suzuki Alto 2012  — 13.60 lacs, 820,000 km, Rawalpindi
+- Suzuki Baleno 2005 JXR — 14.00 lacs, 35,000 km, Islamabad
+- Mitsubishi Pajero Mini 2003  — 14.50 lacs, 122,308 km, Islamabad
+- Mitsubishi Pajero Mini 2000  — 16.00 lacs, 146,000 km, Rawalpindi
+- Mitsubishi EK Wagon 2007 G — 16.00 lacs, 171,100 km, Rawalpindi
+- Toyota Vitz 2000 1 3 Racy RS — 17.10 lacs, 135,000 km, Rawalpindi
+- Suzuki Swift 2012 1 3L DLX — 22.50 lacs, 119,000 km, Islamabad
+- Toyota Passo 2007 G F Package — 22.85 lacs, 138,200 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 3.20 to 17.80 lacs, Islamabad
