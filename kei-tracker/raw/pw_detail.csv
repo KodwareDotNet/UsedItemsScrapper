@@ -32,7 +32,6 @@ id,color,reg_city,assembly,cc,body
 11911724,Blue,Islamabad,Imported,660 cc,N/A
 11910978,White,Islamabad,Local,660 cc,Hatchback
 11909982,White,Punjab,Imported,660 cc,N/A
-11910896,Sky Blue,Islamabad,Local,660 cc,Hatchback
 11763279,Silver,Punjab,Imported,660 cc,N/A
 11896413,Maroon,Islamabad,Imported,658 cc,Hatchback
 11707708,Bluish Black Pearl,Islamabad,Imported,660 cc,Hatchback
@@ -64,7 +63,6 @@ id,color,reg_city,assembly,cc,body
 11903924,Urban Brown Pearl,Punjab,Imported,660 cc,Hatchback
 11903898,White,Islamabad,Local,660 cc,Hatchback
 11903208,White,Islamabad,Local,660 cc,Hatchback
-11903102,Silver,Punjab,Local,660 cc,Hatchback
 11902347,White,Islamabad,Local,660 cc,Hatchback
 11902263,White,Islamabad,Local,660 cc,Hatchback
 11902243,White,Punjab,Local,660 cc,Hatchback
@@ -90,16 +88,8 @@ id,color,reg_city,assembly,cc,body
 11889319,White,Islamabad,Local,660 cc,Hatchback
 11863193,Silver,Islamabad,Imported,660 cc,Hatchback
 11878312,White,Punjab,Local,660 cc,Hatchback
-11730820,Beige,Islamabad,Imported,660 cc,Hatchback
-11886380,Black,Islamabad,Imported,660 cc,SUV
-11885969,White,Islamabad,Local,660 cc,Hatchback
-11884670,Rose Gold,Islamabad,Imported,660 cc,Hatchback
-11884757,Beige,Islamabad,Imported,660 cc,Hatchback
-11884237,Burgundy,Islamabad,Imported,660 cc,N/A
-11882498,White,Islamabad,Imported,660 cc,Hatchback
 11881142,Burgundy,Islamabad,Imported,660 cc,Hatchback
 11879398,White,Islamabad,Imported,660 cc,Hatchback
-11877893,Grey,Punjab,Local,660 cc,Hatchback
 11819965,White,Lahore,Local,660 cc,Hatchback
 11858255,Beige,Islamabad,Local,660 cc,Hatchback
 11668041,Yellow,Punjab,Imported,660 cc,Hatchback
@@ -114,7 +104,6 @@ id,color,reg_city,assembly,cc,body
 11792560,Pearl Red,Islamabad,Local,1300 cc,Hatchback
 11808655,Solid White,Islamabad,Local,1300 cc,Hatchback
 11903733,Graphite Grey,Islamabad,Local,1000 cc,Hatchback
-11743729,Solid White,Islamabad,Local,1300 cc,Hatchback
 11827299,Silver Metallic,Islamabad,Imported,1000 cc,Hatchback
 11825487,Black,Islamabad,Imported,1000 cc,Hatchback
 11899900,Maroon,Islamabad,Local,1300 cc,Hatchback
@@ -145,11 +134,6 @@ id,color,reg_city,assembly,cc,body
 11889911,White,Islamabad,Imported,660 cc,Hatchback
 11889500,Black,Islamabad,Imported,660 cc,Hatchback
 11867241,White,Islamabad,Imported,660 cc,Hatchback
-11886604,White,Islamabad,Imported,660 cc,N/A
-11885480,White,Punjab,Imported,660 cc,Hatchback
-11885333,Blue,Islamabad,Imported,660 cc,N/A
-11884047,Yellow,Karachi,Imported,660 cc,N/A
-11883927,Black,Islamabad,Imported,660 cc,Hatchback
 10473449,Black,Punjab,Imported,660 cc,Convertible
 11830606,White,Islamabad,Imported,660 cc,Hatchback
 11841782,Silver,Islamabad,Imported,660 cc,Hatchback
@@ -172,13 +156,10 @@ id,color,reg_city,assembly,cc,body
 11890448,White,Islamabad,Imported,660 cc,Hatchback
 11888799,White,Punjab,Imported,660 cc,N/A
 11724650,Navy,Karachi,Imported,660 cc,Hatchback
-11885678,Golden,Islamabad,Imported,660 cc,Hatchback
-11884434,White,Karachi,Imported,660 cc,N/A
 11576871,Blue,Punjab,Imported,660 cc,Hatchback
 11726283,White,Islamabad,Imported,1300 cc,Hatchback
 11748770,Pearl Red,Karachi,Local,1000 cc,Hatchback
 11902752,Golden,Islamabad,Local,1300 cc,N/A
-11738684,Silky Silver,Islamabad,Local,1000 cc,Hatchback
 11755705,Black Sand Pearl,Lahore,Imported,1000 cc,Hatchback
 11916446,White,Islamabad,Local,660 cc,Hatchback
 11916173,Brown,Islamabad,Imported,660 cc,Hatchback
@@ -214,7 +195,6 @@ id,color,reg_city,assembly,cc,body
 11919729,Blue,Sindh,Imported,660 cc,SUV
 11785000,Yellow,Islamabad,Imported,660 cc,Hatchback
 11923498,White,Islamabad,Imported,660 cc,Hatchback
-11923128,Silver,Punjab,Local,660 cc,Hatchback
 11770268,Blue,Punjab,Imported,660 cc,Hatchback
 11922492,Pink,Islamabad,Imported,660 cc,N/A
 11922378,Green,Sindh,Imported,660 cc,SUV
@@ -275,8 +255,6 @@ id,color,reg_city,assembly,cc,body
 11931386,Silver,Lahore,Imported,660 cc,Hatchback
 11931999,Silver,Islamabad,Imported,660 cc,Hatchback
 11931721,White,Islamabad,Imported,660 cc,N/A
-11931743,White,Punjab,Imported,660 cc,Hatchback
-11931598,Unlisted,Islamabad,Imported,660 cc,N/A
 11931391,Silver,Islamabad,Imported,660 cc,Hatchback
 11931083,Purple,Islamabad,Imported,660 cc,Hatchback
 11931020,White,Islamabad,Imported,660 cc,Hatchback
@@ -302,7 +280,6 @@ id,color,reg_city,assembly,cc,body
 11935364,White,Abbottabad,Local,660 cc,Hatchback
 11934746,White,Karachi,Local,660 cc,Hatchback
 11934722,Magenta,Islamabad,Imported,660 cc,N/A
-11926730,White,Islamabad,Local,1300 cc,Hatchback
 11646406,Red,Islamabad,Local,660 cc,Hatchback
 11936210,Black,Islamabad,Imported,660 cc,Hatchback
 11936589,Black,Islamabad,Imported,660 cc,Hatchback
@@ -332,7 +309,6 @@ id,color,reg_city,assembly,cc,body
 11901314,White,Kasur,Imported,660 cc,Mini Vehicles
 11895114,Maroon,Islamabad,Imported,660 cc,Hatchback
 11888469,White,Islamabad,Local,660 cc,Hatchback
-11886201,Red,Sindh,Imported,660 cc,Hatchback
 11887059,Black,Sindh,Imported,660 cc,N/A
 11939228,Silver,Islamabad,Imported,660 cc,Hatchback
 11733870,Red,Punjab,Imported,660 cc,Hatchback
@@ -355,15 +331,12 @@ id,color,reg_city,assembly,cc,body
 11941101,Green,Islamabad,Imported,660 cc,N/A
 10885576,Silver,Islamabad,Imported,660 cc,Hatchback
 11768357,Solid White,Islamabad,Local,1000 cc,Hatchback
-11941629,White,Islamabad,Local,1300 cc,Hatchback
 11942744,White,Lahore,Imported,660 cc,Hatchback
 11943071,Blue,Islamabad,Imported,660 cc,Hatchback
 11796520,Black,Punjab,Imported,660 cc,N/A
 11942598,Burgundy,Islamabad,Imported,660 cc,Hatchback
-11943406,Red,Islamabad,Imported,660 cc,Hatchback
 11943103,White,Islamabad,Imported,660 cc,Hatchback
 11942512,White,Punjab,Imported,660 cc,Hatchback
-11941805,Silver,Lahore,Imported,1300 cc,Hatchback
 11943725,Silver,Karachi,Local,660 cc,N/A
 11920743,Graphite Grey,Islamabad,Local,1300 cc,Hatchback
 11944263,White,Islamabad,Imported,660 cc,Hatchback
@@ -454,7 +427,6 @@ id,color,reg_city,assembly,cc,body
 11949279,Red wine,Islamabad,Imported,660 cc,N/A
 11955258,White,Islamabad,Imported,660 cc,Hatchback
 11955151,Bronze,Rawalpindi,Local,660 cc,Hatchback
-11643619,Bright Silver Metallic,Punjab,Imported,660 cc,Hatchback
 11830162,Yellow,Islamabad,Imported,660 cc,Hatchback
 11775351,Sky Blue,Islamabad,Imported,660 cc,Hatchback
 11653580,bottle green,Sindh,Imported,660 cc,SUV
@@ -468,7 +440,6 @@ id,color,reg_city,assembly,cc,body
 11958381,Blue,Sindh,Imported,660 cc,Hatchback
 11470563,Gold,Sindh,Imported,660 cc,N/A
 11958594,White,Islamabad,Imported,660 cc,Hatchback
-11808749,Maroon,Peshawar,Imported,660 cc,Hatchback
 11956950,Pink,Islamabad,Imported,660 cc,Hatchback
 11958838,Blue,Islamabad,Local,660 cc,N/A
 11953710,White,Islamabad,Local,660 cc,Hatchback
@@ -506,7 +477,6 @@ id,color,reg_city,assembly,cc,body
 11966350,Silver,Islamabad,Imported,660 cc,Hatchback
 11626392,Beige,Lahore,Imported,660 cc,Hatchback
 11966222,Navy,Lahore,Imported,660 cc,Hatchback
-11965974,White,Islamabad,Local,660 cc,Hatchback
 11965938,Grey,Punjab,Local,660 cc,Hatchback
 11965932,Black,Punjab,Imported,660 cc,N/A
 11867659,Silver,Islamabad,Imported,660 cc,Hatchback
@@ -521,7 +491,6 @@ id,color,reg_city,assembly,cc,body
 11964830,Black,Punjab,Imported,660 cc,Hatchback
 11814985,Silver,Abbottabad,Imported,660 cc,Hatchback
 11964577,White,Islamabad,Imported,660 cc,N/A
-11890948,Graphite Grey,Islamabad,Local,660 cc,Hatchback
 11966298,Maroon,Islamabad,Imported,1300 cc,Hatchback
 11965577,Silver,Punjab,Imported,1000 cc,Hatchback
 11964575,Blue,Islamabad,Imported,1000 cc,Hatchback
@@ -575,7 +544,6 @@ id,color,reg_city,assembly,cc,body
 11972257,Gold,Lahore,Imported,660 cc,N/A
 11972027,White,Punjab,Imported,660 cc,N/A
 11973140,Black,Punjab,Imported,660 cc,Hatchback
-11973344,Grey,Punjab,Local,1300 cc,Hatchback
 10196976,Black,Islamabad,Imported,1000 cc,Hatchback
 11972123,Silver,Islamabad,Imported,1000 cc,Sedan
 11973621,Black,Karachi,Imported,660 cc,SUV
@@ -593,18 +561,13 @@ id,color,reg_city,assembly,cc,body
 11973507,White,Punjab,Imported,660 cc,Hatchback
 11974728,Black,Islamabad,Imported,660 cc,Hatchback
 11809586,White,Punjab,Imported,660 cc,Hatchback
-11974697,White,Punjab,Local,1300 cc,Sedan
-11916492,White,Islamabad,Local,1000 cc,Hatchback
-11974402,Black,Islamabad,Imported,1000 cc,Hatchback
 11975381,Silver,Islamabad,Imported,660 cc,Hatchback
-11828836,Black,Islamabad,Imported,1300 cc,Hatchback
 11480665,Silver,Islamabad,Imported,1300 cc,Hatchback
 11974067,Silver,Islamabad,Imported,1000 cc,Hatchback
 11974094,White,Islamabad,Local,1000 cc,Hatchback
 11851652,Burgundy,Islamabad,Imported,1000 cc,Hatchback
 11975668,Black,Karachi,Imported,660 cc,Hatchback
 11976400,Blue,Punjab,Imported,660 cc,Hatchback
-11976011,White,Islamabad,Imported,660 cc,Hatchback
 11975770,White,Islamabad,Local,660 cc,Hatchback
 11975742,Turquoise,Punjab,Imported,660 cc,N/A
 11974707,White,Karachi,Imported,660 cc,N/A
@@ -615,7 +578,6 @@ id,color,reg_city,assembly,cc,body
 11976094,Silver,Rawalpindi,Local,660 cc,N/A
 11975459,Silver,Lahore,Local,660 cc,N/A
 11973862,White,Karachi,Imported,660 cc,N/A
-11949773,Silver,Punjab,Local,1300 cc,Hatchback
 11975453,White,Punjab,Local,1000 cc,Hatchback
 11977326,Silver,Islamabad,Local,660 cc,Hatchback
 11976911,White,Islamabad,Imported,660 cc,Hatchback
@@ -733,8 +695,6 @@ id,color,reg_city,assembly,cc,body
 11986085,White,Sindh,Imported,660 cc,N/A
 11985942,Burgundy,Islamabad,Imported,660 cc,Hatchback
 11848154,redwine,Islamabad,Local,660 cc,Mini Van
-11985812,White,Islamabad,Imported,660 cc,Hatchback
-11985675,Silver,Islamabad,Imported,660 cc,N/A
 11985617,Grey,Islamabad,Local,660 cc,Hatchback
 11985580,White,Islamabad,Imported,660 cc,Hatchback
 11889942,Beige,Islamabad,Imported,1000 cc,Hatchback
@@ -754,8 +714,6 @@ id,color,reg_city,assembly,cc,body
 11987777,White,Abbottabad,Imported,660 cc,N/A
 11987173,Silver,Islamabad,Imported,660 cc,Hatchback
 11987592,White,Islamabad,Local,660 cc,Hatchback
-11965283,White,Islamabad,Imported,660 cc,Hatchback
-11987368,White,Islamabad,Imported,660 cc,Hatchback
 11987188,Silver,Islamabad,Imported,660 cc,Hatchback
 11986991,White,Lahore,Local,660 cc,Hatchback
 11940626,Black,Islamabad,Imported,660 cc,Hatchback
@@ -807,7 +765,6 @@ id,color,reg_city,assembly,cc,body
 11990983,White,Islamabad,Imported,660 cc,Hatchback
 11990749,Black,Islamabad,Imported,660 cc,Hatchback
 11991663,Orange,Punjab,Imported,660 cc,Hatchback
-11990959,Maroon,Islamabad,Imported,660 cc,Hatchback
 11991902,White,Islamabad,Local,1000 cc,Hatchback
 11812293,White,Lahore,Imported,1000 cc,Hatchback
 11991413,Silver,Islamabad,Local,1000 cc,Hatchback
@@ -819,7 +776,6 @@ id,color,reg_city,assembly,cc,body
 11993618,Silver,Abbottabad,Local,660 cc,Hatchback
 11993185,Golden,Sindh,Imported,660 cc,Hatchback
 11993169,Turquoise,Islamabad,Imported,660 cc,Hatchback
-11993158,Silver,Punjab,Local,660 cc,Hatchback
 11993097,White,Islamabad,Imported,660 cc,N/A
 11992987,Silver,Rawalpindi,Imported,660 cc,SUV
 11992962,White,Islamabad,Local,660 cc,N/A
@@ -834,23 +790,10 @@ id,color,reg_city,assembly,cc,body
 11043547,Blue,Rawalpindi,Local,660 cc,Hatchback
 11992429,Grey,Islamabad,Local,660 cc,N/A
 11993756,White,Punjab,Local,1000 cc,Hatchback
-11992216,Golden,Punjab,Imported,1300 cc,Sedan
-11994046,Silver,Islamabad,Local,1300 cc,Sedan
-11469274,Solid White,Lahore,Local,1300 cc,Hatchback
-11993951,Gold,Islamabad,Imported,1300 cc,N/A
 11989355,cherry Red,Islamabad,Imported,1000 cc,Hatchback
-11993845,White,Lahore,Imported,1000 cc,N/A
-11993625,Silver,Islamabad,Imported,1000 cc,Hatchback
-11993593,Pearl white,Punjab,Imported,1000 cc,Hatchback
-11993490,White,Punjab,Imported,1000 cc,Hatchback
-11860412,White,Lahore,Local,1000 cc,Hatchback
-11993340,Blue,Islamabad,Local,1000 cc,Hatchback
-11993260,Black,Islamabad,Imported,1300 cc,Hatchback
-11437238,White,Lahore,Imported,1300 cc,Sedan
 11994951,Turquoise,Islamabad,Imported,660 cc,N/A
 11995145,Black,Islamabad,Imported,660 cc,Hatchback
 11833314,Black,Islamabad,Imported,660 cc,Hatchback
-11994668,Grey,Islamabad,Local,660 cc,Hatchback
 11994710,Silver,Karachi,Imported,658 cc,Hatchback
 11449531,Blue,Islamabad,Imported,660 cc,N/A
 11994568,Pink,Islamabad,Imported,660 cc,N/A
@@ -860,16 +803,7 @@ id,color,reg_city,assembly,cc,body
 11995164,Black,Islamabad,Local,1300 cc,Hatchback
 11994987,Silver,Islamabad,Local,1300 cc,Hatchback
 11994918,Silver,Punjab,Imported,1300 cc,Hatchback
-11994832,White,Islamabad,Local,1000 cc,Hatchback
-11994761,Turquoise,Islamabad,Imported,1000 cc,Hatchback
-11867459,White,Punjab,Local,1300 cc,Sedan
-11994597,Unlisted,Lahore,Imported,1300 cc,Hatchback
-11994414,White,Punjab,Local,1000 cc,Hatchback
 11942133,Red,Islamabad,Local,1300 cc,Hatchback
-11994316,Silver,Punjab,Local,1300 cc,Hatchback
-11994290,White,Islamabad,Local,1300 cc,Hatchback
-11994275,White,Lahore,Local,1000 cc,Hatchback
-11994211,Silver,Islamabad,Imported,1000 cc,Hatchback
 11995802,Silver,Sindh,Imported,660 cc,SUV
 11853729,Sky Blue,Islamabad,Imported,660 cc,Hatchback
 11995229,Pink,Islamabad,Imported,658 cc,Hatchback
@@ -920,14 +854,12 @@ id,color,reg_city,assembly,cc,body
 11997935,White,Islamabad,Imported,660 cc,Hatchback
 11997611,White,Punjab,Imported,660 cc,Hatchback
 11948144,Silver,Un-Registered,Local,660 cc,N/A
-11997165,Black,Lahore,Imported,660 cc,N/A
 11997155,White,Islamabad,Local,660 cc,Hatchback
 11980968,White,Islamabad,Imported,660 cc,Mini Vehicles
 11696940,Unlisted,Karachi,Imported,660 cc,Hatchback
 11998294,Turquoise,Lahore,Local,660 cc,Hatchback
 11998057,Silver,Islamabad,Imported,660 cc,Hatchback
 11997329,White,Rawalpindi,Imported,660 cc,Hatchback
-11749023,Blue,Punjab,Local,660 cc,Hatchback
 11998937,White,Punjab,Local,1300 cc,Hatchback
 11998785,Grey,Islamabad,Local,1300 cc,Hatchback
 11999024,White,Islamabad,Local,1000 cc,Hatchback
@@ -976,7 +908,6 @@ id,color,reg_city,assembly,cc,body
 11999387,Maroon,Peshawar,Local,1000 cc,Hatchback
 12000196,Black,Punjab,Imported,660 cc,N/A
 11986474,Silky Silver Metallic,Lahore,Imported,660 cc,Hatchback
-11718527,White,Islamabad,Imported,660 cc,Hatchback
 12000074,Silver,Punjab,Imported,660 cc,Hatchback
 11999448,Red,Islamabad,Imported,658 cc,Hatchback
 12000582,White,Punjab,Imported,660 cc,Hatchback
@@ -1019,7 +950,6 @@ id,color,reg_city,assembly,cc,body
 12001782,White,Islamabad,Imported,660 cc,Hatchback
 12001584,Beige,Islamabad,Imported,660 cc,N/A
 12001508,Pink,Islamabad,Imported,660 cc,Hatchback
-12001388,Silver,Lahore,Imported,660 cc,Hatchback
 12001267,White,Islamabad,Imported,660 cc,Hatchback
 12002140,White,Islamabad,Imported,660 cc,Hatchback
 12002815,White,Punjab,Local,1000 cc,Hatchback
@@ -1037,7 +967,6 @@ id,color,reg_city,assembly,cc,body
 12001439,White,Islamabad,Local,1000 cc,N/A
 12001410,Grey,Punjab,Local,1300 cc,Hatchback
 12001378,Silver,Lahore,Imported,1000 cc,Hatchback
-11993121,Silver,Islamabad,Local,1000 cc,Hatchback
 12003071,White,Peshawar,Imported,660 cc,N/A
 12003561,White,Islamabad,Local,660 cc,Hatchback
 12003329,White,Lahore,Imported,660 cc,Hatchback
@@ -1066,7 +995,6 @@ id,color,reg_city,assembly,cc,body
 12004772,Bright Silver Metallic,Un-Registered,Imported,660 cc,Hatchback
 12004563,White,Islamabad,Imported,660 cc,Hatchback
 11758173,Pink,Islamabad,Imported,660 cc,Hatchback
-12004224,Black,Karachi,Imported,660 cc,N/A
 12004169,White,Islamabad,Imported,660 cc,Hatchback
 12004134,Orange,Islamabad,Imported,660 cc,Hatchback
 11982361,Maroon,Islamabad,Imported,660 cc,Hatchback
@@ -1117,7 +1045,6 @@ id,color,reg_city,assembly,cc,body
 12006780,Beige,Islamabad,Local,1000 cc,Hatchback
 12006574,Silver,Sindh,Local,1000 cc,Hatchback
 12002200,Silver,Islamabad,Imported,1000 cc,Hatchback
-12007274,Grey,Lahore,Local,1300 cc,Hatchback
 12007228,Golden,Rawalpindi,Local,1000 cc,Hatchback
 12007186,Grey,Islamabad,Local,1000 cc,Hatchback
 12006505,White,Islamabad,Local,1300 cc,Hatchback
@@ -1139,13 +1066,11 @@ id,color,reg_city,assembly,cc,body
 12006281,White,Islamabad,Local,1300 cc,Hatchback
 12006182,Silver,Islamabad,Imported,1300 cc,Hatchback
 12006156,Grey,Islamabad,Imported,1300 cc,Hatchback
-12006112,Unlisted,Islamabad,Local,1000 cc,Hatchback
 11989521,Navy,Islamabad,Imported,1300 cc,Hatchback
 12005818,Blue,Islamabad,Local,1300 cc,Hatchback
 12005776,White,Islamabad,Local,1000 cc,Hatchback
 12005743,Burgundy,Islamabad,Imported,1000 cc,Hatchback
 12005731,Silver,Islamabad,Imported,1000 cc,Hatchback
-12005677,White,Islamabad,Local,1000 cc,Hatchback
 12005628,Beige,Islamabad,Local,1300 cc,Sedan
 11875070,White,Islamabad,Imported,660 cc,N/A
 11870300,Red,Islamabad,Imported,660 cc,Hatchback
@@ -1172,8 +1097,56 @@ id,color,reg_city,assembly,cc,body
 12007656,Golden,Punjab,Imported,1000 cc,Hatchback
 12007635,Silver,Islamabad,Imported,1000 cc,Hatchback
 11823909,White,Islamabad,Local,1300 cc,Hatchback
-12007590,White,Islamabad,Local,1000 cc,Hatchback
 12007461,Grey,Lahore,Local,1000 cc,N/A
 12007465,White,Islamabad,Local,1000 cc,Hatchback
 12007446,White,Islamabad,Local,1300 cc,Hatchback
 12007389,White,Islamabad,Imported,1000 cc,Hatchback
+12009462,White,Islamabad,Local,660 cc,Hatchback
+12009413,Burgundy,Islamabad,Imported,660 cc,Hatchback
+12009404,Burgundy,Lahore,Imported,660 cc,Hatchback
+12009399,Turquoise,Islamabad,Imported,660 cc,Hatchback
+12008947,White,Punjab,Imported,660 cc,N/A
+12009656,Silver,Islamabad,Imported,660 cc,N/A
+12009600,White,Islamabad,Local,660 cc,Hatchback
+12009579,Silver,Islamabad,Imported,660 cc,N/A
+12009567,White,Islamabad,Local,660 cc,Hatchback
+12009508,White,Islamabad,Local,660 cc,Mini Vehicles
+12009477,White,Islamabad,Local,660 cc,Hatchback
+12009476,White,Islamabad,Local,660 cc,Hatchback
+12009445,White,Punjab,Imported,660 cc,Hatchback
+12009382,Turquoise,Islamabad,Imported,660 cc,Hatchback
+12009378,White,Islamabad,Imported,660 cc,Hatchback
+12009144,Silver,Un-Registered,Imported,660 cc,Hatchback
+12008971,White,Islamabad,Local,660 cc,Hatchback
+12008964,White,Islamabad,Local,660 cc,Hatchback
+12008936,Black,Abbottabad,Imported,660 cc,Hatchback
+12008878,Burgundy,Punjab,Imported,660 cc,Hatchback
+12008866,White,Islamabad,Imported,660 cc,N/A
+12008844,Silver,Punjab,Imported,660 cc,Hatchback
+12008751,Blue,Islamabad,Imported,660 cc,Hatchback
+12008542,Black,Lahore,Imported,660 cc,Hatchback
+11738655,Black,Punjab,Imported,660 cc,Hatchback
+12008484,Silver,Islamabad,Imported,660 cc,N/A
+12008408,White,Islamabad,Imported,660 cc,Hatchback
+11778101,Navy,Rawalpindi,Local,660 cc,N/A
+12008925,White,Lahore,Imported,660 cc,Hatchback
+11998271,Solid White,Punjab,Local,1000 cc,Hatchback
+11919629,White,Islamabad,Local,1000 cc,Hatchback
+12009426,Blue,Islamabad,Imported,1300 cc,Hatchback
+12007609,Silver,Islamabad,Imported,1000 cc,Hatchback
+12009665,Grey,Punjab,Imported,1000 cc,Hatchback
+12009593,White,Lahore,Local,1000 cc,Hatchback
+12009282,White,Punjab,Local,1300 cc,Hatchback
+12008999,Grey,Punjab,Local,1300 cc,Hatchback
+12009108,White,Punjab,Local,800 cc,Hatchback
+12008996,White,Punjab,Local,1000 cc,Hatchback
+11764546,Grey,Islamabad,Imported,1300 cc,Sedan
+11963991,White,Punjab,Local,1000 cc,Hatchback
+12008839,White,Lahore,Local,1000 cc,Hatchback
+12008785,White,Islamabad,Local,1000 cc,Hatchback
+12008699,Red,Sindh,Imported,1000 cc,Hatchback
+12008589,Solid White,Lahore,Local,1000 cc,Hatchback
+12008434,White,Islamabad,Local,1000 cc,Hatchback
+12008398,White,Karachi,Local,1300 cc,Hatchback
+12008373,Gold,Rawalpindi,Imported,1300 cc,N/A
+12008319,White,Punjab,Local,1000 cc,Hatchback
