@@ -1,16 +1,16 @@
-**Kei tracker — 16 Sep, 11:49 PM**
-1405 live listings (1161 PakWheels, 244 OLX)
-**30 new** since last run · **211 price drops** · 26 ads disappeared
+**Kei tracker — 17 Sep, 2:04 PM**
+1379 live listings (1134 PakWheels, 245 OLX)
+**79 new** since last run · **206 price drops** · 105 ads disappeared
 
 New:
-- Suzuki Baleno 2002 GLI P — 9.70 lacs, 121,212 km, Islamabad
-- Suzuki Alto 2006 VXR — 11.50 lacs, 50,000 km, Islamabad
-- Suzuki Alto 2003 VXR — 11.50 lacs, 150,000 km, Rawalpindi
-- Daihatsu Terios Kid 2007 Custom L — 14.75 lacs, 10,000 km, Islamabad
-- Daihatsu Mira 2006  — 15.50 lacs, 150,000 km, Islamabad
-- Suzuki Wagon R 2017 VXL — 21.00 lacs, 160,000 km, Islamabad
-- Suzuki Swift 2010 1 3L DLX — 21.50 lacs, 1 km, Islamabad
-- Daihatsu Mira ES 2012  — 21.50 lacs, 97,000 km, Islamabad
+- Suzuki Alto 1993  — 3.95 lacs, 150,000 km, Islamabad
+- Nissan March 1997 1997 — 9.25 lacs, 250,000 km, Diplomatic Enclave, Islamabad
+- Suzuki Alto 2008 2008 660 Cc Converted — 10.85 lacs, 145,000 km, Adiala Road, Rawalpindi
+- Suzuki Baleno 1999  — 11.15 lacs, 15,000 km, Rawalpindi
+- Suzuki Alto 2006 VXR — 11.20 lacs, 85,000 km, Islamabad
+- Other JDM 2007 vxr alto Pakistani. 660cc automatic VTEC engine — 13.75 lacs, 75,000 km, Harley Street, Rawalpindi
+- Suzuki Alto 2010 VXR — 13.80 lacs, 116,100 km, Islamabad
+- Suzuki Alto 2008  — 14.20 lacs, 120,000 km, Rawalpindi
 
 Price drops:
 - Suzuki Swift 1996 — down 7.00 to 14.00 lacs, Islamabad
