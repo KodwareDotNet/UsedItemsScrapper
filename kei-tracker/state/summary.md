@@ -1,16 +1,16 @@
-**Kei tracker — 30 Sep, 10:55 PM**
-1355 live listings (1123 PakWheels, 232 OLX)
-**52 new** since last run · **232 price drops** · 39 ads disappeared
+**Kei tracker — 01 Oct, 3:07 AM**
+1363 live listings (1131 PakWheels, 232 OLX)
+**15 new** since last run · **234 price drops** · 7 ads disappeared
 
 New:
-- Mitsubishi Pajero Mini 1995  — 8.00 lacs, 100,000 km, Rawalpindi
-- Suzuki Alto 2005 VXR — 10.50 lacs, 255,600 km, Islamabad
-- Suzuki Baleno 2005 JXR — 10.50 lacs, 25,000 km, Islamabad
-- Suzuki Baleno 2004 JXL — 10.50 lacs, 234,566 km, Islamabad
-- Suzuki Alto 2003  — 12.00 lacs, 15,000 km, Islamabad
-- Suzuki Alto 2010 VXR CNG — 12.85 lacs, 90,000 km, Islamabad
-- Daihatsu Mira 2005 Gino — 15.50 lacs, 100,000 km, Rawalpindi
-- Daihatsu Mira 2008 TX Special — 16.75 lacs, 150,000 km, Islamabad
+- Suzuki Alto 2005 VXR CNG — 8.30 lacs, 200,000 km, Islamabad
+- Suzuki Wagon R 2007 FX — 16.90 lacs, 235,000 km, Islamabad
+- Suzuki Alto 2007 GII — 18.50 lacs, 160,000 km, Islamabad
+- Toyota Vitz 2006 1 3 Racy RS — 22.17 lacs, 380,000 km, Islamabad
+- Suzuki Wagon R 2019 VXR — 22.40 lacs, 105,500 km, Islamabad
+- Suzuki Alto 2014 ECO L — 23.00 lacs, 180,000 km, Islamabad
+- Suzuki Wagon R 2018 VXR — 23.00 lacs, 150,000 km, Islamabad
+- Suzuki Alto 2022 VX — 24.80 lacs, 225 km, Rawalpindi
 
 Price drops:
 - Toyota Belta 2006 — down 9.00 to 21.00 lacs, Islamabad
