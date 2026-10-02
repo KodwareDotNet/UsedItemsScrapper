@@ -1,21 +1,21 @@
-**Kei tracker — 01 Oct, 11:20 PM**
-1370 live listings (1131 PakWheels, 239 OLX)
-**63 new** since last run · **226 price drops** · 62 ads disappeared
+**Kei tracker — 02 Oct, 3:04 PM**
+1360 live listings (1127 PakWheels, 233 OLX)
+**87 new** since last run · **223 price drops** · 97 ads disappeared
 
 New:
-- Suzuki Alto 2006 VXR — 10.50 lacs, 180,000 km, Rawalpindi
-- Suzuki Alto 2008 VXR CNG — 10.80 lacs, 193,000 km, Rawalpindi
-- Suzuki Alto 2006 VXR — 11.30 lacs, 185,000 km, Islamabad
-- Suzuki Baleno 2004 JXR — 11.50 lacs, 164,000 km, Islamabad
-- Suzuki Alto 2010 VXR — 12.70 lacs, 160,000 km, Islamabad
-- Nissan March 2007 Bolero — 13.50 lacs, 218,000 km, Islamabad
-- Suzuki Alto 2010 VXR CNG — 15.50 lacs, 173,000 km, Islamabad
-- Suzuki Alto 2012 ECO L — 17.50 lacs, 95,000 km, Islamabad
+- Suzuki Alto 2004 VXR CNG — 8.40 lacs, 250,000 km, Islamabad
+- Suzuki Baleno 1998  — 10.00 lacs, 30,000 km, Islamabad
+- Suzuki Baleno 2004 Sports — 10.50 lacs, 135,000 km, Islamabad
+- Other JDM 2020 Prince Pearl 2020 automatic 660cc — 10.80 lacs, 30,000 km, Koral Chowk, Islamabad
+- Suzuki Baleno 2002 JXR — 11.65 lacs, 189,000 km, Rawalpindi
+- Suzuki Alto 2006 VXR — 11.70 lacs, 12,344 km, Islamabad
+- Suzuki Jimny 1988  — 12.00 lacs, 200,000 km, Islamabad
+- Suzuki Alto 2007  — 12.00 lacs, 80,000 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
 - Honda Life 2007 — down 3.70 to 13.65 lacs, Rawalpindi
-- Suzuki Swift 2018 — down 2.85 to 27.15 lacs, Islamabad
-- Daihatsu Tanto 2015 — down 2.60 to 23.90 lacs, Rawalpindi
+- Suzuki Swift 2018 — down 3.05 to 26.95 lacs, Islamabad
 - Daihatsu Esse 2007 — down 2.50 to 20.00 lacs, Islamabad
-- Daihatsu Tanto 2013 — down 2.50 to 23.50 lacs, Islamabad
+- Suzuki Alto 2005 — down 2.40 to 10.60 lacs, Islamabad
+- Daihatsu Tanto 2013 — down 2.20 to 23.80 lacs, Islamabad
