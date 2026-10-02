@@ -1,16 +1,16 @@
-**Kei tracker — 02 Oct, 3:04 PM**
-1360 live listings (1127 PakWheels, 233 OLX)
-**87 new** since last run · **223 price drops** · 97 ads disappeared
+**Kei tracker — 02 Oct, 10:46 PM**
+1368 live listings (1135 PakWheels, 233 OLX)
+**70 new** since last run · **220 price drops** · 62 ads disappeared
 
 New:
-- Suzuki Alto 2004 VXR CNG — 8.40 lacs, 250,000 km, Islamabad
-- Suzuki Baleno 1998  — 10.00 lacs, 30,000 km, Islamabad
-- Suzuki Baleno 2004 Sports — 10.50 lacs, 135,000 km, Islamabad
-- Other JDM 2020 Prince Pearl 2020 automatic 660cc — 10.80 lacs, 30,000 km, Koral Chowk, Islamabad
-- Suzuki Baleno 2002 JXR — 11.65 lacs, 189,000 km, Rawalpindi
-- Suzuki Alto 2006 VXR — 11.70 lacs, 12,344 km, Islamabad
-- Suzuki Jimny 1988  — 12.00 lacs, 200,000 km, Islamabad
-- Suzuki Alto 2007  — 12.00 lacs, 80,000 km, Islamabad
+- Suzuki Alto 2022 VX — 1.00 lacs, 138,224 km, Rawalpindi
+- Suzuki Alto 2004  — 8.40 lacs, 215,000 km, Islamabad
+- Suzuki Baleno 2001 ELI — 9.20 lacs, 55,000 km, Rawalpindi
+- Suzuki Baleno 1999 GLI — 10.00 lacs, 135,000 km, Islamabad
+- Suzuki Baleno 2005 JXR — 10.80 lacs, 300,000 km, Islamabad
+- Suzuki Alto 2011 VXR CNG — 11.00 lacs, 200,000 km, Rawalpindi
+- Suzuki Alto 2010 VXR — 12.00 lacs, 100,000 km, Rawalpindi
+- Suzuki Alto 2006 VXR CNG — 12.50 lacs, 100,000 km, Rawalpindi
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
