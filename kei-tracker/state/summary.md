@@ -1,16 +1,16 @@
-**Kei tracker — 06 Oct, 3:31 PM**
-1360 live listings (1116 PakWheels, 244 OLX)
-**125 new** since last run · **212 price drops** · 145 ads disappeared
+**Kei tracker — 06 Oct, 11:13 PM**
+1362 live listings (1118 PakWheels, 244 OLX)
+**64 new** since last run · **212 price drops** · 62 ads disappeared
 
 New:
-- Toyota Passo 2009 2009 — 2.04 lacs, 126,000 km, I-8, Islamabad
-- Suzuki Wagon R 1997  — 7.70 lacs, 190,000 km, Islamabad
-- Suzuki Baleno 2001 GLI — 8.30 lacs, 200,000 km, Islamabad
-- Mitsubishi Pajero Mini 1997 1997 660cc argent sale Whatsapp03175413718 — 9.00 lacs, 150,000 km, Cricket Stadium Road, Rawalpindi
-- Suzuki Baleno 1999 GLI — 9.00 lacs, 100,000 km, Islamabad
-- Suzuki Alto 2002 VXR — 9.50 lacs, 198,000 km, Islamabad
-- Suzuki Alto 2006 VXR — 10.10 lacs, 180,000 km, Rawalpindi
-- Suzuki Alto 2006  — 10.35 lacs, 60,000 km, Islamabad
+- Suzuki Alto 2001 VXR — 6.50 lacs, 201,562 km, Islamabad
+- Suzuki Baleno 2001 ELI — 8.65 lacs, 425,000 km, Islamabad
+- Mitsubishi Pajero Mini 1995 Limited — 9.50 lacs, 150,000 km, Rawalpindi
+- Suzuki Baleno 2005 JXR — 10.65 lacs, 145,000 km, Islamabad
+- Suzuki Baleno 2001 ELI — 10.90 lacs, 100,000 km, Islamabad
+- Suzuki Alto 2005 VXR — 12.00 lacs, 150,000 km, Islamabad
+- Mitsubishi Pajero Mini 1995  — 13.50 lacs, 200,000 km, Islamabad
+- Daihatsu Mira 2004 X — 13.50 lacs, 120,000 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
