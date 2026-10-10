@@ -1,16 +1,16 @@
-**Kei tracker — 10 Oct, 3:11 PM**
-1314 live listings (1073 PakWheels, 241 OLX)
-**102 new** since last run · **225 price drops** · 107 ads disappeared
+**Kei tracker — 10 Oct, 10:15 PM**
+1325 live listings (1084 PakWheels, 241 OLX)
+**60 new** since last run · **219 price drops** · 49 ads disappeared
 
 New:
-- Other JDM 2007 2007 mehran 660cc engine efi — 8.50 lacs, 192,718 km, Dhoke Banaras Road, Rawalpindi
-- Mitsubishi Pajero Mini 1997 XR — 8.90 lacs, 1,230 km, Islamabad
-- Suzuki Alto 2007 VXR — 9.55 lacs, 900,000 km, Rawalpindi
-- Suzuki Alto 2003 VXR — 10.50 lacs, 200,000 km, Islamabad
-- Suzuki Alto 2006 GII — 10.65 lacs, 100,000 km, Islamabad
-- Suzuki Baleno 2004 JXR — 11.10 lacs, 164,000 km, Islamabad
-- Suzuki Baleno 2004  — 11.50 lacs, 353,727 km, Islamabad
-- Other JDM 2006 Alto VXR 660cc Automatic — 12.88 lacs, 5,600 km, G-10, Islamabad
+- Suzuki Alto 2000 VXR — 8.50 lacs, 206,356 km, Islamabad
+- Suzuki Baleno 2002 JXR — 11.20 lacs, 150,000 km, Islamabad
+- Suzuki Alto 2010 G — 11.30 lacs, 123,546 km, Islamabad
+- Suzuki Alto 2006 VXR — 11.60 lacs, 185,698 km, Islamabad
+- Suzuki Alto 2012 VXR — 11.80 lacs, 194,000 km, Rawalpindi
+- Suzuki Alto 2012 VXR CNG — 12.10 lacs, 297,560 km, Islamabad
+- Suzuki Alto 2010 VXR — 12.30 lacs, 145,000 km, Islamabad
+- Suzuki Alto 2008 VXR — 13.00 lacs, 344,500 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
@@ -18,4 +18,4 @@ Price drops:
 - Suzuki Alto Lapin 2014 — down 5.00 to 20.00 lacs, Islamabad
 - Suzuki Wagon R 2014 — down 4.00 to 23.00 lacs, Rawalpindi
 - Honda Life 2007 — down 3.70 to 13.65 lacs, Rawalpindi
-- Nissan Dayz 2012 — down 3.00 to 19.00 lacs, Islamabad
+- Nissan Dayz 2012 — down 3.00 to 19.00 lacs, G-13, Islamabad
