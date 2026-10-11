@@ -1,16 +1,16 @@
-**Kei tracker — 11 Oct, 10:37 PM**
-1333 live listings (1094 PakWheels, 239 OLX)
-**58 new** since last run · **212 price drops** · 41 ads disappeared
+**Kei tracker — 12 Oct, 2:45 AM**
+1337 live listings (1098 PakWheels, 239 OLX)
+**10 new** since last run · **216 price drops** · 6 ads disappeared
 
 New:
-- Suzuki Swift 1987  — 5.50 lacs, 100,000 km, Islamabad
-- Suzuki Baleno 2003 JXL — 10.25 lacs, 210,000 km, Rawalpindi
-- Suzuki Alto 2007 VXR — 11.00 lacs, 10,000 km, Islamabad
-- Suzuki Alto 2012 VXR — 11.30 lacs, 131,000 km, Rawalpindi
-- Suzuki Baleno 2005 Sports — 11.45 lacs, 350,000 km, Islamabad
-- Suzuki Baleno 2005 JXR — 11.50 lacs, 215,489 km, Rawalpindi
-- Suzuki Alto 2006 VXR — 11.85 lacs, 10,000 km, Rawalpindi
-- Suzuki Baleno 2004 JXR — 12.00 lacs, 31,249 km, Rawalpindi
+- Suzuki Alto 2009 VXR CNG — 10.50 lacs, 120,000 km, Islamabad
+- Suzuki Alto 2014 F — 13.00 lacs, 110,000 km, Rawalpindi
+- Suzuki Baleno 2003 JXL — 13.60 lacs, 100,000 km, Islamabad
+- Daihatsu Move 2007 Custom X — 18.70 lacs, 166,000 km, Rawalpindi
+- Suzuki Wagon R 2014 VXL — 19.40 lacs, 134,750 km, Islamabad
+- Suzuki Alto 2011 ECO S — 21.50 lacs, 150,000 km, Islamabad
+- Toyota Vitz 2005 1 3 F — 22.80 lacs, 300,000 km, Islamabad
+- Suzuki Spacia 2014 Custom XS — 24.00 lacs, 200,000 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
