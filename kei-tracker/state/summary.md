@@ -1,16 +1,12 @@
-**Kei tracker — 17 Oct, 10:52 PM**
-1327 live listings (1083 PakWheels, 244 OLX)
-**33 new** since last run · **233 price drops** · 23 ads disappeared
+**Kei tracker — 18 Oct, 1:25 AM**
+1324 live listings (1080 PakWheels, 244 OLX)
+**4 new** since last run · **233 price drops** · 7 ads disappeared
 
 New:
-- Suzuki Alto 2001 VXR — 8.70 lacs, 200,000 km, Rawalpindi
-- Suzuki Alto 2006 VXR — 9.70 lacs, 100,000 km, Islamabad
-- Suzuki Alto 2008 VXR — 10.80 lacs, 257,895 km, Rawalpindi
-- Suzuki Alto 2012 VXR — 11.60 lacs, 134,000 km, Rawalpindi
-- Suzuki Alto 2009 VXR — 12.70 lacs, 300,000 km, Rawalpindi
-- Mitsubishi EK Wagon 2017 G — 13.50 lacs, 4,700 km, Islamabad
-- Suzuki Alto 2006  — 14.00 lacs, 194,000 km, Islamabad
-- Suzuki Alto 2012 VXR — 14.80 lacs, 179,000 km, Islamabad
+- Suzuki Alto 2020 VXL — 2.60 lacs, 46,000 km, Islamabad
+- Nissan Dayz 2013  — 22.95 lacs, 170,000 km, Islamabad
+- Toyota Vitz 2008 1 3 F — 24.60 lacs, 138,000 km, Islamabad
+- Suzuki Wagon R 2014 FX — 26.00 lacs, 115,000 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
