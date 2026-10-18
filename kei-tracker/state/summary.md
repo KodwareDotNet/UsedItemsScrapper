@@ -1,12 +1,16 @@
-**Kei tracker — 18 Oct, 1:25 AM**
-1324 live listings (1080 PakWheels, 244 OLX)
-**4 new** since last run · **233 price drops** · 7 ads disappeared
+**Kei tracker — 18 Oct, 1:25 PM**
+1296 live listings (1043 PakWheels, 253 OLX)
+**55 new** since last run · **233 price drops** · 83 ads disappeared
 
 New:
-- Suzuki Alto 2020 VXL — 2.60 lacs, 46,000 km, Islamabad
-- Nissan Dayz 2013  — 22.95 lacs, 170,000 km, Islamabad
-- Toyota Vitz 2008 1 3 F — 24.60 lacs, 138,000 km, Islamabad
-- Suzuki Wagon R 2014 FX — 26.00 lacs, 115,000 km, Islamabad
+- Nissan March 1997 1997 — 9.25 lacs, 250,000 km, Diplomatic Enclave, Islamabad
+- Suzuki Alto 2007 VXR — 9.50 lacs, 99,800 km, Rawalpindi
+- Nissan March 1998 1998 — 10.50 lacs, 100,000 km, Others, Gujar Khan
+- Suzuki Alto 2006 2006 — 10.50 lacs, 100,000 km, Bhara kahu, Islamabad
+- Suzuki Alto 2006 VXR 2006 60% Genuine Exchange possible with City 2010+ — 10.50 lacs, 200,000 km, 9th Avenue, Islamabad
+- Suzuki Alto 2006 GII — 12.60 lacs, 35,000 km, Islamabad
+- Suzuki Alto 2012  — 13.00 lacs, 100 km, Rawalpindi
+- Other JDM 2006 Alto VXR 660cc Automatic — 13.18 lacs, 65,000 km, Melody Market, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
