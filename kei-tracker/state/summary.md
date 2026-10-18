@@ -1,16 +1,16 @@
-**Kei tracker — 18 Oct, 6:08 PM**
-1034 live listings (781 PakWheels, 253 OLX)
-**18 new** since last run · **193 price drops** · 280 ads disappeared
+**Kei tracker — 18 Oct, 11:04 PM**
+1310 live listings (1057 PakWheels, 253 OLX)
+**281 new** since last run · **195 price drops** · 5 ads disappeared
 
 New:
-- Suzuki Alto 2006 G — 12.80 lacs, 174,700 km, Islamabad
-- Suzuki Alto 2006 G — 12.90 lacs, 120,000 km, Islamabad
-- Suzuki Alto 2007  — 15.00 lacs, 90,443 km, Rawalpindi
-- Subaru Pleo 2012 F — 16.50 lacs, 132,400 km, Rawalpindi
-- Suzuki Alto 2008 G — 17.30 lacs, 85,000 km, Islamabad
-- Suzuki Wagon R 2007 X — 17.89 lacs, 221,000 km, Islamabad
-- Honda Life 2007 F — 19.80 lacs, 105,000 km, Rawalpindi
-- Suzuki Alto 2010 F — 22.25 lacs, 300,000 km, Rawalpindi
+- Suzuki Alto 2012 VX — 7.20 lacs, 10,000 km, Islamabad
+- Suzuki Alto 2005 VXR — 7.35 lacs, 15,000 km, Rawalpindi
+- Suzuki Alto 2001 VXR — 8.70 lacs, 200,000 km, Rawalpindi
+- Suzuki Alto 2003 VXR — 9.00 lacs, 354,586 km, Islamabad
+- Suzuki Alto 2009 VX — 9.20 lacs, 100,000 km, Rawalpindi
+- Nissan March 1997  — 9.25 lacs, 250,000 km, Islamabad
+- Suzuki Alto 2007 VXR — 9.50 lacs, 99,800 km, Rawalpindi
+- Suzuki Baleno 2002 JXR — 9.50 lacs, 131,982 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
