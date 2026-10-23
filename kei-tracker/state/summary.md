@@ -1,16 +1,16 @@
-**Kei tracker — 23 Oct, 12:09 AM**
-1360 live listings (1108 PakWheels, 252 OLX)
-**23 new** since last run · **216 price drops** · 21 ads disappeared
+**Kei tracker — 23 Oct, 1:56 PM**
+1336 live listings (1097 PakWheels, 239 OLX)
+**54 new** since last run · **217 price drops** · 78 ads disappeared
 
 New:
-- Suzuki Alto 2007 VXR — 11.20 lacs, 315,000 km, Islamabad
-- Suzuki Baleno 2004 JXR — 13.45 lacs, 200,000 km, Rawalpindi
-- Suzuki Alto 2005  — 14.00 lacs, 500,000 km, Islamabad
-- Mitsubishi EK Wagon 2007 GS — 18.50 lacs, 230,000 km, Islamabad
-- Nissan Moco 2006 G Four — 18.50 lacs, 520,000 km, Rawalpindi
-- Suzuki MR Wagon 2007  — 18.50 lacs, 220 km, Islamabad
-- Suzuki Alto 2009 G — 18.75 lacs, 150,000 km, Islamabad
-- Suzuki Swift 2011 1 3L DLX — 19.25 lacs, 204,500 km, Islamabad
+- Suzuki Alto 2005 VXR — 11.50 lacs, 80,000 km, Rawalpindi
+- Suzuki Alto 2005 2005.660cc — 11.50 lacs, 123,455 km, Peshawar Road, Rawalpindi
+- Suzuki Baleno 2004 JXL — 11.90 lacs, 135,500 km, Islamabad
+- Suzuki Alto 2012 VXR CNG — 12.80 lacs, 100,000 km, Islamabad
+- Nissan Moco 2006 X — 12.85 lacs, 400,000 km, Islamabad
+- Suzuki Baleno 1999 GLI P — 13.50 lacs, 250,000 km, Islamabad
+- Toyota Vitz 2000 2000 — 16.50 lacs, 123,456 km, Airport Housing Society, Rawalpindi
+- Daihatsu Mira 2005 2005 — 18.50 lacs, 100,000 km, Pakistan Town, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
@@ -18,4 +18,4 @@ Price drops:
 - Suzuki Alto Lapin 2014 — down 5.00 to 20.00 lacs, Islamabad
 - Suzuki Alto 2016 — down 2.25 to 26.75 lacs, Islamabad
 - Toyota Vitz 2008 — down 2.20 to 22.30 lacs, G-13/1, Islamabad
-- Honda N Box 2014 — down 2.20 to 23.30 lacs, Islamabad
+- Suzuki Wagon R 2014 — down 2.00 to 25.00 lacs, Rawalpindi
