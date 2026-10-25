@@ -1,16 +1,16 @@
-**Kei tracker — 25 Oct, 1:26 PM**
+**Kei tracker — 25 Oct, 6:49 PM**
 1332 live listings (1093 PakWheels, 239 OLX)
-**34 new** since last run · **213 price drops** · 59 ads disappeared
+**55 new** since last run · **208 price drops** · 55 ads disappeared
 
 New:
-- Mitsubishi Pajero Mini 2006 VR — 8.30 lacs, 15,000 km, Rawalpindi
-- Suzuki Baleno 2004 JXL — 11.00 lacs, 230,000 km, Islamabad
-- Suzuki Alto 2011 VXR — 12.75 lacs, 55,000 km, Islamabad
-- Suzuki Alto 2009 VXR CNG — 14.00 lacs, 20 km, Islamabad
-- Suzuki Alto 2010 E Manual — 14.80 lacs, 175,000 km, Rawalpindi
-- Suzuki MR Wagon 2007  — 17.50 lacs, 230,000 km, Islamabad
-- Daihatsu Move 2009  — 18.50 lacs, 144,000 km, Islamabad
-- Daihatsu Mira 2007  — 19.85 lacs, 200,000 km, Rawalpindi
+- Suzuki Baleno 2004  — 8.75 lacs, 180,000 km, Islamabad
+- Suzuki Alto 2004 VXR — 9.00 lacs, 400,000 km, Islamabad
+- Suzuki Baleno 2000 GXI — 9.10 lacs, 155,000 km, Rawalpindi
+- Suzuki Alto 2007 VXR — 9.20 lacs, 96,586 km, Islamabad
+- Suzuki Alto 2002 VXR — 9.70 lacs, 400,000 km, Rawalpindi
+- Suzuki Alto 2005 VXR — 10.50 lacs, 180,000 km, Islamabad
+- Suzuki Alto 2007 VXR — 10.70 lacs, 90,000 km, Rawalpindi
+- Suzuki Alto 2006 VXR — 10.80 lacs, 100,000 km, Rawalpindi
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
