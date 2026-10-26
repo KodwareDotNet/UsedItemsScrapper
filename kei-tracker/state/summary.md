@@ -1,16 +1,16 @@
-**Kei tracker — 26 Oct, 1:53 PM**
-1331 live listings (1092 PakWheels, 239 OLX)
-**50 new** since last run · **208 price drops** · 52 ads disappeared
+**Kei tracker — 26 Oct, 9:32 PM**
+1339 live listings (1105 PakWheels, 234 OLX)
+**115 new** since last run · **208 price drops** · 107 ads disappeared
 
 New:
-- Suzuki Baleno 1999 GLI P — 8.80 lacs, 150,000 km, Islamabad
-- Suzuki Alto 2006 VXR — 10.80 lacs, 250,000 km, Rawalpindi
-- Suzuki Alto 2008  — 11.90 lacs, 150,000 km, Rawalpindi
-- Suzuki Alto 2017  — 13.50 lacs, 100,000 km, Islamabad
-- Suzuki Baleno 2003 Sports — 14.00 lacs, 320,000 km, Islamabad
-- Daihatsu Esse 2006 X — 14.50 lacs, 115,000 km, Islamabad
-- Nissan March 2007 Bolero — 18.00 lacs, 200,000 km, Rawalpindi
-- Toyota Belta 2007 X S Package 1 — 19.00 lacs, 191,217 km, Rawalpindi
+- Mitsubishi Pajero Mini 2006 2006 — 8.30 lacs, 15,000 km, Friends Colony, Rawalpindi
+- Suzuki Baleno 2002 JXR — 11.50 lacs, 250,000 km, Islamabad
+- Suzuki Alto 2006 VXR — 12.00 lacs, 107,590 km, Rawalpindi
+- Other JDM 2005 Alto VXR 2005model Converted into k6A Black mocco660cc — 12.75 lacs, 300 km, Shalley Valley, Rawalpindi
+- Suzuki Alto 2005 2005 — 12.80 lacs, 135,000 km, Gulberg Greens, Islamabad
+- Suzuki Alto 2007 2007 660cc — 12.95 lacs, 10,000 km, Lalazar, Rawalpindi
+- Suzuki Alto 2012 VXR — 13.50 lacs, 223,000 km, Islamabad
+- Subaru Pleo 2008 Plus — 14.55 lacs, 500,000 km, Islamabad
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
