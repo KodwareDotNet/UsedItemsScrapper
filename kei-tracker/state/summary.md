@@ -1,21 +1,21 @@
-**Kei tracker — 25 Oct, 11:28 PM**
-1333 live listings (1094 PakWheels, 239 OLX)
-**22 new** since last run · **210 price drops** · 21 ads disappeared
+**Kei tracker — 26 Oct, 1:53 PM**
+1331 live listings (1092 PakWheels, 239 OLX)
+**50 new** since last run · **208 price drops** · 52 ads disappeared
 
 New:
-- Suzuki Alto 2004 E — 8.95 lacs, 123,440 km, Islamabad
-- Suzuki Alto 2005 VXR — 9.70 lacs, 30,000 km, Islamabad
-- Suzuki Alto 2005 VXR — 11.80 lacs, 228,000 km, Rawalpindi
-- Suzuki Alto 2008 VXR — 13.50 lacs, 76,000 km, Islamabad
-- Suzuki Alto 2010 VXR — 14.00 lacs, 150,000 km, Rawalpindi
-- Mazda Carol 2012  — 16.50 lacs, 180,000 km, Rawalpindi
-- Honda Zest 2010  — 20.50 lacs, 260,800 km, Islamabad
-- Suzuki Wagon R 2017 VXR — 22.50 lacs, 65,000 km, Islamabad
+- Suzuki Baleno 1999 GLI P — 8.80 lacs, 150,000 km, Islamabad
+- Suzuki Alto 2006 VXR — 10.80 lacs, 250,000 km, Rawalpindi
+- Suzuki Alto 2008  — 11.90 lacs, 150,000 km, Rawalpindi
+- Suzuki Alto 2017  — 13.50 lacs, 100,000 km, Islamabad
+- Suzuki Baleno 2003 Sports — 14.00 lacs, 320,000 km, Islamabad
+- Daihatsu Esse 2006 X — 14.50 lacs, 115,000 km, Islamabad
+- Nissan March 2007 Bolero — 18.00 lacs, 200,000 km, Rawalpindi
+- Toyota Belta 2007 X S Package 1 — 19.00 lacs, 191,217 km, Rawalpindi
 
 Price drops:
 - Suzuki Swift 1996 — down 9.00 to 12.00 lacs, Islamabad
 - Toyota Passo 2007 — down 5.70 to 13.80 lacs, Islamabad
 - Suzuki Alto Lapin 2014 — down 5.00 to 20.00 lacs, Islamabad
+- Suzuki Alto 2021 — down 3.65 to 24.35 lacs, Islamabad
 - Suzuki Hustler 2018 — down 3.00 to 26.50 lacs, Islamabad
-- Suzuki Alto 2016 — down 2.50 to 26.50 lacs, Islamabad
-- Toyota Vitz 2008 — down 2.20 to 22.30 lacs, G-13/1, Islamabad
+- Daihatsu Copen 2009 — down 3.00 to 23.95 lacs, Islamabad
