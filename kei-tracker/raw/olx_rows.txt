@@ -1,74 +1,70 @@
-1120761703|Daihatsu Mira|2017|29.8|2017||isb|F-11, Islamabad|4d|core|654444795
-1120791782|Daihatsu Mira|2015 import 2017 LHR no|25.5|2015|117000|isb|PWD Housing Scheme, Islamabad|3d|core|654625775
-1117318790|Daihatsu Mira|2009 two door|16.25|2009|177000|isb|Bhara kahu, Islamabad|4w|core|648886338
-1120901094|Daihatsu Mira|2011|20.9|2011|137000|isb|Clock Tower, Islamabad|4h|core|655285779
-1120884758|Daihatsu Mira|2011|19.7|2011|138596|isb|G-9, Islamabad|11h|core|655184943
-1120877374|Daihatsu Mira|2017|27|2017|180000|isb|Bahria Enclave, Islamabad|22h|core|655141830
-1120875469|Daihatsu Mira|2012|22.3|2012|123|isb|H-15, Islamabad|23h|core|655131371
-1120865114|Mitsubishi EK Wagon|2014 660cc automatic Total Genuine like alto mira|16.6|2014||isb|9th Avenue, Islamabad|1d|core|655072143
-1120848578|Daihatsu Mira|2014|23.5|2014|100000|isb|G-10, Islamabad|1d|core|654969874
-1120837668|Daihatsu Mira|Eis 2014 Totally orignal.|28.5|2014|94000|isb|PWD Housing Scheme, Islamabad|2d|core|654905787
-1120824298|Daihatsu Mira Cocoa|2015/2020|22.6|2015|157640|isb|DHA Defence Phase 2, Islamabad|2d|core|654826082
-1120815239|Daihatsu Mira|2011/2014 all original condition no accidental car|19.8|2011|138574|isb|G-9/2, Islamabad|2d|core|654769359
-1120669015|Daihatsu Mira|2015|24.35|2015|95000|isb|MPCHS - Multi Gardens, Islamabad|3d|core|653883395
-1119632856|Daihatsu Mira|L500|9|2000|120000|isb|I-10/2, Islamabad|3d|core|647692585
-1120791971|Daihatsu Mira|2006 / 2011|18.5|2006|85000|isb|G-13, Islamabad|3d|core|654626828
-1120784232|Daihatsu Mira|2014|27.5|2014|76000|isb|Margalla Town, Islamabad|3d|core|654579089
-1120759226|Daihatsu Mira|full option|21.4|2014|122000|isb|G-9, Islamabad|4d|core|654430600
-1120751622|Daihatsu Mira|2005|18.5|2005|100000|isb|Pakistan Town, Islamabad|4d|core|654384227
-1120736821|Daihatsu Mira|2013|23|2013|140000|isb|G-9, Islamabad|5d|core|654292679
-1120701698|Daihatsu Mira|eis 2012|24.5|2012|83580|isb|Margalla Town, Islamabad|6d|core|654076455
-1120693415|Daihatsu Mira|2017|27.25|2017|95000|isb|Tarnol, Islamabad|6d|core|654028361
-1120533022|Daihatsu Mira|, X-LIMITED EDITION, REGISTERED NOVEMBER 2011|18.95|2011|186000|rwp|Chaklala Scheme, Rawalpindi|1w|core|653067845
-1120888411|Daihatsu Move|2007/2012 Import Family car ISB Num Chill AC 03025271768|19.5|2007|200000|rwp|Liaquat Bagh, Rawalpindi|9h|core|655208753
-1120883730|Daihatsu Mira|2013|25.8|2013||rwp|Chaklala Scheme, Rawalpindi|12h|core|655178941
-1120865082|Mitsubishi EK Wagon|2014 660cc Japanese Total Genuine like alto mira|16.6|2014||rwp|Askari 14, Rawalpindi|1d|core|655071966
-1120703881|Toyota Passo|2005 2013 dryport|20.5|2005|30000|rwp|Satellite Town - Block D, Rawalpindi|1d|core|654090149
-1120855732|Daihatsu Mira|2013|23|2013|170000|rwp|Chakri Road, Rawalpindi|1d|core|655014029
-1120852857|Daihatsu Mira|2008|15.95|2008|205000|rwp|Khayaban-e-Sir Syed, Rawalpindi|1d|core|654996606
-1120809120|Daihatsu Mira|2003/2008 Model for Sale|16.5|2003|190000|rwp|Dhok Kashmirian, Rawalpindi|3d|core|654731408
-1120763809|Daihatsu Mira|2009|24|2009|11000|rwp|Ali Abad, Rawalpindi|4d|core|654457388
-1120738809|Daihatsu Mira|2014|28.5|2014|154000|rwp|Satellite Town, Rawalpindi|5d|core|654304550
-1114753678|Daihatsu Mira|Mira car 2015 registered model 2012|24.5|2012|133000|rwp|Waris Khan, Rawalpindi|5d|core|618954843
-1120670247|Daihatsu Mira|2014|25.1|2014|112000|rwp|Fazal Town, Rawalpindi|6d|core|653891345
+1120761703|Daihatsu Mira|2017|29.8|2017||isb|F-11, Islamabad|5d|core|654444795
+1120791782|Daihatsu Mira|2015 import 2017 LHR no|25.5|2015|117000|isb|PWD Housing Scheme, Islamabad|4d|core|654625775
+1120489957|Daihatsu Mira|2011|21.65|2011|105500|isb|I-8/3, Islamabad|3h|core|652810219
+1120951242|Daihatsu Mira ES|Mira Es 2018 import|24|2012|280000|isb|Tamma, Islamabad|4h|core|655583818
+1120913189|Daihatsu Mira|2015|20|2015|180000|isb|Bani Gala, Islamabad|1d|core|655356956
+1120901094|Daihatsu Mira|2011|20.9|2011|137000|isb|Clock Tower, Islamabad|1d|core|655285779
+1120884758|Daihatsu Mira|2011|19.7|2011|138596|isb|G-9, Islamabad|2d|core|655184943
+1120877374|Daihatsu Mira|2017|26.6|2017|180000|isb|Park Road, Islamabad|2d|core|655141830
+1120875469|Daihatsu Mira|2012|22.3|2012|123|isb|H-15, Islamabad|2d|core|655131371
+1120848578|Daihatsu Mira|2014|23.5|2014|100000|isb|G-10, Islamabad|3d|core|654969874
+1120837668|Daihatsu Mira|Eis 2014 Totally orignal.|28.5|2014|94000|isb|PWD Housing Scheme, Islamabad|3d|core|654905787
+1120824298|Daihatsu Mira Cocoa|2015/2020|22.6|2015|157640|isb|DHA Defence Phase 2, Islamabad|3d|core|654826082
+1120815239|Daihatsu Mira|2011/2014 all original condition no accidental car|19.8|2011|138574|isb|G-9/2, Islamabad|4d|core|654769359
+1120669015|Daihatsu Mira|2015|24.35|2015|95000|isb|MPCHS - Multi Gardens, Islamabad|4d|core|653883395
+1119632856|Daihatsu Mira|L500|9|2000|120000|isb|I-10/2, Islamabad|4d|core|647692585
+1120791971|Daihatsu Mira|2006 / 2011|18.5|2006|85000|isb|G-13, Islamabad|4d|core|654626828
+1120784232|Daihatsu Mira|2014|27.5|2014|76000|isb|Margalla Town, Islamabad|5d|core|654579089
+1120751622|Daihatsu Mira|2005|18.5|2005|100000|isb|Pakistan Town, Islamabad|6d|core|654384227
+1120736821|Daihatsu Mira|2013|23|2013|140000|isb|G-9, Islamabad|6d|core|654292679
+1120701698|Daihatsu Mira|eis 2012|24.5|2012|83580|isb|Margalla Town, Islamabad|1w|core|654076455
+1120693415|Daihatsu Mira|2017|27.25|2017|95000|isb|Tarnol, Islamabad|1w|core|654028361
+1120533022|Daihatsu Mira|, X-LIMITED EDITION, REGISTERED NOVEMBER 2011|18.95|2011|186000|rwp|Chaklala Scheme, Rawalpindi|2w|core|653067845
+1120888411|Daihatsu Move|2007/2012 Import Family car ISB Num Chill AC 03025271768|19.5|2007|200000|rwp|Liaquat Bagh, Rawalpindi|2d|core|655208753
+1120883730|Daihatsu Mira|2013|25.8|2013||rwp|Chaklala Scheme, Rawalpindi|2d|core|655178941
+1120703881|Toyota Passo|2005 2013 dryport|20.5|2005|30000|rwp|Satellite Town - Block D, Rawalpindi|3d|core|654090149
+1120855732|Daihatsu Mira|2013|23|2013|170000|rwp|Chakri Road, Rawalpindi|3d|core|655014029
+1120852857|Daihatsu Mira|2008|15.95|2008|205000|rwp|Khayaban-e-Sir Syed, Rawalpindi|3d|core|654996606
+1120809120|Daihatsu Mira|2003/2008 Model for Sale|16.5|2003|190000|rwp|Dhok Kashmirian, Rawalpindi|4d|core|654731408
+1120763809|Daihatsu Mira|2009|24|2009|11000|rwp|Ali Abad, Rawalpindi|5d|core|654457388
+1120738809|Daihatsu Mira|2014|28.5|2014|154000|rwp|Satellite Town, Rawalpindi|6d|core|654304550
+1114753678|Daihatsu Mira|Mira car 2015 registered model 2012|24.5|2012|133000|rwp|Waris Khan, Rawalpindi|1w|core|618954843
+1120670247|Daihatsu Mira|2014|25.1|2014|112000|rwp|Fazal Town, Rawalpindi|1w|core|653891345
 1120655795|Daihatsu Mira|2013|23.8|2013|138000|rwp|Adiala Road, Rawalpindi|1w|core|653802903
-1117985084|Daihatsu Mira|2014|20|2014|200000|rwp|Gulraiz Housing Scheme, Rawalpindi|1w|core|637900161
-1120518990|Daihatsu Mira|2007|13.4|2007|165000|rwp|Askari 14, Rawalpindi|1w|core|652985465
+1117985084|Daihatsu Mira|2014|20|2014|200000|rwp|Gulraiz Housing Scheme, Rawalpindi|2w|core|637900161
+1120518990|Daihatsu Mira|2007|13.4|2007|165000|rwp|Askari 14, Rawalpindi|2w|core|652985465
 1119324768|Daihatsu Mira|2013|25.5|2013||rwp|Satellite Town - Block D, Rawalpindi|2w|core|645855341
 1118601980|Daihatsu Mira|2007|20|2007|200000|rwp|KRL Road, Rawalpindi|2w|core|641548825
+1119941156|Daihatsu Mira|2007/2012|13.65|2007|196000|rwp|Peshawar Road, Rawalpindi|2w|core|649523196
 1120232135|Nissan Dayz|2015|24.5|2015|143000|isb|Margalla View Housing Society, Islamabad|3w|core|651266307
-1120828296|Nissan Dayz|2019|24|2019|200000|isb|I-8 Markaz, Islamabad|2d|core|654850228
-1120784945|Nissan Roox|2015|26.5|2015|126418|isb|Ghauri Town Phase 5, Islamabad|3d|core|654583663
-1120685710|Nissan Dayz|2016|25.5|2016|66000|isb|I-14, Islamabad|6d|core|653983723
-1119342374|Nissan Dayz|2017/2020|30|2017|12345|isb|Constitution Avenue, Islamabad|1w|core|645959382
-1120554258|Nissan Dayz|2015|24|2015|145000|isb|G-13, Islamabad|1w|core|653193309
+1120828296|Nissan Dayz|2019|24|2019|200000|isb|I-8 Markaz, Islamabad|3d|core|654850228
+1120784945|Nissan Roox|2015|26.5|2015|126418|isb|Ghauri Town Phase 5, Islamabad|5d|core|654583663
+1120554258|Nissan Dayz|2015|24|2015|145000|isb|G-13, Islamabad|2w|core|653193309
 1120500525|Nissan Dayz|2014|25.5|2014|97800|isb|Bani Gala, Islamabad|2w|core|652873282
 1119528123|Nissan Dayz|2014 Import 2017|23|2014|100000|isb|Airport Avenue Housing Society, Islamabad|2w|core|647070061
 1120375169|Nissan Dayz|Highway Star 2015|27.5|2015|121000|isb|Bhara kahu, Islamabad|2w|core|652127178
 1120363100|Nissan Dayz|Highway Star 2015|29|2015|125000|isb|Gulberg, Islamabad|2w|core|652050611
 1119101551|Nissan Dayz|2017|26.2|2017|160000|isb|Motorway Chowk, Islamabad|2w|core|645424832
-1120298894|Nissan Dayz|Highway Star 2013 Genuine 360° Camera Full Option|23.25|2013|97000|isb|Jhangi Syedan, Islamabad|2w|core|651672655
-1120266972|Nissan Dayz|2014|20.9|2013|56000|isb|Diplomatic Enclave, Islamabad|2w|core|651479452
+1120298894|Nissan Dayz|Highway Star 2013 Genuine 360° Camera Full Option|23.25|2013|97000|isb|Jhangi Syedan, Islamabad|3w|core|651672655
+1120266972|Nissan Dayz|2014|20.9|2013|56000|isb|Diplomatic Enclave, Islamabad|3w|core|651479452
 1120164989|Suzuki Alto|VXR 2006 60% Genuine Body 660cc Converted japnese .|12.8|2006|200000|isb|9th Avenue, Islamabad|3w|core|650864952
-1119271702|Nissan Roox|dayz 2016 model in excellent condition for sale|24.5|2016|123000|isb|Askari 14, Rawalpindi|3h|core|645533567
-1120710372|Nissan Dayz|Roxx 2014|24.5|2014|109000|isb|Dhok Sayedan Road, Rawalpindi|5d|core|654137145
+1119271702|Nissan Roox|dayz 2016 model in excellent condition for sale|24.5|2016|123000|isb|Askari 14, Rawalpindi|1d|core|645533567
+1120710372|Nissan Dayz|Roxx 2014|24.5|2014|109000|isb|Dhok Sayedan Road, Rawalpindi|1w|core|654137145
 1119457718|Nissan Dayz|Highway Star 2016|27.5|2016|82500|isb|New Lalazar, Rawalpindi|1w|core|646649418
-1100694033|Nissan Dayz|S 2016|24|2016|110800|rwp|Bahria Town Phase 6, Rawalpindi|2w|core|534415836
+1119349729|Nissan Dayz|2018|24.75|2018|180000|isb|New City, Wah|2w|near|646001080
+1100694033|Nissan Dayz|S 2016|24|2016|110800|isb|Bahria Town Phase 6, Rawalpindi|3w|core|534415836
 1119960851|Nissan Dayz|Highway Star 2015|24.65|2015|185000|rwp|Ghauri Town, Rawalpindi|4w|core|649641377
 1119945264|Nissan Dayz|2014|23.5|2014|158000|rwp|Gulistan Colony, Rawalpindi|4w|core|649545853
-1119925794|Nissan Dayz|2016|25|2016|100000|rwp|Bahria Town Phase 8, Rawalpindi|4w|core|649433633
-1119349729|Nissan Dayz|2018|24.75|2018|180000|rwp|New City, Wah|1w|near|646001080
-1120748284|Suzuki Alto|2014|23.5|2014|102000|isb|PWD Housing Society - Block A, Islamabad|4d|core|654363226
-1120748011|Mazda Carol|2011|23.5|2011|102400|isb|Pakistan Town, Islamabad|4d|core|654361460
+1120748284|Suzuki Alto|2014|23.5|2014|102000|isb|PWD Housing Society - Block A, Islamabad|6d|core|654363226
+1120748011|Mazda Carol|2011|23.5|2011|102400|isb|Pakistan Town, Islamabad|6d|core|654361460
 1120621312|Suzuki Alto|2016|24.6|2016|63000|isb|Bhara kahu, Islamabad|1w|core|653590236
 1119332530|Mazda Carol|2013/16|23.95|2016|145000|isb|Jhangi Syedan, Islamabad|2w|core|645900582
 1120387843|Suzuki Alto|2011 [carol]|19.8|2011|122000|isb|Alipur Farash, Islamabad|2w|core|652202688
 1119943059|Mazda Carol|2016|27|2016|78300|isb|DHA Defence Phase 4, Islamabad|4w|core|649533154
 1117002813|Mazda Carol|2014|24|2014|160000|isb|Rawal Town, Islamabad|4w|core|632145208
-1120686542|Mazda Carol|2011|23|2011|12345|isb|Kallar Syedan, Rawalpindi|4h|core|653988678
-1120839978|Mazda Carol|2009|18.5|2009|127000|isb|Bahria Town Phase 4, Rawalpindi|2d|core|654918136
-1118900877|Mazda Carol|2012|21.5|2012|13000|isb|Murree Road, Rawalpindi|2w|core|643323505
-1120883295|Suzuki Hustler|2014|24.15|2014|190000|isb|F-9, Islamabad|13h|core|655176294
+1120839978|Mazda Carol|2009|18.5|2009|127000|isb|Bahria Town Phase 4, Rawalpindi|3d|core|654918136
+1118900877|Mazda Carol|2012|21.5|2012|13000|isb|Murree Road, Rawalpindi|3w|core|643323505
+1120883295|Suzuki Hustler|2014|24.15|2014|190000|isb|F-9, Islamabad|2d|core|655176294
 1119278970|Suzuki Hustler|2015 model urgent sale|24.4|2015|60000|isb|I-10, Islamabad|1w|core|645582333
 1120568853|Suzuki Hustler|2015|25.5|2015|50000|isb|F-9, Islamabad|1w|core|653282584
 1120527101|Suzuki Hustler|2017 Model (Full Option)|27.5|2017|74000|isb|DHA Defence Phase 1, Islamabad|1w|core|653033143
@@ -76,159 +72,171 @@
 1120357161|Suzuki Hustler|2015|26.2|2015|200000|isb|Bani Gala, Islamabad|2w|core|652015114
 1117360386|Suzuki Hustler|2017|29|2017|67000|isb|I-10/4, Islamabad|3w|core|646587009
 1120042040|Suzuki Hustler|2015|23.5|2015|125000|isb|Others, Islamabad|3w|core|650126712
-1115111132|Suzuki Hustler|2016|29|2016|200000|isb|Kallar Syedan, Rawalpindi|6d|core|621021740
+1115111132|Suzuki Hustler|2016|29|2016|200000|isb|Kallar Syedan, Rawalpindi|1w|core|621021740
 1118558320|Suzuki Hustler|2015|25.5|2015|126000|isb|Stadium Road, Rawalpindi|4w|core|641288338
 1117903878|Daihatsu Tanto|2014/2020|25.5|2014|11000|isb|Airport Housing Society, Rawalpindi|3w|core|637426957
-1119815622|Daihatsu Tanto|2011|16.5|2011|110000|isb|Dina Bypass, Dina|4w|near|648785366
 1120616735|Suzuki Alto|2013|21.5|2013|123000|isb|Chinar Residencia Housing Society, Islamabad|1w|core|653564864
 1118777034|Suzuki Alto Lapin|2015|25|2015|120000|isb|Kamra, Attock|2w|near|642586811
 1116053458|Suzuki Alto Lapin|2015|25.5|2015|144000|isb|Airport Housing Society, Rawalpindi|4w|core|626584649
-1120775048|Mazda Flair|Wagon 2015|23.5|2015|140000|isb|Satellite Town, Rawalpindi|4d|core|654522243
+1120775048|Mazda Flair|Wagon 2015|23.5|2015|140000|isb|Satellite Town, Rawalpindi|5d|core|654522243
 1120380991|Suzuki Jimny|2011|26.5|2011|150000|isb|Blue Area, Islamabad|2w|core|652163328
-1120272205|Suzuki Jimny|X-Adventure 2002, Custom Auction|25.75|2002|220250|isb|G-13, Islamabad|2w|core|651512341
-1120018193|Suzuki Jimny|1985|17|1985|1|isb|Ali Pur, Islamabad|3w|core|649982730
-1117534138|Suzuki Jimny|japnis|25|2013|2500|isb|Adiala Road, Rawalpindi|1w|core|635255319
+1120272205|Suzuki Jimny|X-Adventure 2002, Custom Auction|25.75|2002|220250|isb|G-13, Islamabad|3w|core|651512341
+1120018193|Suzuki Jimny|1985|17|1985|1|isb|Ali Pur, Islamabad|4w|core|649982730
+1117534138|Suzuki Jimny|japnis|25|2013|2500|isb|Adiala Road, Rawalpindi|2w|core|635255319
 1119307667|Suzuki Jimny|sparco limited edition 2013/2018|27|2013|80000|isb|Gulshan-e-Raza, Wah|2w|near|645750761
 1120421557|Suzuki Jimny|2008|29.5|2008|150000|isb|Wah Cantt, Wah|2w|near|652401418
 1116589215|Toyota Passo|2013|28.6|2013|154007|isb|G-9 Markaz, Islamabad|3w|core|629719332
 1119893827|Toyota Passo|2010|25.7|2010|253000|isb|PWD Housing Scheme, Islamabad|4w|core|649246254
-1120847064|Toyota Passo|2007 2012 registered.|20.5|2007|146000|isb|I-16, Islamabad|2d|core|654961085
-1120836911|Toyota Passo|2010|26.5|2010|128000|isb|G-11/3, Islamabad|2d|core|654901461
-1120809773|Toyota Passo|2010 / 2014 Islamabad registered|25|2010|256000|isb|Pakistan Town - Phase 1, Islamabad|3d|core|654735488
-1120804886|Toyota Passo|2007|19.85|2007|156000|isb|G-11/3, Islamabad|3d|core|654704691
-1120802551|Toyota Passo|2006|21.9|2006|141000|isb|Ghauri Town Phase 4A, Islamabad|3d|core|654690828
-1120800881|Toyota Passo|, 2010 total|26.5|2010|164|isb|Bani Gala, Islamabad|3d|core|654681005
-1120797544|Toyota Passo|2015|28|2015|80000|isb|Gulberg Greens, Islamabad|3d|core|654660367
-1118997225|Toyota Passo|2013|26.5|2013|200000|isb|I-8, Islamabad|3d|core|643897268
-1120775164|Toyota Passo|2011|24.95|2011|121000|isb|I-10/4, Islamabad|4d|core|654522897
-1119631789|Toyota Passo|2009|19.5|2009|90000|isb|British Homes Colony, Islamabad|4d|core|647686052
-1120769846|Toyota Passo|2013|26.95|2013|168000|isb|G-11/3, Islamabad|4d|core|654490496
-1120745255|Toyota Passo|2006|18.6|2006|358726|isb|Aara, Islamabad|4d|core|654344502
-1120705223|Toyota Passo|2010|25|2010|143000|isb|Gulberg Greens, Islamabad|5d|core|654098844
-1119526581|Toyota Passo|2013/2017|28.3|2013|169000|isb|PWD Housing Scheme, Islamabad|6d|core|647061089
-1120683419|Toyota Passo||28.25|2014|121000|isb|G-8, Islamabad|6d|core|653969486
-1117896468|Toyota Passo|2012|21.8|2012|107000|isb|G-10, Islamabad|6d|core|637381590
-1120674240|Toyota Passo|+Hanna 2014|22.8|2014|125000|isb|PWD Housing Scheme, Islamabad|6d|core|653914380
-1120673464|Toyota Passo|2014|28.5|2014|160000|isb|G-6 Markaz, Islamabad|6d|core|653909753
-1120649282|Toyota Passo|2010|25|2010|147000|isb|G-14/4, Islamabad|1w|core|653765917
-1120640451|Toyota Passo|2007|19.5|2007|158000|isb|Faisal Town Phase 1, Islamabad|1w|core|653711639
-1120637738|Toyota Passo|2010|26.2|2010||isb|I-11, Islamabad|1w|core|653694613
-1118325840|Toyota Passo|2012/2014|22.8|2012|135000|rwp|Dhamyal Road, Rawalpindi|4d|core|639904365
-1120905248|Toyota Passo|2010|25|2010|92000|rwp|Satellite Town - Block D, Rawalpindi|2h|core|655310725
-1120835406|Toyota Passo|2012|26.8|2012|150000|rwp|Lalkurti, Rawalpindi|2d|core|654893053
-1120823063|Toyota Passo|hana 2010 import 2014 wine red|26|2010|200000|rwp|Ilyas Colony, Rawalpindi|2d|core|654818655
-1120819521|Toyota Passo|2008|22.75|2008|106000|rwp|Askari 10, Rawalpindi|2d|core|654796677
-1120806838|Toyota Passo|2012|25.8|2012|200000|rwp|Chaklala Scheme, Rawalpindi|3d|core|654716961
-1119555622|Toyota Passo|2015|28.5|2015|88800|rwp|Air Force Housing Society, Rawalpindi|4d|core|647230260
-1120739468|Toyota Passo|2006|17.5|2006|150000|rwp|Islamabad Airport, Rawalpindi|5d|core|654308958
-1120729982|Toyota Passo|2007|21|2007|105000|rwp|Bahria Town Phase 3, Rawalpindi|5d|core|654254367
-1113198073|Toyota Passo|2011/2014|23|2011|90000|rwp|Askari 7, Rawalpindi|5d|core|609812328
-1120696729|Toyota Passo|2007/13 imported Islamabad Number|21.9|2007|235000|rwp|Range Road, Rawalpindi|6d|core|654046591
-1118347599|Toyota Passo|2005|21|2005|132536|rwp|Chaklala Scheme, Rawalpindi|6d|core|640033293
-1120678546|Toyota Passo|2011(2015)|25.9|2011|140000|rwp|Bahria Town Phase 8, Rawalpindi|6d|core|653940635
-1120671133|Toyota Passo|2005 Exchange Possible with Sedan|18.25|2005|135000|rwp|Bahria Town Phase 2, Rawalpindi|6d|core|653896322
+1120952882|Toyota Passo|2006|20.5|2006|125000|isb|Meherban Colony, Islamabad|3h|core|655593021
+1118090626|Toyota Passo|2011, Exchange possible with 660cc japenese car|24.5|2011|150000|isb|Gulshan-e-Khudadad, Islamabad|9h|core|638516699
+1120937940|Toyota Passo|2015|28.5|2015|122000|isb|I-10, Islamabad|10h|core|655507672
+1120932865|Toyota Passo|Passo Haana Plus|28.45|2013|81000|isb|Swan Garden, Islamabad|12h|core|655477082
+1120910340|Toyota Passo|for urgent sale|27.75|2012|146000|isb|I-10/2, Islamabad|1d|core|655357356
+1120847064|Toyota Passo|2007 2012 registered.|20.5|2007|146000|isb|I-16, Islamabad|3d|core|654961085
+1120836911|Toyota Passo|2010|26.5|2010|128000|isb|G-11/3, Islamabad|3d|core|654901461
+1120809773|Toyota Passo|2010 / 2014 Islamabad registered|25|2010|256000|isb|Pakistan Town - Phase 1, Islamabad|4d|core|654735488
+1120804886|Toyota Passo|2007|19.85|2007|156000|isb|G-11/3, Islamabad|4d|core|654704691
+1120802551|Toyota Passo|2006|21.9|2006|141000|isb|Ghauri Town Phase 4A, Islamabad|4d|core|654690828
+1120800881|Toyota Passo|, 2010 total|26.5|2010|164|isb|Bani Gala, Islamabad|4d|core|654681005
+1120797544|Toyota Passo|2015|27.5|2015|80000|isb|Gulberg Greens, Islamabad|4d|core|654660367
+1118997225|Toyota Passo|2013|26.5|2013|200000|isb|I-8, Islamabad|5d|core|643897268
+1120775164|Toyota Passo|2011|24.95|2011|121000|isb|I-10/4, Islamabad|5d|core|654522897
+1119631789|Toyota Passo|2009|19.5|2009|90000|isb|British Homes Colony, Islamabad|5d|core|647686052
+1120769846|Toyota Passo|2013|26.95|2013|168000|isb|G-11/3, Islamabad|5d|core|654490496
+1120745255|Toyota Passo|2006|18.6|2006|358726|isb|Aara, Islamabad|6d|core|654344502
+1120705223|Toyota Passo|2010|25|2010|143000|isb|Gulberg Greens, Islamabad|1w|core|654098844
+1119526581|Toyota Passo|2013/2017|28.3|2013|169000|isb|PWD Housing Scheme, Islamabad|1w|core|647061089
+1117896468|Toyota Passo|2012|21.8|2012|107000|isb|G-10, Islamabad|1w|core|637381590
+1120674240|Toyota Passo|+Hanna 2014|22.8|2014|125000|isb|PWD Housing Scheme, Islamabad|1w|core|653914380
+1120673464|Toyota Passo|2014|28.5|2014|160000|isb|G-6 Markaz, Islamabad|1w|core|653909753
+1118325840|Toyota Passo|2012/2014|22.8|2012|135000|rwp|Dhamyal Road, Rawalpindi|6d|core|639904365
+1120912257|Toyota Passo|2007|25|2007|232000|rwp|Chaklala Scheme, Rawalpindi|1d|core|655351710
+1119290614|Toyota Passo|2008|20.8|2008|125000|rwp|Judicial Colony, Rawalpindi|1d|core|655340699
+1120905248|Toyota Passo|2010|25|2010|92000|rwp|Satellite Town - Block D, Rawalpindi|1d|core|655310725
+1120835406|Toyota Passo|2012|26.8|2012|150000|rwp|Lalkurti, Rawalpindi|3d|core|654893053
+1120823063|Toyota Passo|hana 2010 import 2014 wine red|26|2010|200000|rwp|Ilyas Colony, Rawalpindi|4d|core|654818655
+1120819521|Toyota Passo|2008|22.75|2008|106000|rwp|Askari 10, Rawalpindi|4d|core|654796677
+1120806838|Toyota Passo|2012|25.8|2012|200000|rwp|Chaklala Scheme, Rawalpindi|4d|core|654716961
+1119555622|Toyota Passo|2015|28.5|2015|88800|rwp|Air Force Housing Society, Rawalpindi|6d|core|647230260
+1120739468|Toyota Passo|2006|17.5|2006|150000|rwp|Islamabad Airport, Rawalpindi|6d|core|654308958
+1120729982|Toyota Passo|2007|21|2007|105000|rwp|Bahria Town Phase 3, Rawalpindi|6d|core|654254367
+1113198073|Toyota Passo|2011/2014|23|2011|90000|rwp|Askari 7, Rawalpindi|1w|core|609812328
+1120696729|Toyota Passo|2007/13 imported Islamabad Number|21.9|2007|235000|rwp|Range Road, Rawalpindi|1w|core|654046591
+1118347599|Toyota Passo|2005|21|2005|132536|rwp|Chaklala Scheme, Rawalpindi|1w|core|640033293
+1120678546|Toyota Passo|2011(2015)|25.9|2011|140000|rwp|Bahria Town Phase 8, Rawalpindi|1w|core|653940635
+1120671133|Toyota Passo|2005 Exchange Possible with Sedan|18.25|2005|135000|rwp|Bahria Town Phase 2, Rawalpindi|1w|core|653896322
 1120635732|Toyota Passo|2005|21.9|2005|136000|rwp|KRL Road, Rawalpindi|1w|core|653682592
 1120635131|Toyota Passo|2004|17.5|2004|145000|rwp|Ayub Colony, Rawalpindi|1w|core|653678596
 1120622400|Toyota Passo|2008|20.95|2008|182000|rwp|Amer Pura, Rawalpindi|1w|core|653596759
-1120609305|Toyota Passo|2009|24.5|2009|144408|rwp|Afshan Colony, Rawalpindi|1w|core|653522450
-1120338352|Toyota Passo|2007 full option key less entry and push start|22|2007|106000|rwp|Peshawar Road, Rawalpindi|1w|core|651905346
-1120624268|Toyota Vitz|2011 Push start version 1000cc islamabad registered|28|2011|200000|isb|9th Avenue, Islamabad|3d|core|653608071
+1120925659|Toyota Vitz|2000 Import 2008 For Sale|17.5|2000|65000|isb|G-5, Islamabad|15h|core|655434178
+1120624268|Toyota Vitz|2011 Push start version 1000cc islamabad registered|28|2011|200000|isb|9th Avenue, Islamabad|5d|core|653608071
 1120616152|Toyota Vitz|2011|23|2011|250000|isb|DHA Defence Phase 2, Islamabad|1w|core|653561836
-1119212380|Toyota Vitz|2009 (1300cc)|22.49|2009|185000|isb|Others, Islamabad|4w|core|645185990
-1120271043|Toyota Vitz|2008|20.8|2008|185000|isb|CBR Town Phase 1, Islamabad|2d|core|651505385
-1119525238|Toyota Vitz|2008 model 2012 import|22.3|2008||isb|G-13/1, Islamabad|2d|core|651422547
-1120909077|Toyota Vitz|2000 import 2008|17.5|2000|65000|isb|G-5, Islamabad|31m|core|655333131
-1120906826|Toyota Vitz|1999|23.5|1999|150000|isb|PWD Road, Islamabad|2h|core|655319622
-1093990015|Toyota Vitz|2009|30|2012|40000|isb|Abdullah Garden, Islamabad|3h|core|655300286
-1120903398|Toyota Vitz|2012|27.8|2012||isb|Bhara kahu, Islamabad|3h|core|655299762
-1120901769|Toyota Vitz|2006|22.5|2006||isb|I-8 Markaz, Islamabad|4h|core|655289840
-1120896742|Toyota Vitz|2007|22.3|2007|120000|isb|G-10, Islamabad|6h|core|655260310
-1120871202|Toyota Vitz|2003|28.4|2003|175000|isb|I-10, Islamabad|1d|core|655107705
-1120862620|Toyota Vitz|2006|22.25|2006|200|isb|G-13/1, Islamabad|1d|core|655056931
-1120858594|Toyota Vitz|2013|28.5|2013|123456|isb|G-5/2, Islamabad|1d|core|655031347
-1120853236|Toyota Vitz|2010 F1.0|27.5|2010|141023|isb|I-14, Islamabad|1d|core|654999021
-1120824985|Toyota Vitz|2008|21.95|2008|90000|isb|DHA Defence Phase 1, Islamabad|2d|core|654830319
-1120799726|Toyota Vitz|2001|17.5|2001|200000|isb|MPCHS - Multi Gardens, Islamabad|3d|core|654674149
-1120782682|Toyota Vitz|2000|19.7|2000|150|isb|Bhara kahu, Islamabad|3d|core|654569573
-1120755051|Toyota Vitz|2013|24|2009|150000|isb|I-8 Markaz, Islamabad|4d|core|654405513
-1120644206|Toyota Vitz|2007/09- Push Start - Full Option -|22.5|2007|155000|rwp|Bahria Town Phase 8, Rawalpindi|4d|core|653734424
-1120256593|Toyota Vitz|2008|22.95|2008|195000|rwp|Westridge, Rawalpindi|5d|core|651414221
+1120271043|Toyota Vitz|2008|20.8|2008|185000|isb|CBR Town Phase 1, Islamabad|3d|core|651505385
+1119525238|Toyota Vitz|2008 model 2012 import|22.3|2008||isb|G-13/1, Islamabad|3d|core|651422547
+1120776989|Toyota Vitz|2003/2007|23|2003|140000|isb|DHA Defence Phase 1, Islamabad|6h|core|654533895
+1120944945|Toyota Vitz|2002|18.5|2002|70000|isb|Ghauri Town, Islamabad|7h|core|655547607
+1120914831|Toyota Vitz|2007|21.5|2007|200000|isb|Bani Gala, Islamabad|1d|core|655366275
+1120909077|Toyota Vitz|2000 import 2008|17.5|2000|65000|isb|G-5, Islamabad|1d|core|655333131
+1120906826|Toyota Vitz|1999|23.5|1999|150000|isb|PWD Road, Islamabad|1d|core|655319622
+1093990015|Toyota Vitz|2009|30|2012|40000|isb|Abdullah Garden, Islamabad|1d|core|655300286
+1120903398|Toyota Vitz|2012|27.8|2012||isb|Bhara kahu, Islamabad|1d|core|655299762
+1120901769|Toyota Vitz|2006|22.5|2006||isb|I-8 Markaz, Islamabad|1d|core|655289840
+1120896742|Toyota Vitz|2007|22.3|2007|120000|isb|G-10, Islamabad|2d|core|655260310
+1120871202|Toyota Vitz|2003|28.4|2003|175000|isb|I-10, Islamabad|2d|core|655107705
+1120862620|Toyota Vitz|2006|22.25|2006|200|isb|G-13/1, Islamabad|2d|core|655056931
+1120858594|Toyota Vitz|2013|28.5|2013|123456|isb|G-5/2, Islamabad|3d|core|655031347
+1120853236|Toyota Vitz|2010 F1.0|27.5|2010|141023|isb|I-14, Islamabad|3d|core|654999021
+1120824985|Toyota Vitz|2008|21.95|2008|90000|isb|DHA Defence Phase 1, Islamabad|4d|core|654830319
+1120799726|Toyota Vitz|2001|17.5|2001|200000|isb|MPCHS - Multi Gardens, Islamabad|4d|core|654674149
+1120782682|Toyota Vitz|2000|19.7|2000|150|isb|Bhara kahu, Islamabad|5d|core|654569573
+1120644206|Toyota Vitz|2007/09- Push Start - Full Option -|22.3|2007|155000|rwp|Bahria Town Phase 8, Rawalpindi|6d|core|653734424
+1120256593|Toyota Vitz|2008|22.95|2008|195000|rwp|Westridge, Rawalpindi|1w|core|651414221
 1120229613|Toyota Vitz|2006 import 2013 1500cc RS|29.5|2006|115000|rwp|Bahria Town Phase 8, Rawalpindi|3w|core|651251197
-1119311381|Toyota Vitz|2007|22.9|2007|177000|rwp|Satellite Town, Rawalpindi|5h|core|645771345
-1120897875|Toyota Vitz|2005|19.75|2005|100|rwp|Pir Wadhai, Rawalpindi|5h|core|655266688
-1120836872|Toyota Vitz|2012|22.5|2012|15000|rwp|Daultala, Rawalpindi|2d|core|654901194
-1120825363|Toyota Vitz|2002|17|2002|218000|rwp|Satellite Town, Rawalpindi|2d|core|654832566
-1120821222|Toyota Vitz|2011|27|2011|200000|rwp|Bahria Town Phase 8, Rawalpindi|2d|core|654807505
-1120785381|Toyota Vitz|2012 2015 Ragister|27|2012|100000|rwp|Murree Road, Rawalpindi|3d|core|654586501
-1120776883|Toyota Vitz|2013|29.8|2013|226000|rwp|Airport Housing Society, Rawalpindi|4d|core|654533257
-1120773367|Toyota Vitz|2000|16.5|2000|123456|rwp|Airport Housing Society, Rawalpindi|4d|core|654511651
-1120740874|Toyota Vitz|2009|22.6|2009|200000|rwp|Gulraiz Housing Scheme, Rawalpindi|5d|core|655324377
-1119447175|Toyota Vitz|2013|23.85|2013|150000|rwp|Bahria Town Phase 8, Rawalpindi|6d|core|646584491
-1120683555|Toyota Vitz|2005|23.7|2005|150000|rwp|Chakra, Rawalpindi|6d|core|653970292
-1117569468|Toyota Vitz|2006|23.3|2006|150000|rwp|Adiala Road, Rawalpindi|1w|core|635458530
-1120648865|Toyota Vitz|2011|29.8|2011|100000|rwp|Kahuta, Rawalpindi|1w|core|653763432
-1120830794|Toyota Belta|2007|23.8|2007||isb|G-13/1, Islamabad|2d|core|654865592
-1120723385|Toyota Belta|2010/13, 1000cc|23.5|2010|192900|isb|Bahria Town, Islamabad|5d|core|654217133
-1119499625|Toyota Belta|2006|25|2006|230000|isb|H-17, Islamabad|1w|core|646901764
+1119311381|Toyota Vitz|2007|22.9|2007|177000|rwp|Satellite Town, Rawalpindi|1d|core|645771345
+1120511262|Toyota Vitz|2012|26.5|2012|185000|rwp|Dhok Chaudhrian, Rawalpindi|11h|core|652936038
+1118600799|Toyota Vitz|2004-2007|23|2004|126|rwp|Jinnah Colony, Rawalpindi|13h|core|641541882
+1116946698|Toyota Vitz|2004 -2007|23|2004|126203|rwp|Jinnah Colony, Rawalpindi|13h|core|631805832
+1120897875|Toyota Vitz|2005|19.75|2005|100|rwp|Pir Wadhai, Rawalpindi|1d|core|655266688
+1120836872|Toyota Vitz|2012|22.5|2012|15000|rwp|Daultala, Rawalpindi|3d|core|654901194
+1120825363|Toyota Vitz|2002|17|2002|218000|rwp|Satellite Town, Rawalpindi|3d|core|654832566
+1120821222|Toyota Vitz|2011|27|2011|200000|rwp|Bahria Town Phase 8, Rawalpindi|4d|core|654807505
+1120785381|Toyota Vitz|2012 2015 Ragister|27|2012|100000|rwp|Murree Road, Rawalpindi|5d|core|654586501
+1120776883|Toyota Vitz|2013|29.8|2013|226000|rwp|Airport Housing Society, Rawalpindi|5d|core|654533257
+1120773367|Toyota Vitz|2000|16.5|2000|123456|rwp|Airport Housing Society, Rawalpindi|5d|core|654511651
+1120740874|Toyota Vitz|2009|22.6|2009|200000|rwp|Gulraiz Housing Scheme, Rawalpindi|6d|core|655324377
+1119447175|Toyota Vitz|2013|23.85|2013|150000|rwp|Bahria Town Phase 8, Rawalpindi|1w|core|646584491
+1120945242|Toyota Belta|2007|24.6|2007|180000|isb|E-11, Islamabad|7h|core|655549382
+1120927225|Toyota Belta|2007|24.3|2007|170000|isb|Agha Shahi Avenue, Islamabad|15h|core|655444141
+1118871875|Toyota Belta|2006/12|24.75|2006|122000|isb|Gulberg Greens, Islamabad|1d|core|643141200
+1120830794|Toyota Belta|2007|23.8|2007||isb|G-13/1, Islamabad|3d|core|654865592
+1120723385|Toyota Belta|2010/13, 1000cc|23.5|2010|192900|isb|Bahria Town, Islamabad|6d|core|654217133
+1119499625|Toyota Belta|2006|24|2006|230000|isb|H-17, Islamabad|1w|core|646901764
 1120572832|Toyota Belta|2007|25.7|2007|135000|isb|I-10, Islamabad|1w|core|653306604
 1120376406|Toyota Belta|2007/2013|23|2007|123456|isb|G-11/3, Islamabad|2w|core|652134528
-1120273894|Toyota Belta|2007|19.95|2007|175000|isb|DHA Defence Phase 2, Islamabad|2w|core|651522456
+1120273894|Toyota Belta|2007|19.95|2007|175000|isb|DHA Defence Phase 2, Islamabad|3w|core|651522456
 1120185537|Toyota Belta|2008|22.5|2008|140000|isb|Rawat, Islamabad|3w|core|650988018
 1120135319|Toyota Belta|2008|24.5|2008|786|isb|Bahria Town, Islamabad|3w|core|650686921
 1119931029|Toyota Belta|2006|21|2006|200384|isb|Bhara kahu, Islamabad|4w|core|649464726
 1119892415|Toyota Belta|2007/09 Lahore number|22.5|2007|190000|isb|Bahria Town, Islamabad|4w|core|649238390
 1119852921|Toyota Belta|2008|24|2008|145000|isb|DHA Defence Phase 2, Islamabad|4w|core|649008209
-1119993317|Toyota Belta|2006|26|2006|138000|isb|Bahria Expressway, Rawalpindi|3w|core|649829639
+1119993317|Toyota Belta|2006|26|2006|138000|isb|Bahria Expressway, Rawalpindi|4w|core|649829639
 1119890522|Toyota Belta|2006/10|18.7|2006|135455|isb|Airport Housing Society, Rawalpindi|4w|core|653868481
-1120900418|Toyota Belta|2010/13|23.7|2013|192950|isb|Bahria Town Phase 4, Rawalpindi|4h|core|655281755
-1120878617|Toyota Belta|2010/13|23.6|2013|192950|isb|Bahria Town Phase 4, Rawalpindi|21h|core|655149238
-1120871425|Toyota Belta|2010 1.0X|24.5|2010|167751|isb|Bahria Town Phase 8, Rawalpindi|1d|core|655108776
-1120859812|Toyota Belta|2008|24.5|2008|120000|isb|Bahria Town Phase 8, Rawalpindi|1d|core|655038919
-1120792660|Toyota Belta|2006|24.7|2006|300000|isb|Airport Housing Society, Rawalpindi|3d|core|654630968
+1120900418|Toyota Belta|2010/13|23.7|2013|192950|isb|Bahria Town Phase 4, Rawalpindi|1d|core|655281755
+1120878617|Toyota Belta|2010/13|23.6|2013|192950|isb|Bahria Town Phase 4, Rawalpindi|2d|core|655149238
+1120871425|Toyota Belta|2010 1.0X|24.5|2010|167751|isb|Bahria Town Phase 8, Rawalpindi|2d|core|655108776
+1120859812|Toyota Belta|2008|24.5|2008|120000|isb|Bahria Town Phase 8, Rawalpindi|3d|core|655038919
+1120792660|Toyota Belta|2006|24.7|2006|300000|isb|Airport Housing Society, Rawalpindi|4d|core|654630968
 1120565973|Toyota Belta|2006|21.6|2006||isb|Tench Road, Rawalpindi|1w|core|653264941
 1120373741|Toyota Belta|2012|22.5|2012|120000|isb|Munawar Colony, Rawalpindi|2w|core|652117295
-1120360035|Toyota Belta|2006|26.5|2006|130000|isb|Chaklala Scheme, Rawalpindi|2w|core|652032506
-1120334915|Toyota Belta|2006|22.5|2006|21000|isb|Westridge, Rawalpindi|2w|core|651884398
-1117723289|Toyota Belta|2009|21.5|2009|98000|isb|Mehria Town, Attock|2w|near|636361776
+1120360035|Toyota Belta|2006|26.5|2006|130000|rwp|Chaklala Scheme, Rawalpindi|2w|core|652032506
+1120334915|Toyota Belta|2006|22.5|2006|21000|rwp|Westridge, Rawalpindi|2w|core|651884398
 1120070592|Toyota Belta|2008|21.9|2008|20000|rwp|Westridge, Rawalpindi|3w|core|650296298
+1117723289|Toyota Belta|2009|21.5|2009|98000|rwp|Mehria Town, Attock|3w|near|636361776
 1120244433|Toyota Belta|2005 Import 2008|21.8|2005|333000|rwp|Cantt, Taxila|3w|near|651340442
-1119644606|Nissan March|2007|17.89|2007|200000|isb|E-11/3, Islamabad|3d|core|650743068
-1118129164|Nissan March|1997|8.8|1997|250000|isb|Diplomatic Enclave, Islamabad|1w|core|638740033
+1119644606|Nissan March|2007|17.89|2007|200000|isb|E-11/3, Islamabad|5d|core|650743068
+1118129164|Nissan March|1997|8.8|1997|250000|isb|Diplomatic Enclave, Islamabad|2w|core|638740033
 1118614827|Nissan March|2006|16|2006|183000|isb|G-8 Markaz, Islamabad|2w|core|641625570
 1120442446|Nissan March|2007|17.39|2003|200010|isb|G-11, Islamabad|2w|core|652525309
 1120337047|Nissan March|2002|15.5|2002|150000|isb|CBR Town Phase 1, Islamabad|2w|core|651897502
-1119093088|Nissan March|2000|13|2000|100000|isb|Gulberg Greens, Islamabad|2w|core|644473857
+1119093088|Nissan March|2000|13|2000|100000|isb|Gulberg Greens, Islamabad|3w|core|644473857
 1120042495|Toyota Pixis|Van 2021.41000 Drive. Import in March 2026|24.85|2021|41000|isb|I-8, Islamabad|3w|core|650129355
-1120586095|Nissan March|1998|10.5|1998|100000|isb|Others, Gujar Khan|6d|near|653383480
-1120888842|Nissan March|2007|18|2007|200000|isb|Peshawar Road, Rawalpindi|9h|core|655211462
+1120938172|Nissan March|2007|18.3|2007|153|isb|Shalley Valley, Rawalpindi|10h|core|655509050
+1120888842|Nissan March|2007|18|2007|200000|isb|Peshawar Road, Rawalpindi|2d|core|655211462
+1120586095|Nissan March|1998|10.5|1998|100000|isb|Others, Gujar Khan|1w|near|653383480
 1119882549|Nissan March|2006|17.2|2006|185354|isb|Rail View Housing Society, Rawalpindi|4w|core|649180084
 1120438825|Daihatsu Boon|2007|21.49|2007|90927|isb|DHA Defence Phase 2, Islamabad|2w|core|652502833
-1120265906|Daihatsu Boon|2013 Eco Ideal Total Genuine|28.25|2013|94000|isb|Ghauri Town Phase 5, Islamabad|2d|core|651472887
+1120265906|Daihatsu Boon|2013 Eco Ideal Total Genuine|28.25|2013|94000|isb|Ghauri Town Phase 5, Islamabad|4d|core|651472887
+1120822889|Daihatsu Boon|2007/ 2013 lahore number urgent sale 03009837719|20.5|2007|12345|isb|G-11/3, Islamabad|1d|core|655083528
 1112718987|Daihatsu Boon|Available for slae|30|2014|140|isb|Rawal Town, Islamabad|2w|core|645551914
 1117169420|Daihatsu Boon|2011/15 Toyota Passo|25.9|2011|158000|isb|Westridge, Rawalpindi|3w|core|653048057
 1120321466|Daihatsu Boon|2006|19.5|2006|200000|isb|Civil Line, Jhelum|2w|near|651805200
-1120891086|Daihatsu Move|Custom X 2013 - For Sale|21|2013|111764|isb|Blue Area, Islamabad|8h|core|655225800
-1120791075|Mitsubishi Pajero Mini|1998|16.5|1998|123|isb|Islamabad Expressway, Islamabad|2d|core|654621847
+1120891086|Daihatsu Move|Custom X 2013 - For Sale|21|2013|111764|isb|Blue Area, Islamabad|2d|core|655225800
+1120791075|Mitsubishi Pajero Mini|1998|16.5|1998|123|isb|Islamabad Expressway, Islamabad|4d|core|654621847
 1118443463|Suzuki Alto|VXL AGS 2021|28.7|2021|95000|isb|DHA Defence Phase 2, Islamabad|3w|core|644607543
 1119438409|Suzuki Alto|VXR 2021. /03213107217/|25.5|2021|130000|isb|F-11 Markaz, Islamabad|4w|core|646529426
-1120899118|Subaru Pleo|2008|14.55|2008|500000|isb|F-7/1, Islamabad|5h|core|655274313
-1116904749|Suzuki Alto|660cc Automatic Excellent Condition Japanese Engine|14.95|2004|180000|isb|DHA Defence Phase 2, Islamabad|10h|core|631557041
-1120883542|Suzuki Alto|2005|12.8|2005|135000|isb|Gulberg Greens, Islamabad|13h|core|655177883
-1120856108|Mitsubishi EK Wagon|2011|18.2|2011|160000|isb|G-9, Islamabad|1d|core|655030401
-1120816085|Daihatsu Terios Kid|2005|17.5|2005|150000|isb|Bahria Town, Islamabad|2d|core|654774741
-1120801189|Daihatsu Move|2014|27.9|2014|150000|isb|Bahria Town, Islamabad|3d|core|654682744
-1119630351|Suzuki Spacia|2016|24.5|2016|129000|isb|Bahria Enclave, Islamabad|4d|core|647677166
-1120746847|Suzuki Alto|2011|12.9|2011|140000|isb|Soan Garden, Islamabad|4d|core|654354170
-1120728420|Suzuki Alto|2005/auto 660|11.5|2005|12345|isb|MPCHS - Multi Gardens, Islamabad|5d|core|654245831
-1120864824|Other JDM|Alto VXR 2005model Converted into k6A Black mocco660cc|12.75|2005|300|rwp|Shalley Valley, Rawalpindi|4h|core|655070385
-1120679867|Mitsubishi Toppo|2013|22.5|2013|170000|rwp|Old Punjab House, Rawalpindi|1d|core|653948510
-1120307341|Honda N Box|2015 660cc Army Officer Owned Lahore Registered|26.25|2015|81600|rwp|Chaklala Scheme, Rawalpindi|1d|core|651723434
-1120907337|Honda N One|Premium (Full Option)|24.95|2016|120000|rwp|Askari 14, Rawalpindi|1h|core|655322575
-1120868788|Nissan Moco|2015|24.5|2015|150000|rwp|Saddar, Rawalpindi|1d|core|655094223
-1120866372|Suzuki Alto|2007 660cc|12.95|2007|10000|rwp|Lalazar, Rawalpindi|1d|core|655080587
-1120859011|Suzuki Alto|Japanese 2013/16 Model – Automatic transmission 660cc|21.7|2013|112000|rwp|Airport Housing Society, Rawalpindi|1d|core|655033907
-1120833271|Mitsubishi Pajero Mini|2006|8.3|2006|15000|rwp|Friends Colony, Rawalpindi|2d|core|654881089
-1115740543|Suzuki Alto|ORIGINAL JAPNES AUTOMATIC 660CC|11.8|2002|285000|rwp|Dhok Paracha, Rawalpindi|3d|core|624753653
-1120799299|Suzuki Alto|2007|11|2007|20000|rwp|Railway Scheme Chaklala, Rawalpindi|3d|core|654674343
-1120751671|Suzuki Alto|2005.660cc|11.5|2005|123455|rwp|Peshawar Road, Rawalpindi|4d|core|654384571
-1120742319|Suzuki Alto|2006|12.4|2006|35000|rwp|Bahria Town Phase 8, Rawalpindi|4d|core|654325496
+1120950602|Suzuki Alto|2003|11.5|2003|300000|isb|Khanna Pul, Islamabad|5h|core|655580121
+1119755742|Suzuki Alto|2007|12.7|2007|370|isb|G-13/1, Islamabad|19h|core|648421893
+1119622218|Mitsubishi i|2008|18.45|2008|100000|isb|Faisal Town Phase 1, Islamabad|20h|core|647630317
+1120899118|Subaru Pleo|2008|14.55|2008|500000|isb|F-7/1, Islamabad|1d|core|655274313
+1116904749|Suzuki Alto|660cc Automatic Excellent Condition Japanese Engine|14.95|2004|180000|isb|DHA Defence Phase 2, Islamabad|2d|core|631557041
+1120883542|Suzuki Alto|2005|12.8|2005|135000|isb|Gulberg Greens, Islamabad|2d|core|655177883
+1120856108|Mitsubishi EK Wagon|2011|18.2|2011|160000|isb|G-9, Islamabad|3d|core|655030401
+1120816085|Daihatsu Terios Kid|2005|17.5|2005|150000|isb|Bahria Town, Islamabad|4d|core|654774741
+1120801189|Daihatsu Move|2014|27|2014|150000|isb|Bahria Town, Islamabad|4d|core|654682744
+1119630351|Suzuki Spacia|2016|24.5|2016|129000|isb|Bahria Enclave, Islamabad|5d|core|647677166
+1120746847|Suzuki Alto|2011|12.9|2011|140000|isb|Soan Garden, Islamabad|6d|core|654354170
+1120864824|Other JDM|Alto VXR 2005model Converted into k6A Black mocco660cc|12.75|2005|300|rwp|Shalley Valley, Rawalpindi|1d|core|655070385
+1120679867|Mitsubishi Toppo|2013|22.5|2013|170000|rwp|Old Punjab House, Rawalpindi|2d|core|653948510
+1120307341|Honda N Box|2015 660cc Army Officer Owned Lahore Registered|26.25|2015|81600|rwp|Chaklala Scheme, Rawalpindi|2d|core|651723434
+1120947075|Suzuki Alto|2007|20|2007|110000|rwp|Kahuta, Rawalpindi|6h|core|655559095
+1120945712|Suzuki Alto|Japanese 660cc Automatic G2|17.8|2008|88000|rwp|Quaid-e-Azam Colony, Rawalpindi|7h|core|655551836
+1120936978|Suzuki Alto|2002 automatic transmission 660cc .|10.3|2002|15000|rwp|Babar Colony, Rawalpindi|11h|core|655501773
+1120926090|Other JDM|uzuki Cultus VXR 2006 660cc Automatic|9.5|2006|230000|rwp|Gulraiz Housing Scheme, Rawalpindi|15h|core|655436898
+1115240580|Daihatsu Sonica|2006|19.8|2006|140000|rwp|Chakra Road, Rawalpindi|16h|core|621792845
+1119791019|Other JDM|Suzuki Japanese Kei 660cc Model 2005 Registered 2007 Automatic|16.39|2007|168000|rwp|Peshawar Road, Rawalpindi|1d|core|648639269
+1120907337|Honda N One|Premium (Full Option)|24.95|2016|120000|rwp|Askari 14, Rawalpindi|1d|core|655322575
+1120868788|Nissan Moco|2015|24.5|2015|150000|rwp|Saddar, Rawalpindi|2d|core|655094223
+1120859011|Suzuki Alto|Japanese 2013/16 Model – Automatic transmission 660cc|21.7|2013|112000|rwp|Airport Housing Society, Rawalpindi|3d|core|655033907
+1120833271|Mitsubishi Pajero Mini|2006|8.3|2006|15000|rwp|Friends Colony, Rawalpindi|3d|core|654881089
+1115740543|Suzuki Alto|ORIGINAL JAPNES AUTOMATIC 660CC|11.8|2002|285000|rwp|Dhok Paracha, Rawalpindi|4d|core|624753653
+1120799299|Suzuki Alto|2007|11|2007|20000|rwp|Railway Scheme Chaklala, Rawalpindi|4d|core|654674343
