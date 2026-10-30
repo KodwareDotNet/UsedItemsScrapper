@@ -1,16 +1,16 @@
-**Kei tracker — 29 Oct, 11:51 PM**
-1344 live listings (1112 PakWheels, 232 OLX)
-**108 new** since last run · **211 price drops** · 98 ads disappeared
+**Kei tracker — 30 Oct, 2:50 PM**
+1340 live listings (1108 PakWheels, 232 OLX)
+**56 new** since last run · **216 price drops** · 60 ads disappeared
 
 New:
-- Mazda Carol 2022 GL — 3.45 lacs, 56,000 km, Rawalpindi
-- Suzuki Baleno 2000 ELI — 8.90 lacs, 132,000 km, Rawalpindi
-- Suzuki Alto 2007 VXR — 10.19 lacs, 90,000 km, Rawalpindi
-- Suzuki Baleno 2005 JXR — 10.80 lacs, 180,000 km, Islamabad
-- Suzuki Swift 1996  — 12.00 lacs, 69,986 km, Islamabad
-- Suzuki Alto 2006 2006 Automatic 660cc — 12.30 lacs, 12,000 km, Askari 10, Rawalpindi
-- Suzuki Alto 2008 VXR CNG — 12.50 lacs, 109,200 km, Islamabad
-- Suzuki Alto 2006 2006 — 12.79 lacs, 175,000 km, G-10, Islamabad
+- Suzuki Alto 2003 VXR — 8.00 lacs, 358,068 km, Islamabad
+- Suzuki Alto 2002 VXR — 8.70 lacs, 250,000 km, Islamabad
+- Suzuki Alto 2004  — 11.20 lacs, 54,000 km, Islamabad
+- Suzuki Alto 2006 GII — 12.50 lacs, 180,000 km, Islamabad
+- Suzuki Alto 2012 VXR — 13.10 lacs, 245 km, Islamabad
+- Suzuki Baleno 2004 JXR — 13.20 lacs, 180,000 km, Islamabad
+- Mitsubishi Pajero Mini 2006 XR — 15.00 lacs, 250,000 km, Islamabad
+- Daihatsu Mira 2006 X — 16.50 lacs, 147,000 km, Islamabad
 
 Price drops:
 - Daihatsu Mira ES 2015 — down 6.80 to 19.00 lacs, Islamabad
