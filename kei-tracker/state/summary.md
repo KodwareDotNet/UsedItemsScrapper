@@ -1,16 +1,16 @@
-**Kei tracker — 30 Oct, 11:05 PM**
-1356 live listings (1124 PakWheels, 232 OLX)
-**73 new** since last run · **221 price drops** · 57 ads disappeared
+**Kei tracker — 31 Oct, 3:39 AM**
+1356 live listings (1127 PakWheels, 229 OLX)
+**39 new** since last run · **216 price drops** · 39 ads disappeared
 
 New:
-- Suzuki Alto 2004 VXR — 9.80 lacs, 335,000 km, Islamabad
-- Suzuki Baleno 2005 JXR — 9.80 lacs, 273,000 km, Islamabad
-- Suzuki Alto 2010 VXR — 10.00 lacs, 110,000 km, Islamabad
-- Suzuki Alto 2004 VXR — 10.80 lacs, 150,000 km, Islamabad
-- Suzuki Alto 2005 VXR CNG — 10.80 lacs, 311,250 km, Rawalpindi
-- Suzuki Alto 2005 VXR CNG — 10.80 lacs, 200,000 km, Islamabad
-- Suzuki Alto 2009 VXR — 11.85 lacs, 150,000 km, Islamabad
-- Suzuki Baleno 2003 JXR — 11.90 lacs, 215,903 km, Islamabad
+- Subaru Pleo 2008  — 13.55 lacs, 125,000 km, Islamabad
+- Other JDM 1996 1996 frame,AC heater chalo, 660cc EFI turbo engine, 4x4 active, — 15.50 lacs, 5,413 km, Frash Town, Islamabad
+- Daihatsu Mira 2008 2008 — 16.89 lacs, 40,000 km, I-10, Islamabad
+- Toyota Vitz 2001 2001 — 17.00 lacs, 185,000 km, G-9, Islamabad
+- Mitsubishi Pajero Mini 2001  — 17.50 lacs, 100,000 km, Islamabad
+- Mitsubishi EK Wagon 2011 2011 — 18.00 lacs, 150,000 km, G-7, Islamabad
+- Mazda Carol 2006 carol G2, ABS, IMMOBILIZER. TOTAL GENUNE PAINT, 2006 model — 18.20 lacs, 92,200 km, Askari 13, Rawalpindi
+- Daihatsu Move 2012 2007/2012 Import Family car ISB Num Chill AC 03025271768 — 19.30 lacs, 20,000 km, Murree Road, Rawalpindi
 
 Price drops:
 - Daihatsu Mira ES 2015 — down 6.80 to 19.00 lacs, Islamabad
