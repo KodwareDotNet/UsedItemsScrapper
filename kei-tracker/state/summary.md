@@ -1,16 +1,16 @@
-**Kei tracker — 03 Nov, 2:47 AM**
-1385 live listings (1154 PakWheels, 231 OLX)
-**54 new** since last run · **213 price drops** · 50 ads disappeared
+**Kei tracker — 03 Nov, 3:50 PM**
+1375 live listings (1144 PakWheels, 231 OLX)
+**44 new** since last run · **208 price drops** · 54 ads disappeared
 
 New:
-- Mitsubishi EK Wagon 2009 Limited — 2.08 lacs, 95,000 km, Islamabad
-- Suzuki Alto 1993  — 3.25 lacs, 125 km, Islamabad
-- Suzuki Alto 2006 VXR — 8.70 lacs, 255 km, Rawalpindi
-- Suzuki Alto 2010 VXR — 10.95 lacs, 110,074 km, Rawalpindi
-- Suzuki Baleno 1998  — 10.95 lacs, 241,000 km, Islamabad
-- Suzuki Baleno 2004 JXR — 11.00 lacs, 400,000 km, Rawalpindi
-- Suzuki Baleno 2003 JXL — 11.50 lacs, 159,535 km, Islamabad
-- Suzuki Baleno 2005 JXR — 11.80 lacs, 100,000 km, Rawalpindi
+- Suzuki Alto 1991  — 4.30 lacs, 77,610 km, Islamabad
+- Suzuki Alto 2006 VXR — 9.75 lacs, 150,000 km, Islamabad
+- Suzuki Alto 2008 VXR — 10.00 lacs, 200,000 km, Rawalpindi
+- Suzuki Alto 2007 VXR — 11.00 lacs, 100,000 km, Islamabad
+- Suzuki Baleno 2005 JXR — 11.00 lacs, 250,000 km, Islamabad
+- Suzuki Baleno 2005 JXR — 11.20 lacs, 150,000 km, Islamabad
+- Suzuki Alto 2006 VX — 11.30 lacs, 100,000 km, Islamabad
+- Suzuki Alto 2005 VXR CNG — 12.75 lacs, 144,000 km, Islamabad
 
 Price drops:
 - Toyota Passo 2007 — down 5.70 to 13.80 lacs, Islamabad
