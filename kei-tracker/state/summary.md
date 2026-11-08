@@ -1,16 +1,16 @@
-**Kei tracker — 08 Nov, 3:11 AM**
-1402 live listings (1161 PakWheels, 241 OLX)
-**43 new** since last run · **224 price drops** · 34 ads disappeared
+**Kei tracker — 08 Nov, 3:05 PM**
+1396 live listings (1155 PakWheels, 241 OLX)
+**68 new** since last run · **219 price drops** · 74 ads disappeared
 
 New:
-- Mitsubishi Pajero Mini 1996 1996 — 13.50 lacs, 200,000 km, Lalazar, Rawalpindi
-- Suzuki Alto 2011 VXR — 15.30 lacs, 89,000 km, Rawalpindi
-- Daihatsu Mira 2009 2009 two door — 16.00 lacs, 178,500 km, Bhara kahu, Islamabad
-- Suzuki Alto 2007 2007 import 2011 — 16.80 lacs, 123,456 km, G-9/2, Islamabad
-- Mitsubishi EK Wagon 2011 2011 — 17.85 lacs, 127,503 km, KRL Road, Rawalpindi
-- Daihatsu Mira 2009 2009 — 18.89 lacs, 120,523 km, G-9/2, Islamabad
-- Daihatsu Mira 2007 2013 — 18.89 lacs, 71,000 km, Jinnah Gardens, Islamabad
-- Toyota Vitz 2005 2005 — 18.89 lacs, 105,000 km, Askari 11, Rawalpindi
+- Suzuki Alto 2004 VXR — 8.10 lacs, 200,000 km, Islamabad
+- Suzuki Baleno 2005 JXR — 9.70 lacs, 300,000 km, Islamabad
+- Suzuki Alto 2006 VXR — 10.20 lacs, 224,665 km, Rawalpindi
+- Suzuki Alto 2008 VXR — 11.10 lacs, 120,000 km, Rawalpindi
+- Suzuki Alto 2007 VXR — 11.50 lacs, 156,000 km, Islamabad
+- Suzuki Alto 2001 VXR — 11.50 lacs, 119,094 km, Rawalpindi
+- Suzuki Alto 2004 E — 11.90 lacs, 120,000 km, Islamabad
+- Suzuki Baleno 2004 JXR — 12.20 lacs, 172,000 km, Islamabad
 
 Price drops:
 - Toyota Passo 2007 — down 5.70 to 13.80 lacs, Islamabad
