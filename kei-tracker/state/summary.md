@@ -1,16 +1,16 @@
-**Kei tracker — 10 Nov, 3:13 AM**
-1414 live listings (1172 PakWheels, 242 OLX)
-**62 new** since last run · **236 price drops** · 53 ads disappeared
+**Kei tracker — 10 Nov, 4:27 PM**
+1395 live listings (1161 PakWheels, 234 OLX)
+**84 new** since last run · **229 price drops** · 103 ads disappeared
 
 New:
-- Suzuki Baleno 2004 JXR — 8.10 lacs, 183,000 km, Islamabad
-- Suzuki Alto 2002 VXR — 9.00 lacs, 100,000 km, Rawalpindi
-- Suzuki Baleno 2004 JXR — 9.50 lacs, 175,000 km, Rawalpindi
-- Suzuki Alto 2005 VXR — 9.50 lacs, 80,000 km, Rawalpindi
-- Suzuki Baleno 2000 GLI — 9.90 lacs, 150,000 km, Islamabad
-- Suzuki Baleno 2005 JXL — 11.00 lacs, 100,000 km, Rawalpindi
-- Suzuki Alto 2007 E — 11.00 lacs, 123,000 km, Islamabad
-- Suzuki Baleno 2001 GLI P — 11.20 lacs, 22 km, Rawalpindi
+- Suzuki Alto 1992  — 2.30 lacs, 250,000 km, Rawalpindi
+- Suzuki Alto 2007 VXR — 8.50 lacs, 208,840 km, Islamabad
+- Suzuki Baleno 1998  — 8.75 lacs, 465,979 km, Rawalpindi
+- Suzuki Alto 2007 VXR — 9.70 lacs, 350,000 km, Islamabad
+- Suzuki Alto 2008 VX CNG — 9.80 lacs, 96,500 km, Islamabad
+- Suzuki Alto 2007 VXR — 10.50 lacs, 54 km, Rawalpindi
+- Suzuki Baleno 2001 ELI — 10.80 lacs, 100,000 km, Islamabad
+- Suzuki Baleno 2002 JXR — 10.85 lacs, 325,000 km, Rawalpindi
 
 Price drops:
 - Toyota Belta 2009 — down 19.40 to 2.10 lacs, Mehria Town, Attock
@@ -18,4 +18,4 @@ Price drops:
 - Suzuki Alto Lapin 2014 — down 5.00 to 20.00 lacs, Islamabad
 - Suzuki Hustler 2018 — down 3.00 to 26.50 lacs, Islamabad
 - Daihatsu Mira ES 2014 — down 2.90 to 25.30 lacs, Rawalpindi
-- Honda Life 2007 — down 2.60 to 17.90 lacs, Rawalpindi
+- Daihatsu Mira 2014 — down 2.90 to 25.30 lacs, Satellite Town, Rawalpindi
